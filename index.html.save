@@ -1,9 +1,3 @@
-<!--
-Author: WebThemez
-Author URL: http://webthemez.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,18 +5,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="free-educational-responsive-web-template-webEdu">
 	<meta name="author" content="webThemez.com">
-	<title>free-educational-responsive-web-template-webEdu</title>
-	<link rel="favicon" href="images/favicon.png">
+	<title>Educación Online</title>
+	<link rel="favicon" href="assets/images/favicon.png">
 	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css"> 
-	<link rel="stylesheet" href="css/bootstrap-theme.css" media="screen"> 
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css"> 
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen"> 
+	<link rel="stylesheet" href="assets/css/style.css">
     <link rel='stylesheet' id='camera-css'  href='assets/css/camera.css' type='text/css' media='all'> 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
-	<script src="js/html5shiv.js"></script>
-	<script src="js/respond.min.js"></script>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond.min.js"></script>
 	<![endif]-->
 </head>
 <body>
@@ -33,17 +27,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<!-- Button for smallest screens -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
 				<a class="navbar-brand" href="index.html">
-					<img src="images/logo.png" alt="Techro HTML5 template"></a>
+					<img src="assets/images/logo.png" alt="Techro HTML5 template"></a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right mainNav">
 					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="courses.html">Courses</a></li>
-					<li><a href="price.html">Price</a></li>
+					<li><a href="about.html">Quiénes Somos</a></li>
+					<li><a href="courses.html">Cursos</a></li>
 					<li><a href="videos.html">Videos</a></li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Páginas<b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="sidebar-right.html">Right Sidebar</a></li>
 							<li><a href="#">Dummy Link1</a></li>
@@ -51,7 +44,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<li><a href="#">Dummy Link3</a></li>
 						</ul>
 					</li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="contact.html">Contáctenos</a></li>
 
 				</ul>
 			</div>
@@ -64,18 +57,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<header id="head">
 		<div class="container">
              <div class="heading-text">							
-							<h1 class="animated flipInY delay1">Start Online Education</h1>
-							<p>Free Online education template for elearning and online education institute.</p>
+							<h1 class="animated flipInY delay1">Comienza Tu Educación En Línea</h1>
+							<p>Realiza tu voluntariado o capacitate con los mejores.</p>
+							<p> Tu oportunidad de ingresar a una universidad empieza ahora.</p>
 						</div>
             
 					<div class="fluid_container">                       
                     <div class="camera_wrap camera_emboss pattern_1" id="camera_wrap_4">
-                        <div data-thumb="images/slides/thumbs/img1.jpg" data-src="images/slides/img1.jpg">
+                        <div data-thumb="assets/images/slides/thumbs/img1.jpg" data-src="assets/images/slides/img1.jpg">
                             <h2>We develop.</h2>
                         </div> 
-                        <div data-thumb="images/slides/thumbs/img2.jpg" data-src="images/slides/img2.jpg">
+                        <div data-thumb="assets/images/slides/thumbs/img2.jpg" data-src="assets/images/slides/img2.jpg">
                         </div>
-                        <div data-thumb="images/slides/thumbs/img3.jpg" data-src="images/slides/img3.jpg">
+                        <div data-thumb="assets/images/slides/thumbs/img3.jpg" data-src="assets/images/slides/img3.jpg">
                         </div> 
                     </div><!-- #camera_wrap_3 -->
                 </div><!-- .fluid_container -->
@@ -88,12 +82,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="col-md-3">
 						<div class="grey-box-icon">
 							<div class="icon-box-top grey-box-icon-pos">
-								<img src="images/1.png" alt="" />
+								<img src="assets/images/1.png" alt="" />
 							</div><!--icon box top -->
-							<h4>Online Courses</h4>
+							<h4>Cursos Online</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus eleifend risus ut congue
 							eset nec lacus elit dor broma.</p>
-     						<p><a href="#"><em>Read More</em></a></p>
+     						<p><a href="#"><em>Leer Más</em></a></p>
 						</div><!--grey box -->
 					</div><!--/span3-->
 					<div class="col-md-3">
@@ -101,10 +95,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="icon-box-top grey-box-icon-pos">
 								<img src="assets/images/2.png" alt="" />
 							</div><!--icon box top -->
-							<h4>Meet our Staf</h4>
+							<h4>Personal Capacitado</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus eleifend risus ut congue
 							eset nec lacus elit dor broma.</p>
-     						<p><a href="#"><em>Read More</em></a></p>
+     						<p><a href="#"><em>Leer Más</em></a></p>
 						</div><!--grey box -->
 					</div><!--/span3-->
 					<div class="col-md-3">
@@ -112,10 +106,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="icon-box-top grey-box-icon-pos">
 								<img src="assets/images/3.png" alt="" />
 							</div><!--icon box top -->
-							<h4>Latest Updates</h4>
+							<h4>Últimas Actualizaciones</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus eleifend risus ut congue
 							eset nec lacus elit dor broma.</p>
-     						<p><a href="#"><em>Read More</em></a></p>
+     						<p><a href="#"><em>Leer Más</em></a></p>
 						</div><!--grey box -->
 					</div><!--/span3-->
 					<div class="col-md-3">
@@ -123,17 +117,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="icon-box-top grey-box-icon-pos">
 								<img src="assets/images/4.png" alt="" />
 							</div><!--icon box top -->
-							<h4>Placements</h4>
+							<h4>Ubicaciones</h4>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus eleifend risus ut congue
 							eset nec lacus elit dor broma.</p>
-     						<p><a href="#"><em>Read More →</em></a></p>
+     						<p><a href="#"><em>Leer Más</em></a></p>
 						</div><!--grey box -->
 					</div><!--/span3-->
 				</div>
     </div>
       <section class="news-box top-margin">
         <div class="container">
-            <h2><span>New Courses</span></h2>
+            <h2><span>Nuevos Cursos</span></h2>
             <div class="row">
        
                 <div class="col-lg-4 col-md-4 col-sm-12">
@@ -143,7 +137,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <div class="caption maxheight2">
                             <div class="box_inner">
                                         <div class="box">
-                                            <p class="title"><h5>Developer</h5></p>
+                                            <p class="title"><h5>Desarrollo Web</h5></p>
                                             <p>Lorem ipsum dolor sit amet, conc tetu er adipi scing. Praesent ves tibuum molestie lacuiirhs. Aenean.</p>
                                         </div> 
                                 </div>
@@ -158,7 +152,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <div class="caption maxheight2">
                             <div class="box_inner">
                                         <div class="box">
-                                            <p class="title"><h5>Photography   </h5></p>
+                                            <p class="title"> <h5>Fotografía</h5></p>
                                             <p>Lorem ipsum dolor sit amet, conc tetu er adipi scing. Praesent ves tibuum molestie lacuiirhs. Aenean.</p>
                                         </div> 
                                 </div>
@@ -173,7 +167,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <div class="caption maxheight2">
                            <div class="box_inner">
                                         <div class="box">
-                                            <p class="title"><h5>Audio Editing</h5></p>
+                                            <p class="title"><h5>Edición de Audio</h5></p>
                                             <p>Lorem ipsum dolor sit amet, conc tetu er adipi scing. Praesent ves tibuum molestie lacuiirhs. Aenean.</p>
                                         </div> 
                                 </div>
@@ -189,108 +183,54 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	
       <section class="container">
       <div class="row">
-      	<div class="col-md-8"><div class="title-box clearfix "><h2 class="title-box_primary">About Us</h2></div> 
-        <p><span>Perspiciatis unde omnis iste natus error sit voluptatem. Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus musull dui.</span></p>
-        <p>Lorem ipsumulum aenean noummy endrerit mauris. Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Null dui. Fusce feugiat malesuada odio.</p><p>Lorem ipsumulum aenean noummy endrerit mauris. Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Null dui. Fusce feugiat malesuada odio.</p>
+      	<div class="col-md-8"><div class="title-box clearfix "><h2 class="title-box_primary">Acerca de Nosotros</h2></div> 
+        <p><span>Educacion Online es una pagina web que ofrecer servicios educativo a la comunidad. La experiencia acumulada de nuestros tutores incluye tareas funcionales para el aprendizaje,infraestructura de primera, esquemas de soporte y tutorias personalizada.
+            </span></p>
+        <p>Nuestro Objectivo....</p>
+            <p>Implementar una página web que permita el registro de los estudiantes que desean realizar voluntariados, dictando clases a personas de escasos recuersos que no tienen las posibilidades de ingresar a una universidad.</p>
         <a href="#" title="read more" class="btn-inline " target="_self">read more</a> </div>
               
           
-          <div class="col-md-4"><div class="title-box clearfix "><h2 class="title-box_primary">Up Coming Courses</h2></div> 
+          <div class="col-md-4"><div class="title-box clearfix "><h2 class="title-box_primary">Próximos Cursos</h2></div> 
             <div class="list styled custom-list">
             <ul>
-            <li><a title="Snatoque penatibus et magnis dis partu rient montes ascetur ridiculus mus." href="#">Mathematics and Computer Science</a></li>
-            <li><a title="Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus." href="#">Mathematics and Philosophy</a></li>
-            <li><a title="Penatibus et magnis dis parturient montes ascetur ridiculus mus." href="#">Philosophy and Modern Languages</a></li>
-            <li><a title="Morbi nunc odio gravida at cursus nec luctus a lorem. Maecenas tristique orci." href="#">History (Ancient and Modern)</a></li>
-            <li><a title="Snatoque penatibus et magnis dis partu rient montes ascetur ridiculus mus." href="#">Classical Archaeology and Ancient History</a></li>
-            <li><a title="Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus." href="#">Physics and Philosophy</a></li>
+            <li><a title="Snatoque penatibus et magnis dis partu rient montes ascetur ridiculus mus." href="#">Matemáticas e Informática</a></li>
+            <li><a title="Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus." href="#">Matemáticas y Filosofía</a></li>
+            <li><a title="Penatibus et magnis dis parturient montes ascetur ridiculus mus." href="#">Filosofía y Lenguas Modernas</a></li>
+            <li><a title="Morbi nunc odio gravida at cursus nec luctus a lorem. Maecenas tristique orci." href="#">Historia (Antigua y Moderna)</a></li>
+            <li><a title="Snatoque penatibus et magnis dis partu rient montes ascetur ridiculus mus." href="#">Arqueología Clasíca e Historia Antigua</a></li>
+            <li><a title="Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus." href="#">Física y Filosofía</a></li>
             </ul>
             </div>
          </div>
       </div>
       </section>
-      
-    	 
-    <footer id="footer">
- 
+  <!----------->   
+ <footer id="footer">
 		<div class="container">
    <div class="row">
   <div class="footerbottom">
     <div class="col-md-3 col-sm-6">
       <div class="footerwidget">
         <h4>
-          Course Categories
+          CATEGORIA DE LOS CURSOS
         </h4>
         <div class="menu-course">
           <ul class="menu">
             <li><a href="#">
-                List of Technology 
+                Matematicas 
               </a>
             </li>
             <li><a href="#">
-                List of Business
+                Matemática y lenguaje
               </a>
             </li>
             <li><a href="#">
-                List of Photography
+                Ciencia y Sociales
               </a>
             </li>
             <li><a href="#">
-               List of Language
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 col-sm-6">
-      <div class="footerwidget">
-        <h4>
-          Products Categories
-        </h4>
-        <div class="menu-course">
-          <ul class="menu">
-            <li> <a href="#">
-                Individual Plans  </a>
-            </li>
-            <li><a href="#">
-                Business Plans
-              </a>
-            </li>
-            <li><a href="#">
-                Free Trial
-              </a>
-            </li>
-            <li><a href="#">
-                Academic
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 col-sm-6">
-      <div class="footerwidget">
-        <h4>
-          Browse by Categories
-        </h4>
-        <div class="menu-course">
-          <ul class="menu">
-            <li><a href="#">
-                All Courses
-              </a>
-            </li>
-            <li> <a href="#">
-                All Instructors
-              </a>
-            </li>
-            <li><a href="#">
-                All Members
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                All Groups
+               Matemática y Lenguaje Resuelta
               </a>
             </li>
           </ul>
@@ -299,12 +239,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div>
     <div class="col-md-3 col-sm-6"> 
             	<div class="footerwidget"> 
-                         <h4>Contact</h4> 
-                        <p>Lorem reksi this dummy text unde omnis iste natus error sit volupum</p>
+                         <h4>CONTACTO</h4> 
+                        <p>Nuestra oficinas estan ubicadas.</p>
             <div class="contact-info"> 
-            <i class="fa fa-map-marker"></i> Kerniles 416  - United Kingdom<br>
-            <i class="fa fa-phone"></i>+00 123 156 711 <br>
-             <i class="fa fa-envelope-o"></i> youremail@email.com
+            <i class="fa fa-map-marker"></i> Espol-Edcom, Guayaquil<br>
+            <i class="fa fa-phone"></i>+593990000000 <br>
+             <i class="fa fa-envelope-o"></i> nfo@educaciononline.com
               </div> 
                 </div><!-- end widget --> 
     </div>
@@ -312,40 +252,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
 			<div class="social text-center">
 				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-dribbble"></i></a>
-				<a href="#"><i class="fa fa-flickr"></i></a>
-				<a href="#"><i class="fa fa-github"></i></a>
+				<a href="https://www.facebook.com/Educaci%C3%B3n-Online-1051002865029799/" target="_blank"><i class="fa fa-facebook"></i></a>
+			    <a href="https://github.com/willorko8926" target="_blank"><i class="fa fa-github"></i></a>
 			</div>
-
-			<div class="clear"></div>
+		<div class="clear"></div>
 			<!--CLEAR FLOATS-->
 		</div>
 		<div class="footer2">
 			<div class="container">
 				<div class="row">
-
 					<div class="col-md-6 panel">
 						<div class="panel-body">
 							<p class="simplenav">
-								<a href="index.html">Home</a> | 
-								<a href="about.html">About</a> |
-								<a href="courses.html">Courses</a> |
-								<a href="price.html">Price</a> |
-								<a href="videos.html">Videos</a> |
-								<a href="contact.html">Contact</a>
+								<a href="index.html">HOME</a> | 
+								<a href="about.html">QUIENES SOMOS</a> |
+								<a href="courses.html">CURSOS</a> |
+								<a href="videos.html">VIDEOS</a> |
+								<a href="contact.html">CONTACTO</a>
 							</p>
 						</div>
 					</div>
-
-					<div class="col-md-6 panel">
-						<div class="panel-body">
-							<p class="text-right">
-								Copyright &copy; 2014. Template by <a href="http://webthemez.com/" rel="develop">WebThemez.com</a>
-							</p>
-						</div>
-					</div>
-
 				</div>
 				<!-- /row of panels -->
 			</div>
