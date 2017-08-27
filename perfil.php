@@ -1,3 +1,9 @@
+<?php
+
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,13 +46,13 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav pull-right mainNav">
-                    <li><a href="index.html">INICIO</a></li>
-                    <li><a href="about.html">QUIENES SOMOS</a></li>
-                    <li><a href="courses.html">CURSOS</a></li>
-                    <li><a href="videos.html">VIDEOS</a></li>
-                    <li ><a href="contact.html">CONTÁCTENOS</a></li>
-<li><a href="login.html">LOGIN</a></li>
-                    <li class="active"><a href="perfil.html">PERFIL</a></li>
+                    <li><a href="index.php">INICIO</a></li>
+                    <li><a href="about.php">QUIENES SOMOS</a></li>
+                    <li><a href="courses.php">CURSOS</a></li>
+                    <li><a href="videos.php">VIDEOS</a></li>
+                    <li ><a href="contact.php">CONTÁCTENOS</a></li>
+                    <li><a href="login.php">LOGIN</a></li>
+                    <li class="active"><a href="perfil.php">PERFIL</a></li>
                 </ul>
             </div>
         <!--/.nav-collapse -->
@@ -61,9 +67,9 @@
             <div class="col-md-12">
                 <h1 class="page-header">Mis Datos .::.</h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="perfil.html">Perfil de usuario</a></li>
-                    <li class="active"><a href="ediPerfil.html" >Editando datos</a></li>
+                    <!--<li><a href="index.php">Inicio</a></li>
+                    <li><a href="perfil.php">Perfil de usuario</a></li>-->
+                    <li class="active"><a href="ediPerfil.php" >Perfil de usuario</a></li>
                 </ol>
             </div>
         </div>
@@ -106,7 +112,6 @@
         			<br >
         			<ul class="list-group list-primary">
     			     <a href="#" class="list-group-item">Mi perfil</a>
-        			 <a href="#" class="list-group-item">Cuenta</a>
         			</ul>
     			</div>
                 <!-- Fin Barra vertical de opciones del perfil de usuario -->
@@ -284,11 +289,11 @@
                     <div class="col-md-6 panel">
                         <div class="panel-body">
                             <p class="simplenav">
-                                <a href="index.html">INICIO</a> |
-                                <a href="about.html">QUIENES SOMOS</a> |
-                                <a href="courses.html">CURSOS</a> |
-                                <a href="videos.html">VIDEOS</a> |
-                                <a href="contact.html">CONTACTO</a>
+                                <a href="index.php">INICIO</a> |
+                                <a href="about.php">QUIENES SOMOS</a> |
+                                <a href="courses.php">CURSOS</a> |
+                                <a href="videos.php">VIDEOS</a> |
+                                <a href="contact.php">CONTACTO</a>
                             </p>
                         </div>
                     </div>
