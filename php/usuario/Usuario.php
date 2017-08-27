@@ -2,29 +2,29 @@
 
 class Usuario
 {
-    private $idUsuario;
-    private $nombreUsuario;
+    private $idusuario;
+    private $nombreusuario;
     private $contrasenia;
-    private $idPersona;
+    private $personaid;
     
-     function __construct($idUsuario, $nombreUsuario, $contrasenia, $idPersona) {
-       	$this->idUsuario = $idUsuario;
-       	$this->nombreUsuario = $nombreUsuario;
-	$this->contrasenia = $contrasenia;
-       	$this->idPersona = $idPersona;
+     function __construct($idusuario, $nombreusuario, $contrasenia, $personaid) {
+       	$this->idusuario = $idusuario;
+       	$this->nombreusuario = $nombreusuario;
+        $this->contrasenia = $contrasenia;
+       	$this->personaid = $personaid;
      }
  
-     function setIdUsuario($idUsario){
-       $this->idUsuario = $idUsuario;
+     function setIdusuario($idusuario){
+       $this->idusuario = $idusuario;
      } 
-     function getIdUsuario(){
-       return $this->idUsuario;
+     function getIdusuario(){
+       return $this->idusuario;
      }
-     function setNombreUsuario($nombreUsuario){
-       $this->nombreUsuario = $nombreUsuario;
+     function setNombreusuario($nombreusuario){
+       $this->nombreusuario = $nombreusuario;
      } 
-     function getNombreUsuario(){
-       return $this->nombreUsuario;
+     function getNombreusuario(){
+       return $this->nombreusuario;
      }
      function setContrasenia($contrasenia){
        $this->contrasenia = $contrasenia;
@@ -32,11 +32,11 @@ class Usuario
      function getContrasenia(){
        return $this->contrasenia;
      }
-     function setIdPersona($idPersona){
-       $this->idPersona = $idPersona;
+     function setPersonaid($personaid){
+       $this->personaid = $personaid;
      } 
-     function getIdPersona(){
-       return $this->idPersona;
+     function getPersonaid(){
+       return $this->personaid;
      }
     
 }
