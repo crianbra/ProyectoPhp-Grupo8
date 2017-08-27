@@ -11,7 +11,7 @@ class UsuarioCollector extends Collector
     
     $arrayUsuario= array();        
     foreach ($rows as $c){
-      $aux = new Usuario($c{'idusuario'},$c{'nombreusuario'}, $c{'contrasenia'}, $c{'idpersona_fk'});
+      $aux = new Usuario($c{'idusuario'},$c{'nombreusuario'}, $c{'contrasenia'}, $c{'personaid'});
       array_push($arrayUsuario, $aux);
     }
     return $arrayUsuario;        
@@ -20,19 +20,24 @@ class UsuarioCollector extends Collector
   function showUsuario($id){
     $row = self::$db->getRows("SELECT * FROM usuario where idusuario= ? ", array("{$id}"));
 
-    $ObjUsuario = new Usuario($row[0]{'idusuario'},$row[0]{'nombreusuario'}, $row[0]{'contrasenia'}, $row[0]{'idpersona_fk'});
+    $ObjUsuario = new Usuario($row[0]{'idusuario'},$row[0]{'nombreusuario'}, $row[0]{'contrasenia'}, $row[0]{'personaid'});
     return $ObjUsuario;
 
 }
 
 
-function updateUsuario($id,$nombre){
-	$insertrow = self::$db->updateRow("UPDATE public.usuario SET nombreusuario= ? WHERE idusuario= ?", array("{$nombreusuario}", $id));
+function updateUsuario($id,$nombreusuario, $contrasenia, $personaid){
+	$insertrow = self::$db->updateRow("UPDATE public.usuario SET nombreusuario= ? contrasenia= ? personaid= ? WHERE idusuario= ?", array("{$nombreusuario}", "{$contrasenia}", "{$personaid}", $id));
 
 }
 
 function deleteUsuario($id){
 	$deleterow = self::$db->deleteRow("DELETE FROM public.usuario WHERE idusuario= ?", array("{$id}"));
+
+}
+
+function createUsuario($nombreusuario, $contrasenia, $personaid){
+  $insertarrow = self::$db->insertRow("INSERT INTO public.persona (nombreusuario, contrasenia, personaid) VALUES (?,?,?)", array ("{$nombreusuario}", "{$contrasenia}", "{$personaid}"));
 
 }
 
