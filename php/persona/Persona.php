@@ -2,43 +2,37 @@
 
 class Persona
 {
-    private $idPersona;
+    private $idpersona;
     private $nombre;
-    private $apellido;
     private $ciudad;
     private $direccion;
     private $edad;
     private $telefono;
     private $correo;
+    private $facebook;
     
-     function __construct($idPersona, $nombre, $apellido, $ciudad, $direccion, $edad, $telefono, $correo) {
-       	$this->idPersona = $idPersona;
+     function __construct($idpersona, $nombre, $ciudad, $direccion, $edad, $telefono, $correo, $facebook) {
+       	$this->idpersona = $idpersona;
        	$this->nombre = $nombre;
-	$this->apellido = $apellido;
-       	$this->ciudad = $ciudad;
-	$this->direccion = $direccion;
+        $this->ciudad = $ciudad;
+        $this->direccion = $direccion;
        	$this->edad = $edad;
-	$this->telefono = $telefono;
+        $this->telefono = $telefono;
        	$this->correo = $correo;
+        $this->facebook = $facebook;
      }
     
-     function setIdPersona($idPersona){
-       $this->idPersona = $idPersona;
+     function setIdpersona($idpersona){
+       $this->idpersona = $idpersona;
      } 
-     function getIdPersona(){
-       return $this->idPersona;
+     function getIdpersona(){
+       return $this->idpersona;
      } 
      function setNombre($nombre){
        $this->nombre = $nombre;
      } 
      function getNombre(){
        return $this->nombre;
-     }
-     function setApellido($apellido){
-       $this->apellido = $apellido;
-     } 
-     function getApellido(){
-       return $this->apellido;
      }
      function setCiudad($ciudad){
        $this->ciudad = $ciudad;
@@ -70,7 +64,12 @@ class Persona
      function getCorreo(){
        return $this->correo;
      }
-    
+     function setFacebook($facebook){
+      $this->facebook = $facebook
+     }
+    function getFacebook(){
+       return $this->facebook;
+     }
 }
 
 ?> 
