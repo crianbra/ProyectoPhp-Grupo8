@@ -5,7 +5,7 @@
 class CategoriaXMateria
 {
   private $idcategoria;
-  private $idmateria
+  private $idmateria;
 
   function __construct($id)
   {
