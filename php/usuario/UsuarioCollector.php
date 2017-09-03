@@ -41,6 +41,24 @@ function createUsuario($nombreusuario, $contrasenia, $personaid){
 
 }
 
+function validarUsuario($nombreusuario,$contrasenia){
+                $rows = self::$db->getRows("SELECT * FROM usuario WHERE nombreusuario='$nombreusuario' AND contrasenia='$ontrasenia'");
+                foreach ($rows as $c){
+                  $aux = new Usuario($c{'idusuario'},$c{'nombreusuario'},$c{'contrasenia'},$c{'personaid'});
+                  return 1;
+                }
+                return 0;
+          }    
+        
+function buscarUsuario($nombreusuario) {
+                $rows = self::$db->getRows("SELECT * FROM usuario WHERE nombreusuario='$nombreusuario'");               
+                foreach ($rows as $c){
+                  $aux = new Usuario($c{'idusuario'},$c{'nombreusuario'},$c{'contrasenia'},$c{'personaid'});
+                  return 1;
+                }
+                return 0;          
+            }
+
 }
 ?>
 

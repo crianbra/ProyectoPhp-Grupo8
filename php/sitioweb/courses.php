@@ -1,0 +1,243 @@
+<?php
+
+session_start();
+
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="free-educational-responsive-web-template-webEdu">
+	<meta name="author" content="webThemez.com">
+	<title>Cursos - Educación Online</title>
+	<link rel="icon" type="image/png" href="../../assets/images/logo_navegador.png">
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="../../assets/css/bootstrap-theme.css" media="screen">
+	<link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+				<a class="navbar-brand" href="index.php">
+					<img src="../../assets/images/logo.png" alt="Techro HTML5 template"></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right mainNav">
+					<li><a href="index.php">INICIO</a></li>
+					<li><a href="about.php">QUIENES SOMOS</a></li>
+					<li class="active"><a href="courses.php">CURSOS</a></li>
+					<li><a href="videos.php">VIDEOS</a></li>
+					<li><a href="contact.php">Contáctenos</a></li>
+                    <!--<li><a href="login.php">LOGIN</a></li>-->
+                    <li><a href="perfil.php">PERFIL</a></li>
+                    <li><a href="../../index.php">SALIR</a></li>
+
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</div>
+	<!-- /.navbar -->
+
+		<header id="head" class="secondary">
+            <div class="container">
+                    <h1>CURSOS</h1>
+                    <p>Cursos 100% entendibles.</p>
+                </div>
+    </header>
+
+
+    <div class="container">
+<h3>Cursos</h3>
+<p>Cursos pedagógicos, se mostraran de manera personal y con vídeos explicativos.</p>
+
+<br/>
+<ul class="list-unstyled video-list-thumbs row">
+	<li class="col-lg-3 col-sm-4 col-xs-6">
+		<a href="https://www.youtube.com/watch?v=EwHzJWTcP7o" target="_blank">
+			<img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
+			<h2>Formamos Ecuador, Logica Matematica</h2>
+			<span class="play-button"></span>
+			<span class="duration">02:00</span>
+		</a>
+	</li>
+	<li class="col-lg-3 col-sm-4 col-xs-6">
+		<a href="https://www.youtube.com/watch?v=YylHQhjXrOk" target="_blank" >
+			<img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
+			<h2>Rubiños, Razonamiento Abstracto</h2>
+			<span class="play-button"></span>
+			<span class="duration">47:06</span>
+		</a>
+	</li>
+	<li class="col-lg-3 col-sm-4 col-xs-6">
+		<a href="https://www.youtube.com/watch?v=EwHzJWTcP7o" target="_blank">
+			<img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
+			<h2>Formamos Ecuador, Logica Matematica</h2>
+			<span class="play-button"></span>
+			<span class="duration">02:00</span>
+		</a>
+	</li>
+	<li class="col-lg-3 col-sm-4 col-xs-6">
+		<a href="https://www.youtube.com/watch?v=YylHQhjXrOk" target="_blank" >
+			<img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
+			<h2>Rubiños, Razonamiento Abstracto</h2>
+			<span class="play-button"></span>
+			<span class="duration">47:06</span>
+		</a>
+	</li>
+</ul>
+
+</div>
+	<div id="courses">
+		<section class="container">
+			<h3 align="center">Lista de Cursos que se dictarán</h3>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="featured-box">
+						<div class="text">
+							<h3 align="center">Lengua y Líteratura</h3>
+							<p align="center" >Explicación de verbos y pretéritos del fúturo.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="featured-box">
+						<div class="text">
+							<h3 align="center">Matemáticas</h3>
+							<p align="center"> Explicación de ejercicios matemáticos, reglas de tres y conjuntos.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="featured-box">
+						<div class="text">
+							<h3 align="center">Ciencias Naturales</h3>
+							<p align="center" >  Preguntas relacionadas a las pruebas que tomarán.</p>
+						</div>
+					</div>
+				</div>
+                			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="featured-box">
+						<div class="text">
+							<h3 align="center"> Estudios Sociales</h3>
+							<p align="center" >Fechas Importantes y conocimiento
+                            general . </p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="featured-box">
+						<div class="text">
+							<h3 align="center">Matématica Abstracta</h3>
+							<p align="center" >Razomamiento abstracto y ejercicios resueltos para el aprendizaje.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="featured-box">
+						<div class="text">
+							<h3 align="center">Matemática y Lengua y Líteratura</h3>
+							<p align="center" > Combinación de ambas en ejercicios de despejes.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+	</div>
+
+	 <footer id="footer">
+		<div class="container">
+   <div class="row">
+  <div class="footerbottom">
+    <div class="col-md-3 col-sm-6">
+
+           <div class="footerwidget">
+        <h4>
+        <h4  align="center">
+          CATEGORÍA DE LOS CURSOS A DICTAR
+        </h4>
+        <div class="menu-course">
+          <ul class="menu">
+            <li align="center"><a href=" https://drive.google.com/file/d/0B048WkRgr8JQbC1YZ0xLU2tFdW8/view" target="_blank">
+                Matemática (Revisar)
+              </a>
+            </li>
+            <li align="center"><a href="https://drive.google.com/file/d/0B048WkRgr8JQRnN4MmxGdFBYR00/view" target="_blank">
+                Matemática y Lengua y Líteratura (Revisar)
+              </a>
+            </li>
+            <li align="center"><a href="https://drive.google.com/file/d/0B048WkRgr8JQQ3AwRW9GTGZLWVk/view" target="_blank">
+                Ciencia y Sociales (Revisar)
+              </a>
+            </li>
+            <li align="center"><a href="https://drive.google.com/file/d/0B048WkRgr8JQdWRQSW5BRk15VGc/view" target="_blank">
+               Matemática y Lengua y Líteratura Resuelta (Revisar)
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+            	<div class="social text-center">
+                         <h4>CONTACTO</h4>
+                        <p>Nuestra oficinas estan úbicadas.</p>
+            <div class="contact-info">
+            <i class="fa fa-map-marker"></i> Espol-Edcom, Guayaquil<br>
+            <i class="fa fa-phone"></i>+593990000000 <br>
+             <i class="fa fa-envelope-o"></i> info@educaciononline.com
+              </div>
+                </div><!-- end widget -->
+    </div>
+  </div>
+</div>
+			<div class="social text-center">
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="https://github.com/crianbra/ProyectoPhp-Grupo8" target="_blank"><i class="fa fa-github"></i></a>
+				<a href="https://www.facebook.com/Educaci%C3%B3n-Online-1051002865029799/" target="_blank"><i class="fa fa-facebook"></i></a>
+
+
+			</div>
+		<div class="clear"></div>
+			<!--CLEAR FLOATS-->
+		</div>
+		<div class="footer2">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 panel">
+						<div class="panel-body">
+							<p class="simplenav">
+								<a href="index.php">INICIO</a> |
+								<a href="about.php">QUIENES SOMOS</a> |
+								<a href="courses.php">CURSOS</a> |
+								<a href="videos.php">VIDEOS</a> |
+								<a href="contact.php">CONTÁCTENOS</a> |
+								<a href="perfil.php">PERFIL</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- /row of panels -->
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="../../assets/js/custom.js"></script>
+</body>
+</html>

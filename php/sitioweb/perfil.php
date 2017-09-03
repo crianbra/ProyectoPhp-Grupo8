@@ -16,20 +16,20 @@ session_start();
     <meta name="author" content="">
     <title>Educacion Online -User</title>
     <!--  CSS de Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="js/jquery-example.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <link href="css/personalizado.css" rel="stylesheet">
-    <link href="css/starter-template.css" rel="stylesheet">
+    <script src="../../js/jquery-example.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <link href="../../css/personalizado.css" rel="stylesheet">
+    <link href="../../css/starter-template.css" rel="stylesheet">
 
-    <link rel="icon" type="image/png" href="assets/images/logo_navegador.png">
+    <link rel="icon" type="image/png" href="../../assets/images/logo_navegador.png">
     <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
     <!-- Custom styles for our template -->
-    <link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap-theme.css" media="screen">
+    <link rel="stylesheet" href="../../assets/css/style.css">
     
 
 </head>
@@ -42,8 +42,8 @@ session_start();
             <div class="navbar-header">
                 <!-- Button for smallest screens -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/logo.png" alt="Techro HTML5 template"></a>
+                <a class="navbar-brand" href="index.php">
+                    <img src="../../assets/images/logo.png" alt="Techro HTML5 template"></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav pull-right mainNav">
@@ -51,9 +51,10 @@ session_start();
                     <li><a href="about.php">QUIENES SOMOS</a></li>
                     <li><a href="courses.php">CURSOS</a></li>
                     <li><a href="videos.php">VIDEOS</a></li>
-                    <li ><a href="contact.php">CONTÁCTENOS</a></li>
-                    <li><a href="login.php">LOGIN</a></li>
+                    <li><a href="contact.php">CONTÁCTENOS</a></li>
+                    <!--<li><a href="login.php">LOGIN</a></li>-->
                     <li class="active"><a href="perfil.php">PERFIL</a></li>
+                    <li><a href="../../index.php">SALIR</a></li>
                 </ul>
             </div>
         <!--/.nav-collapse -->
@@ -70,7 +71,7 @@ session_start();
                 <ol class="breadcrumb">
                     <!--<li><a href="index.php">Inicio</a></li>
                     <li><a href="perfil.php">Perfil de usuario</a></li>-->
-                    <li class="active"><a href="ediPerfil.php" >Perfil de usuario</a></li>
+                    <li class="active"><a href="perfil.php" >Perfil de usuario</a></li>
                 </ol>
             </div>
         </div>
@@ -82,7 +83,7 @@ session_start();
             <!-- Columna de la izquierda -->
         	<div class="col-md-3">
         		<div class="col-md-12" align="center">
-        			<img class="img-responsive img-portfolio img-hover" src="img/profile.jpg">
+        			<img class="img-responsive img-portfolio img-hover" src="../../img/profile.jpg">
         		</div>
         		<div class="col-md-12">
         			<p class="text-center"><strong>Nombre Apellido</strong></p>
@@ -282,7 +283,8 @@ session_start();
                                 <a href="about.php">QUIENES SOMOS</a> |
                                 <a href="courses.php">CURSOS</a> |
                                 <a href="videos.php">VIDEOS</a> |
-                                <a href="contact.php">CONTACTO</a>
+                                <a href="contact.php">CONTÁCTENOS</a> |
+                                <a href="perfil.php">PERFIL</a>
                             </p>
                         </div>
                     </div>
@@ -296,10 +298,10 @@ session_start();
     <!-- /.container -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="../../assets/js/custom.js"></script>
     <!-- Google Maps -->
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-    <script src="assets/js/google-map.js"></script>
+    <script src="../../assets/js/google-map.js"></script>
 </body>
 
 </html>
