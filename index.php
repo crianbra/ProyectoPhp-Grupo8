@@ -262,8 +262,8 @@ session_start();
 							<p class="simplenav">
 								<a href="index.php">INICIO</a> |
 								<a href="about.php">QUIENES SOMOS</a> |
-								<a href="courses.php">CURSOS</a> |
-								<a href="videos.php">VIDEOS</a> |
+								<!--<a href="courses.php">CURSOS</a> |
+								<a href="videos.php">VIDEOS</a> | -->
 								<a href="contact.php">CONTACTO</a>
 							</p>
 						</div>

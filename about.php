@@ -241,7 +241,7 @@ session_start();
 								<a href="index.php">HOME</a> | 
 								<a href="about.php">QUIÉNES SOMOS</a> |
 								<!--<a href="courses.php">CURSOS</a> |
-								<a href="videos.php">VIDEOS</a>--> |
+								<a href="videos.php">VIDEOS</a> | -->
 								<a href="contact.php">CONTACTO</a>
 							</p>
 						</div>
