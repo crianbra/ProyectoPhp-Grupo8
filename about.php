@@ -12,7 +12,7 @@ session_start();
     <meta name="description" content="free-educational-responsive-web-template-webEdu">
     <meta name="author" content="webThemez.com">
     <title>Educación Online</title>
-    <link rel="favicon" href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" href="assets/images/logo_navegador.png">
     <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
