@@ -1,7 +1,7 @@
 <?php
 
 include_once('Usuario.php');
-include_once('Collector.php');
+include_once('../bd/Collector.php');
 
 class UsuarioCollector extends Collector
 {

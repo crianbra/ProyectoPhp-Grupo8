@@ -133,46 +133,40 @@ session_start();
     	                        <div class="controls">
     	                        	<br >
     	                            <label>Información básica</label>
-    	                            <span id="alertName" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
-    	                            	<input type="text" class="form-control" id="txtName" placeholder="Introduzca su nombre" required data-validation-required-message="Por favor introduzca su nomnbre.">
+    	                            <span id="alertNombre" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
+    	                            	<input type="text" class="form-control" id="txtNombre" placeholder="Introduzca su nombre" required data-validation-required-message="Por favor introduzca su nomnbre.">
     	                            </span>
     	                            <br >
-    	                            <span id="alertSurname" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
-    	                            	<input type="text" class="form-control" id="txtSurname" placeholder="Introduzca sus apellidos" required data-validation-required-message="Por favor introduzca sus apellidos.">
+    	                            <span id="alertCiudad" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
+    	                            	<input type="text" class="form-control" id="txtCiudad" placeholder="Introduzca su ciudad" required data-validation-required-message="Por favor introduzca su ciudad.">
     	                            </span>
     	                            <br >
-    	                            <span id="alertQualification" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
-    	                            	<input type="text" class="form-control" id="txtQualification" placeholder="Introduzca su título" required data-validation-required-message="Por favor introduzca su título.">
+    	                            <span id="alertDireccion" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
+    	                            	<input type="text" class="form-control" id="txtDireccion" placeholder="Introduzca su direccion" required data-validation-required-message="Por favor introduzca su direccion.">
     	                            </span>
-    	                            <br >
-    	                            <span id="alertEmail" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
-    	                            	<input type="email" class="form-control" id="txtEmail" placeholder="Introduzca su email" required data-validation-required-message="Por favor introduzca su email.">
-    	                            </span>
+                                    <br >
+                                    <span id="alertEdad" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
+                                        <input type="text" class="form-control" id="txtEdad" placeholder="Introduzca su edad" required data-validation-required-message="Por favor introduzca su edad.">
+                                    </span>
+                                    <br >
+                                    <span id="alertTelefono" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
+                                        <input type="text" class="form-control" id="txtTelefono" placeholder="Introduzca su telefono" required data-validation-required-message="Por favor introduzca su telefono.">
+                                    <br >
+                                    <span id="alertCorreo" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
+                                        <input type="text" class="form-control" id="txtCorreo" placeholder="Introduzca su correo" required data-validation-required-message="Por favor introduzca su correo.">
+                                    </span>
+                                    <br >
+                                    <span id="alertUsuario" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
+                                        <input type="text" class="form-control" id="txtUsuario" placeholder="Introduzca su usuario" required data-validation-required-message="Por favor introduzca su usuario.">
+                                    </span>
+                                    <br >
+                                    <span id="alertContrasenia" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
+                                        <input type="text" class="form-control" id="txtContrasenia" placeholder="Introduzca su contraseña" required data-validation-required-message="Por favor introduzca su contraseña.">
+                                    </span>
     	                            <p class="help-block"></p>
     	                        </div>
     	                    </div>
-    	                    <div class="control-group form-group">
-    	                        <div class="controls">
-    	                            <label>Biografía:</label>
-    	                            <span id="alertBiography" data-toggle="popover" data-trigger="hover" data-placement="auto" title="" data-content="">
-    		                            <textarea rows="6" cols="30" class="form-control" id="txtBiography" required maxlength="999" style="resize:none" 
-    		                            data-validation-required-message="Por favor introduzca su biografía deseada."></textarea>
-    		                        </span>
-    		                        <br >
-    		                        <span id="alertSelectLanguage" data-toggle="popover" data-trigger="hover" data-placement="auto" title="" data-content="">
-    		                            <select class="form-control" id="selectLanguage" title="Seleccione su idioma">
-    		                            	<option class="bs-title-option" value="" disabled selected>Elija un idioma</option>
-    		                            	<option>Alemán</option>
-    		                            	<option>Castellano</option>
-    		                            	<option>Catalán</option>
-		                            	   	<option>Francés</option>
-    		                            	<option>Inglés</option>
-    		                            	<option>Portugués</option>
-    		                            </select>
-    		                        </span>
-                                    <br >
-    	                        </div>
-                        	</div>
+    	                   
                     </div>
                 </div>
                 <!-- Fin del div central parte de formulario información básica -->
@@ -184,13 +178,7 @@ session_start();
     	            	<div class="control-group form-group">
                             <div class="controls">
                             	<br >
-                                <label>Enlaces:</label>
-                                <input type="text" class="form-control" id="txtMyWeb" placeholder="Introduzca su web personal o profesional">
-                                <br>
-                                
-                                <div class="input-group">
-                                	<span class="input-group-addon">http://twitter.com</span><input type="text" class="form-control" id="txtTwitter" placeholder="Introduzca su usuario de Twitter">
-                                </div>
+                                <label>Enlace:</label>
                                 <br>
                                 <div class="input-group">
                                 	<span class="input-group-addon">https://www.facebook.com</span><input type="text" class="form-control" id="txtFacebook" placeholder="Introduzca su usuario de Facebook">

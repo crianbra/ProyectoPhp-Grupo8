@@ -75,17 +75,18 @@ session_start();
     <form>
       <input type="text" placeholder="Usuario"/>
       <input type="password" placeholder="Contraseña"/>
-      <input type="checkbox" id="cbox1" value="first_checkbox">Ayudante</input>
       <button>Ingresar</button>
     </form>
   </div>
   <div class="form">
     <h2>Crear una cuenta</h2>
     <form>
+      <input type="text" placeholder="Nombre"/>
       <input type="text" placeholder="Usuario"/>
       <input type="password" placeholder="Contraseña"/>
       <input type="email" placeholder="Email "/>
       <input type="tel" placeholder="Numero de teléfono"/>
+      <input type="checkbox" id="cbox1" value="first_checkbox">Ayudante</input>
       <button>Registrar</button>
     </form>
   </div>
