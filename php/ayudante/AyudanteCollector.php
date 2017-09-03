@@ -18,7 +18,7 @@ class AyudanteCollector extends Collector
   }
 
   function showAyudante($id){
-    $row = self::$db->getRows("SELECT * FROM Ayudante where idayudante= ? ", array("{$id}"));
+    $row = self::$db->getRows("SELECT * FROM ayudante where idayudante= ? ", array("{$id}"));
 
     $ObjAyudante = new Ayudante($row[0]{'idayudante'},$row[0]{'descripcion'}, $row[0]{'usuarioid'});
     return $ObjAyudante;

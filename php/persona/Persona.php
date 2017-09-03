@@ -65,7 +65,7 @@ class Persona
        return $this->correo;
      }
      function setFacebook($facebook){
-      $this->facebook = $facebook
+      $this->facebook = $facebook;
      }
     function getFacebook(){
        return $this->facebook;
