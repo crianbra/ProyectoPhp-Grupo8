@@ -1,46 +1,48 @@
 <?php
 
 include_once('Contectenos.php');
-include_once('../bd/Collector.php');
+include_once('Collector.php');
 
-class ContactenosCollector extends Collector
+class ContectenosCollector extends Collector
 {
-   
-  function showContactenos() {
+ 
+  function showDemos() {
     $rows = self::$db->getRows("SELECT * FROM contactenos ");        
     
-    $arrayContactenos= array();        
+    $arrayDemo= array();        
     foreach ($rows as $c){
-      $aux = new Contactenos($c{'idcontactenos'},$c{'nombre'}, $c{'email'},$c{'telefono'},$c{'materia'},$c{'mensaje'});
-      array_push($arrayContactenos, $aux);
+      $aux = new Demo($c{'idcontactenos'},$c{'nombre'},$c{'email'},$c{'telefono'},$c{'materia'},$c{'mensaje'});
+      array_push($arrayDemo, $aux);
     }
-    return $arrayContactenos;        
+    return $arrayDemo;        
   }
 
-  function showContactenos($id){
+  function showDemo($id){
     $row = self::$db->getRows("SELECT * FROM contactenos where idcontactenos= ? ", array("{$id}"));
 
-    $ObjContactenos= new Contactenos($row[0]{'idcontactenos'},$row[0]{'nombre'}, $row[0]{'email'} $row[0]{'telefono'} $row[0]{'materia'} $row[0]{'mensaje'});
-    return $ObjContactenos;
+    $ObjDemo = new Demo($row[0]{'idcontactenos'},$row[0]{'nombre'},$row[0]{'email'},$row[0]{'telefono'},$row[0]{'materia'},$row[0]{'mensaje'});
+    return $ObjDemo;
 
 }
 
 
-function updateContactenos($id,$nombre, $email, $telefono, $materia, $mensaje){
-	$insertrow = self::$db->updateRow("UPDATE public.contactenos SET nombre= ? , email= ? , telefono= ? , mensaje= ?  WHERE idcontactenos= ?", array("{$nombre}","{$email}","{$telefono}","{$materia}","{$mensaje}", $id));
+function updateDemo($id,$nombre,$cedula,$tipo,$fechanacimiento){
+$insertrow = self::$db->updateRow("UPDATE public.persona SET nombre= ?, cedula= ?, tipo= ?, fechanacimiento= ? WHERE idpersona= ?", array("{$nombre}","{$cedula}","{$tipo}","{$fechanacimiento}",$id));
+}
+
+
+
+
+function deleteDemo($id){
+  $deleterow = self::$db->deleteRow("DELETE FROM public.contactenos WHERE idcontactenos= ?", array("{$id}"));
 
 }
 
-function deleteContactenos($id){
-	$deleterow = self::$db->deleteRow("DELETE FROM public.contactenos WHERE idcontactenos= ?", array("{$id}"));
-
-}
-
-function createContactenos($$nombre, $email, $telefono, $materia, $mensaje){
+function createDemo($nombre,$email,$telefono,$materia,$mensaje){
   $insertarrow = self::$db->insertRow("INSERT INTO public.contactenos (nombre,email,telefono,materia,mensaje) VALUES (?,?,?,?,?)", array ("{$nombre}","{$email}","{$telefono}","{$materia}","{$mensaje}"));
+  
 
 }
 
 }
 ?>
-

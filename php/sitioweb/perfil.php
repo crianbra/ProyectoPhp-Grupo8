@@ -79,12 +79,14 @@ session_start();
 
         <!-- Contact Form -->
         <!-- Campos del formulario de contacto con validación de campos-->
+       
         <div class="row">
             <!-- Columna de la izquierda -->
         	<div class="col-md-3">
         		<div class="col-md-12" align="center">
         			<img class="img-responsive img-portfolio img-hover" src="../../img/profile.jpg">
         		</div>
+
         		<div class="col-md-12">
         			<p class="text-center"><strong>Nombre Apellido</strong></p>
 	        		<p class="text-center"><em>Título del perfil de usuario</em></p>
