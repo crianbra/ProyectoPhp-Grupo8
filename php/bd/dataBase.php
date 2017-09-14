@@ -9,8 +9,8 @@ class dataBase
 
   private $host      = "localhost";
   private $username  = "postgres";
-  private $password  = "postgres";
-  private $dbname    = "educaciononline";
+  private $password  = "1234";
+  private $dbname    = "educaciononline2";
 
   public function __construct($username, $password, $host, $dbname, $options=array()){
     $this->isConnected = true;

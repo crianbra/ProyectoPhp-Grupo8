@@ -6,6 +6,7 @@ class Usuario
     private $nombreusuario;
     private $contrasenia;
     private $personaid;
+    public static  $perfil;//variable estatica llamada perfil
     
      function __construct($idusuario, $nombreusuario, $contrasenia, $personaid) {
        	$this->idusuario = $idusuario;
@@ -20,6 +21,12 @@ class Usuario
      function getIdusuario(){
        return $this->idusuario;
      }
+   
+    public static function  getPerfil($p){
+        static $perfil;
+        $perfil=$p;
+        return $perfil;
+    }
      function setNombreusuario($nombreusuario){
        $this->nombreusuario = $nombreusuario;
      } 
@@ -29,6 +36,7 @@ class Usuario
      function setContrasenia($contrasenia){
        $this->contrasenia = $contrasenia;
      } 
+    
      function getContrasenia(){
        return $this->contrasenia;
      }

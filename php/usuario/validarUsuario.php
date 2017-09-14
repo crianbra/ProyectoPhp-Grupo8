@@ -13,6 +13,7 @@ require('validar.php');
 		$contrasenia = $_POST['contrasenia'];
         if ($usuarioCollector->validarUsuario($nombreusuario,$contrasenia)){
             $_SESSION['mySesion'] = $nombreusuario;
+            $_SESSION['rol'] = Usuario::$perfil; //agrege una sesion rol para identificar al perfil del usuario
             echo "<meta HTTP-EQUIV='REFRESH' CONTENT='1;URL=../sitioweb/index.php'>";
         }
         else{
