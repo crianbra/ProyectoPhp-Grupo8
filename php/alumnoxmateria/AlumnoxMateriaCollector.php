@@ -6,7 +6,7 @@ include_once('../bd/Collector.php');
 class AlumnoxMateriaCollector extends Collector
 {
 
-  function showAyudante() {
+  function showAlumnoxMateria() {
     $rows = self::$db->getRows("SELECT * FROM alumnoxmateria");
 
     $array= array();
@@ -17,26 +17,23 @@ class AlumnoxMateriaCollector extends Collector
     return $array;
   }
 
-  function showAlumnoxMateria($id){
-    $row = self::$db->getRows("SELECT * FROM alumnoxmateria where idayudante= ? ", array("{$id}"));
+  function showAlumnoxMateria($idalumno,$idmateria){
+    $row = self::$db->getRows("SELECT * FROM alumnoxmateria where idmateria= ? ", array("{$idmateria}" and idalumno= ? "{$idalumno}"));
 
-    $ObjAyudante = new Ayudante($row[0]{'idayudante'},$row[0]{'descripcion'}, $row[0]{'usuarioid'});
-    return $ObjAyudante;
-
-}
-
-
-function updateAyudante($id,$descripcion, $usuarioid){
-	$insertrow = self::$db->updateRow("UPDATE public.ayudante SET descripcion= ? usuarioid= ?  WHERE idayudante= ?", array("{$descripcion}","{$usuarioid}", $id));
+    $Obj = new AlumnoxMateria($row[0]{'idalumno'},$row[0]{'idmateria'});
+    return $Obj;
 
 }
 
-function deleteAyudante($id){
-	$deleterow = self::$db->deleteRow("DELETE FROM public.ayudante WHERE idayudante= ?", array("{$id}"));
+
+
+
+function deleteAlumnoxMateria($idalumno, $idmateria){
+	$deleterow = self::$db->deleteRow("DELETE FROM public.alumnoxmateria WHERE idalumno= ?", array("{$idalumno}")"and idmateria= ?", array("{$idmateria}"));
 
 }
 
-function createAyudante($descripcion, $usuarioid){
+function createAlumnoxMateria($descripcion, $usuarioid){
   $insertarrow = self::$db->insertRow("INSERT INTO public.ayudante (descripcion,usuarioid) VALUES (?,?)", array ("{$descripcion}", "{$usuarioid}"));
 
 }

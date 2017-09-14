@@ -1,6 +1,6 @@
 <?php
 
-class Ayudante
+class Alumno
 {
     private $idalumno;
     private $descripcion;

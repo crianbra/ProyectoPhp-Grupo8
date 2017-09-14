@@ -1,35 +1,35 @@
 <?php
 class Materia
 {
-    private $idalumno;
-    private $descripcion;
-    private $usuarioid;
-    
-     function __construct($idalumno, $descripcion, $usuarioid) {
-       	$this->idalumno = $idalumno;
-       	$this->descripcion = $descripcion;
-        $this->usuarioid = $usuarioid;
-      
+    private $idmateria;
+    private $nombremateria;
+    private $idcategoriamateria;
+
+     function __construct($idmateria, $nombremateria, $idcategoriamateria) {
+       	$this->idmateria = $idmateria;
+       	$this->nombremateria = $nombremateria;
+        $this->idcategoriamateria = $idcategoriamateria;
+
      }
-    
-     function setIdAlumno($idalumno){
-       $this->idalumno = $idalumno;
-     } 
-     function getIdAlumno(){
-       return $this->idalumno;
-     } 
-     function setDescripcion($descripcion){
-       $this->descripcion = $descripcion;
-     } 
-     function getDescripcion(){
-       return $this->descripcion;
+
+     function setIdMateria($id){
+       $this->idmateria = $id;
      }
-     function setUsuarioid($usuarioid){
-       $this->usuarioid = $usuarioid;
-     } 
-     function getUsuarioid(){
-       return $this->usuarioid;
+     function getIdMateria(){
+       return $this->idmateria;
      }
-     
+     function setNombreMateria($nm){
+       $this->nombremateria = $nm;
+     }
+     function getNombreMateria(){
+       return $this->nombremateria;
+     }
+     function setIdCategoriaMateria($idcategoriamateria){
+       $this->idcategoriamateria = $idcategoriamateria;
+     }
+     function getIdCategoriaMateria(){
+       return $this->idcategoriamateria;
+     }
+
 }
-?> 
+?>
