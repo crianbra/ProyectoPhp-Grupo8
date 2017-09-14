@@ -5,6 +5,7 @@ class Ayudante
     private $idcurso;
     private $idalumnoxmateria;
     private $idayudante;
+    private $descripcion;
 
     
      function __construct($idcurso, $idalumnoxmateria, $idayudante) {
