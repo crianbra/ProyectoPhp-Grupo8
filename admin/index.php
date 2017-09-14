@@ -35,6 +35,16 @@ if($_SESSION["rol"]!="admin"){
     
 
 </head>
+
+  <body>
+<!-- Fixed navbar -->div class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Button for smallest screens -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="../../assets/images/logo.png" alt="Techro HTML5 template"></a>
+            </div>
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -105,3 +115,4 @@ if($_SESSION["rol"]!="admin"){
     </div>
     <!-- /.navbar-collapse -->
 </nav>
+      </body>

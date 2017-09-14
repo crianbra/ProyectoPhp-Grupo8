@@ -55,6 +55,12 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/materia/MateriaC
             </div>
             <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav side-nav">
+                            
+                            <li >
+                <a href="../../../admin/index.php">
+                    
+                    Menu Administrador</a>
+            </li>
             <li >
                 <a href="#">
                     
@@ -71,7 +77,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/materia/MateriaC
                     Personas</a>
             </li>
             <li >
-                <a href="#">
+                <a href="../../categoriaxmateria/index.php">
                     
                     Categoria Por Materias</a>
             </li>

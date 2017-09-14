@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 if($_SESSION['rol']!='admin'){
     header("location: ../../index.php");
@@ -31,7 +32,6 @@ if($_SESSION['rol']!='admin'){
     <link rel="stylesheet" href="../../assets/css/style.css">
     </head>
     <body>
-        <body>
 <!-- Fixed navbar -->
     <div class="navbar navbar-inverse">
         <div class="container">
@@ -43,6 +43,11 @@ if($_SESSION['rol']!='admin'){
             </div>
             <div class="navbar-collapse collapse">
                  <ul class="nav navbar-nav side-nav">
+                     <li >
+                <a href="../../admin/index.php">
+                    
+                    Menu Administrador</a>
+            </li>
             <li >
                 <a href="#">
                     
@@ -79,14 +84,14 @@ if($_SESSION['rol']!='admin'){
                     Ayudantes</a>
             </li>
                      <li >
-                <a href="#">
+                <a href="../materia/index.php">
                    
                     Materias</a>
                           </li>
             <li >
                 <a href="#">
                     
-                    Alumnos Por Materias</a>
+                    Contenido</a>
             </li>
             <li >
                 <a href="#">

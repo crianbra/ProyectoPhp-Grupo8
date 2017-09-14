@@ -46,6 +46,11 @@ if (isset($_GET["id"])) {
             </div>
             <div class="navbar-collapse collapse">
                       <ul class="nav navbar-nav side-nav">
+                          <li >
+                <a href="../../../admin/index.php">
+                    
+                    Menu Administrador</a>
+            </li>
             <li >
                 <a href="#">
                     
@@ -62,7 +67,7 @@ if (isset($_GET["id"])) {
                     Personas</a>
             </li>
             <li >
-                <a href="#">
+                <a href="../../categoriaxmateria/index.php">
                     
                     Categoria Por Materias</a>
             </li>

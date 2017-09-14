@@ -25,39 +25,100 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/categoriaxmateri
  } else {
 
  ?>
-<html lang='es'>
+<head>
 
-    <head>
-        <meta charset='utf-8'>
-        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <meta name="copyright" content="+Acceso">
-        <!--Nombre de la compañia-->
-        <meta name="organization" content="+Acceso"/>
-        <!--Nombre de la Organizacion-->
-        <meta name="generator" content="Notepad++">
-        <!--Cual es la herramienta que se utiliza para editar, crear la pagina web-->
-        <meta name="name" content="Admin - Lugares">
-        <meta name="description" content="Pagina de inicio de administración de lugares.">
-        <meta name="author" content="Guillermo Bernal">
-        <!-- http://getbootstrap.com/css/#overview-mobile -->
-        <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
-        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-        <title>+Acceso</title>
-        <!-- http://getbootstrap.com/getting-started/ -->
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Educacion Online -User</title>
+    <!--  CSS de Bootstrap -->
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="../../../js/jquery-example.js"></script>
+    <script src="../../../js/bootstrap.min.js"></script>
+    <link href="../../../css/personalizado.css" rel="stylesheet">
+    <link href="../../../css/starter-template.css" rel="stylesheet">
 
-        <link rel="stylesheet" href="/admin/css/sb-admin.css">
-
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
+    <link rel="icon" type="image/png" href="../../../assets/images/logo_navegador.png">
+    <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../assets/css/font-awesome.min.css">
+    <!-- Customyles for our template -->
+    <link rel="stylesheet" href="../../../assets/css/bootstrap-theme.css" media="screen">
+    <link rel="stylesheet" href="../../../assets/css/style.css">
     </head>
-
-    <body>
+        <body>
+<!-- Fixed navbar -->
+    <div class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Button for smallest screens -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="../../../assets/images/logo.png" alt="Techro HTML5 template"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                      <ul class="nav navbar-nav side-nav">
+                          <li >
+                <a href="../../../admin/index.php">
+                    
+                    Menu Administrador</a>
+            </li>
+            <li >
+                <a href="#">
+                    
+                    Alumnos</a>
+            </li>
+            <li >
+                <a href="#">
+                    
+                    Usuarios</a>
+            </li>
+            <li >
+                <a href="#">
+                    
+                    Personas</a>
+            </li>
+            <li >
+                <a href="#">
+                    
+                    Categoria Por Materias</a>
+            </li>
+            <li >
+                <a href="#">
+                   
+                    Cursos</a>
+            </li>
+            <li >
+                <a href="#">
+             
+                    Perfil</a>
+            </li>
+            <li >
+                <a href="#">
+                    
+                    Ayudantes</a>
+            </li>
+                     <li >
+                <a href="../../materia/index.php">
+                   
+                    Materias</a>
+                          </li>
+            <li >
+                <a href="#">
+                    
+                    Alumnos Por Materias</a>
+            </li>
+            <li >
+                <a href="#">
+                    
+                    Contactenos</a>
+            </li>
+        </ul>
+            </div>
+    
 
         <div id="wrapper">
 
@@ -83,7 +144,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/categoriaxmateri
 
         </div>
         <!-- /#wrapper -->
-
+</body>
     </html>
 <?php
 } ?>
