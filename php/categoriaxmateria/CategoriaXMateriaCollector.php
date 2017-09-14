@@ -21,7 +21,7 @@ class CategoriaXMateriaCollector extends Collector
   }
 
   function showCategoriaXMateria($id){
-    $row = self::$db->getRows("SELECT * FROM categoriamateria where idcategoriamateria= ? ", array("{$id}"));
+    $row = self::$db->getRows("SELECT * FROM categoriaxmateria where idcategoriamateria= ? ", array("{$id}"));
 
     $Obj = new CategoriaXMateria($row[0]{'idcategoriamateria'},$row[0]{'nombrecategoria'});
     return $Obj;

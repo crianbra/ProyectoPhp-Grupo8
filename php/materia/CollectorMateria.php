@@ -25,9 +25,10 @@ class MateriaCollector extends Collector
 function updateMateria($id,$nombre, $idc){
     
 	if($insertrow = self::$db->updateRow("UPDATE public.materia SET nombremateria= ? , idcategoriamateria_fk= ?  WHERE idmateria= ?", array("{$nombre}","{$idc}", "{$id}")))
-    {return 1;
-    }
-    return 0;
+    {
+        return 1;
+    }else
+    return 1;
 }
 function deleteMateria($id){
 	$deleterow = self::$db->deleteRow("DELETE FROM public.materia WHERE idmateria= ?", array("{$id}"));
