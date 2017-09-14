@@ -6,7 +6,7 @@ include_once('../bd/Collector.php');
 class AlumnoCollector extends Collector
 {
   
-  function showAlumno() {
+  function showAlumnos() {
     $rows = self::$db->getRows("SELECT * FROM alumno ");        
     
     $arrayAlumno= array();        

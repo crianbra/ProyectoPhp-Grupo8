@@ -1,6 +1,10 @@
 <?php
 
 session_start();
+if($_SESSION["rol"]!='admin'){
+    header("location: ../../index.php");
+    exit();
+}
 
 ?>
 
@@ -39,8 +43,16 @@ session_start();
 					<li><a href="contact.php">Contáctenos</a></li>
                     <!--<li><a href="login.php">LOGIN</a></li>-->
                     <li><a href="perfil.php">PERFIL</a></li>
-                    <li><a href="../../index.php">SALIR</a></li>
-
+                    <?php 
+                    if($_SESSION{'rol'}=='admin'){
+                        ?>
+                     <li><a href="../../admin/index.php">Administrar</a></li>
+                    <?php
+                       
+                    }
+                    ?>
+                    <li><a href="logout.php">SALIR</a></li>
+                     
 				</ul>
 			</div>
 			<!--/.nav-collapse -->

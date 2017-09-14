@@ -1,32 +1,43 @@
 <?php
-include_once('Materia.php');
-include_once('../bd/Collector.php');
-class AlumnoCollector extends Collector
+include_once('MateriaClass.php');
+include $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/bd/Collector.php';
+class MateriaCollector extends Collector
 {
   
-  function showAlumno() {
-    $rows = self::$db->getRows("SELECT * FROM alumno ");        
+  function showMaterias() {
+    $rows = self::$db->getRows("SELECT * FROM materia ");        
     
-    $arrayAlumno= array();        
+    $arrayMateria= array();
+     
     foreach ($rows as $c){
-      $aux = new Alumno($c{'idalumno'},$c{'descripcion'}, $c{'usuarioid'});
-      array_push($arrayAlumno, $aux);
+      $aux = new Materia($c{'idmateria'},$c{'nombremateria'}, $c{'idcategoriamateria_fk'});
+      array_push($arrayMateria, $aux);
     }
-    return $arrayAlumno;        
+    return $arrayMateria;        
   }
-  function showAlumno($id){
-    $row = self::$db->getRows("SELECT * FROM alumno where idalumno= ? ", array("{$id}"));
-    $ObjAlumno = new Alumno($row[0]{'idalumno'},$row[0]{'descripcion'}, $row[0]{'usuarioid'});
-    return $ObjAlumno;
+  function showMateria($id){
+    
+    $row = self::$db->getRows("SELECT * FROM materia WHERE idmateria='$id'");
+      
+    $Obj = new Materia($row[0]{'idmateria'},$row[0]{'nombremateria'}, $row[0]{'idcategoriamateria_fk'});
+    return $Obj;
 }
-function updateAlumno($id,$descripcion, $usuarioid){
-	$insertrow = self::$db->updateRow("UPDATE public.alumno SET descripcion= ? usuarioid= ?  WHERE idalumno= ?", array("{$descripcion}","{$usuarioid}", $id));
+function updateMateria($id,$nombre, $idc){
+    
+	if($insertrow = self::$db->updateRow("UPDATE public.materia SET nombremateria= ? , idcategoriamateria_fk= ?  WHERE idmateria= ?", array("{$nombre}","{$idc}", "{$id}")))
+    {return 1;
+    }
+    return 0;
 }
-function deleteAlumno($id){
-	$deleterow = self::$db->deleteRow("DELETE FROM public.alumno WHERE idalumno= ?", array("{$id}"));
+function deleteMateria($id){
+	$deleterow = self::$db->deleteRow("DELETE FROM public.materia WHERE idmateria= ?", array("{$id}"));
 }
-function createAlumno($descripcion, $usuarioid){
-  $insertarrow = self::$db->insertRow("INSERT INTO public.alumno (descripcion,usuarioid) VALUES (?,?)", array ("{$descripcion}", "{$usuarioid}"));
+function createMateria($nombremateria, $idcategoriaxmateria){
+    
+  if($insertarrow = self::$db->insertRow("INSERT INTO public.materia (nombremateria,idcategoriamateria_fk) VALUES (?,?)", array ("{$nombremateria}", "{$idcategoriaxmateria}"))){  
+      return 1;
+  }
+    return 0;
 }
 }
 ?>
