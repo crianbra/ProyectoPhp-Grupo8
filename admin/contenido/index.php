@@ -86,15 +86,11 @@ session_start();
                     Ayudantes</a>
             </li>
                      <li >
-                <a href="#">
+                <a href="../materia/index.php">
                    
                     Materias</a>
                           </li>
-            <li >
-                <a href="#">
-                    
-                    Alumnos Por Materias</a>
-            </li>
+           
             <li >
                 <a href="#">
                     

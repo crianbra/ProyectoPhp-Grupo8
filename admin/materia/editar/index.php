@@ -87,14 +87,14 @@ if (isset($_GET["id"])) {
                     Ayudantes</a>
             </li>
                      <li >
-                <a href="#">
+                <a href="../index.php">
                    
                     Materias</a>
                           </li>
             <li >
-                <a href="#">
+                <a href="../../contenido/index.php">
                     
-                    Alumnos Por Materias</a>
+                    Contenido</a>
             </li>
             <li >
                 <a href="#">

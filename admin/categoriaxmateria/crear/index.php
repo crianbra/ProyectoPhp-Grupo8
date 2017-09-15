@@ -82,7 +82,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/categoriaxmateri
                     Personas</a>
             </li>
             <li >
-                <a href="#">
+                <a href="../index.php">
                     
                     Categoria Por Materias</a>
             </li>
@@ -107,9 +107,9 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/categoriaxmateri
                     Materias</a>
                           </li>
             <li >
-                <a href="#">
+                <a href="../../contenido/index.php">
                     
-                    Alumnos Por Materias</a>
+                    Contenido</a>
             </li>
             <li >
                 <a href="#">

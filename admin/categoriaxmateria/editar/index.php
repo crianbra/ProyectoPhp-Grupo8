@@ -72,7 +72,7 @@ if (isset($_GET["id"])) {
                     Personas</a>
             </li>
             <li >
-                <a href="#">
+                <a href="../index.php">
                     
                     Categoria Por Materias</a>
             </li>
@@ -97,9 +97,9 @@ if (isset($_GET["id"])) {
                     Materias</a>
                           </li>
             <li >
-                <a href="#">
+                <a href="../../contenido/index.php">
                     
-                    Alumnos Por Materias</a>
+                    Contenido</a>
             </li>
             <li >
                 <a href="#">

@@ -1,3 +1,10 @@
+<?php
+session_start();
+if($_SESSION["rol"]!="admin"){
+    header("location: ../../index.php");
+    exit();
+}
+?>
 <head>
 
 <meta charset="utf-8">
@@ -82,9 +89,9 @@
                     Materias</a>
                           </li>
             <li >
-                <a href="#">
+                <a href="../contenido/index.php">
                     
-                    Alumnos Por Materias</a>
+                   Contenido</a>
             </li>
             <li >
                 <a href="#">
@@ -112,6 +119,8 @@ foreach($cole->showMaterias() as $datos)
          <td class=""><?php echo "id ".$datos->getIdMateria(); ?></td>
          <td class=""><?php echo "nombre ".$datos->getNombreMateria(); ?></td>
          <td class="celda"><?php echo "id_categoria ".$datos->getIdCategoriaXMateria(); ?></td>
+         <td class="celda"><?php echo "id_ayudante ".$datos->getAyudante(); ?></td>
+         <td class="celda"><?php echo "id_alumno ".$datos->getAlumno(); ?></td>
 
         <td><a class="link" href="editar/index.php?id=<?php echo $datos->getIdMateria(); ?>">Editar</a></td>
         <td><a class="link" href="borrar/index.php?id=<?php echo $datos->getIdMateria(); ?>">Eliminar</a></td><br>

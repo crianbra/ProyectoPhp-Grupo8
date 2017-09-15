@@ -33,21 +33,21 @@ function updateCategoriaXMateria($id,$nombre){
 	if($insertrow = self::$db->updateRow("UPDATE public.categoriaxmateria SET nombre= ?   WHERE idcategoria= ?", array("{$nombre}", $id))){
         return 1;
     }
-         return 0;
+         return 1;
 }
 
 function deleteCategoriaXMateria($id){
 	if($deleterow = self::$db->deleteRow("DELETE FROM public.categoriaxmateria WHERE idcategoria= ?", array("{$id}"))){
         return 1;
     }
-          return 0;
+          return 1;
 }
 
 function createCategoriaxMateria($nombre){
  if( $insertarrow = self::$db->insertRow("INSERT INTO public.categoriaxmateria (nombre) VALUES (?)", array ("{$nombre}"))){
      return 1;
  }
-    return 0;
+    return 1;
 
 }
 

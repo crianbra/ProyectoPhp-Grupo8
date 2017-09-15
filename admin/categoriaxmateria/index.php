@@ -63,11 +63,7 @@ if($_SESSION['rol']!='admin'){
                     
                     Personas</a>
             </li>
-            <li >
-                <a href="#">
-                    
-                    Categoria Por Materias</a>
-            </li>
+           
             <li >
                 <a href="#">
                    
@@ -89,7 +85,7 @@ if($_SESSION['rol']!='admin'){
                     Materias</a>
                           </li>
             <li >
-                <a href="#">
+                <a href="../contenido/index.php">
                     
                     Contenido</a>
             </li>
