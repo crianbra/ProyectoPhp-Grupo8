@@ -1,10 +1,17 @@
 <?php
 
 session_start();
+<<<<<<< HEAD:admin/sitioweb/index.php
 //if(($_SESSION["rol"]!='admin')OR($_SESSION["rol"]!='ayudante')){
   //  header("location: ../../index.php");
    // exit();
 //}
+=======
+if($_SESSION["rol"]!='admin'){
+    header("location: ../../index.php");
+    exit();
+}
+>>>>>>> aac5bd7ae6cf0ae4383f761c67406e2111a94329:php/sitioweb/index.php
 
 ?>
 
@@ -44,9 +51,15 @@ session_start();
                     <!--<li><a href="login.php">LOGIN</a></li>-->
                     <li><a href="perfil.php">PERFIL</a></li>
                     <?php 
+<<<<<<< HEAD:admin/sitioweb/index.php
                     if($_SESSION{'mySesion'}=='admin'){
                         ?>
                      <li><a href="../index.php">Administrar</a></li>
+=======
+                    if($_SESSION{'rol'}=='admin'){
+                        ?>
+                     <li><a href="../../admin/index.php">Administrar</a></li>
+>>>>>>> aac5bd7ae6cf0ae4383f761c67406e2111a94329:php/sitioweb/index.php
                     <?php
                        
                     }

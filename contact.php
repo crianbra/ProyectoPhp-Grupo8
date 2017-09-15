@@ -60,7 +60,11 @@ session_start();
 						<p>
 						Por medio de este metodo usted nos ayudara a mejorar, atenderemos su consulta en beneficio de todos.
 						</p>
+<<<<<<< HEAD
 						<form action="admin/contactenos/guardarContacto.php" method="post">
+=======
+				<form action="php/contactenos/guardarContacto.php" method="post">
+>>>>>>> aac5bd7ae6cf0ae4383f761c67406e2111a94329
 				         <fieldset>
 
 						<form class="form-light mt-20" role="form">
@@ -84,7 +88,11 @@ session_start();
 							</div>
 							<div class="form-group">
 								<label>Asunto</label>
+<<<<<<< HEAD
 								<input type="text" name="asunto" class="form-control" placeholder="Subject">
+=======
+								<input type="text" name="materia" class="form-control" placeholder="Subject">
+>>>>>>> aac5bd7ae6cf0ae4383f761c67406e2111a94329
 							</div>
 							<div class="form-group">
 								<label>Mensaje</label>
