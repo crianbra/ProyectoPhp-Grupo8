@@ -8,7 +8,9 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/materia/MateriaC
  if (isset($_POST["nombre"])) {
      $nombre=($_POST["nombre"]);
      $idc=($_POST["idCat"]);
-     if ($coll->createMateria($nombre,$idc)) {
+     $iday=$_POST["idAyu"];
+     $idal=$_POST["idal"];
+     if ($coll->createMateria($nombre,$idc,$iday,$idal)) {
          //var_dump($obj);
          header("Location: ../index.php");
          exit();
@@ -132,6 +134,14 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/materia/MateriaC
                         <div class="form-group">
                             <label for="descr">Id Categoria</label>
                             <input type="text"class='form-control' placeholder='idCat' name="idCat" id="idCat" rows="6">
+                        </div>
+                         <div class="form-group">
+                            <label for="descr">Id Ayudante</label>
+                            <input type="text"class='form-control' placeholder='idAyu' name="idAyu" id="idAyu" rows="6">
+                        </div>
+                         <div class="form-group">
+                            <label for="descr">Id Alumno</label>
+                            <input type="text"class='form-control' placeholder='idal' name="idal" id="idal" rows="6">
                         </div>
                         <button type="submit" class="btn btn-default">Crear</button>
                     </form>

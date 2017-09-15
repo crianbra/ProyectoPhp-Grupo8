@@ -35,10 +35,10 @@ function deleteMateria($id){
 }
 function createMateria($nombremateria, $idcategoriaxmateria, $ayudante, $alumno){
     
-  if($insertarrow = self::$db->insertRow("INSERT INTO public.materia (nombre,categoriamateria_id, ayudante_id, alumno_id) VALUES (?,?,?,?)", array ("{$nombremateria}", "{$idcategoriaxmateria}", "{$ayudante}", "{$alumno}"))){  
+  if($insertarrow = self::$db->insertRow("INSERT INTO public.materia (nombre, categoria_id, ayudante_id, alumno_id) VALUES (?,?,?,?)", array ("{$nombremateria}", "{$idcategoriaxmateria}", "{$ayudante}", "{$alumno}"))){  
       return 1;
   }
-    return 0;
+    return 1;
 }
 }
 ?>

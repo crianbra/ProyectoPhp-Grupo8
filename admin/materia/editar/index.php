@@ -124,7 +124,10 @@ if (isset($_GET["id"])) {
                             <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $obj->getNombreMateria(); ?>" placeholder="Nombre">
                             <label for="nombre">id Categoria</label>
                             <input type="text" class="form-control" id="idcat" name="idcat" value="<?php echo $obj->getIdCategoriaXMateria(); ?>" placeholder="idcat">
-
+                            <label for="nombre">id Ayudante</label>
+                            <input type="text" class="form-control" id="idayu" name="idayu" value="<?php echo $obj->getAyudante(); ?>" placeholder="ayu">
+                             <label for="nombre">id Alumno</label>
+                            <input type="text" class="form-control" id="idalu" name="idalu" value="<?php echo $obj->getAlumno(); ?>" placeholder="idcat">
 
                         </div>
                         <button type="submit" class="btn btn-default">Actualizar</button>
@@ -145,8 +148,10 @@ if (isset($_GET["id"])) {
     $id=$_POST["id"];
    $nombre=$_POST["nombre"];
     $idc=$_POST["idcat"];
+    $iday=$_POST["idayu"];
+    $idal=$_POST["idalu"];
   
-    if ($coll->updateMateria($id,$nombre,$idc)) {
+    if ($coll->updateMateria($id,$nombre,$idc,$iday,$idal)) {
         //var_dump($obj);
         header("Location: ../index.php");
         exit();
