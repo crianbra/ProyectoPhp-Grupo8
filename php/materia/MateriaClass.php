@@ -2,14 +2,14 @@
 class Materia
 {
     private $idmateria;
-    private $nombremateria;
+    private $nombre;
     private $ayudante_id;
     private $alumno_id;
     private $categoria_id;
     
      function __construct($idmateria, $nombremateria, $categoria_id, $alumno,$ayudante) {
        	$this->idmateria = $idmateria;
-       	$this->nombremateria = $nombremateria;
+       	$this->nombre = $nombremateria;
         $this->categoria_id = $categoria_id;
         $this->ayudante_id= $ayudante;
         $this->alumno_id = $alumno;
@@ -23,10 +23,10 @@ class Materia
        return $this->idmateria;
      } 
      function setNombreMateria($nombre){
-       $this->nombremateria = $nombre;
+       $this->nombre = $nombre;
      } 
      function getNombreMateria(){
-       return $this->nombremateria;
+       return $this->nombre;
      }
     function setALumno($alu){
         $this->alumno_id = $alu;
