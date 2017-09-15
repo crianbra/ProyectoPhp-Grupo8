@@ -1,12 +1,17 @@
 <?php 
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/materia/CollectorMateria.php';
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/materia/MateriaClass.php';    
+session_start();
+   if($_SESSION["rol"]!="admin"){
+    header("location: ../../index.php");
+    exit();
+}
+include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/contenido/ContenidoClass.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/contenido/CollectorContenido.php';
 
- $coll = new MateriaCollector();
+ $coll = new ContenidoCollector();
 if (isset($_GET["id"])) {
     //global $id;
-    $obj = $coll->showMateria($_GET["id"]);
-    $id=$obj->getIdMateria();
+    $obj = $coll->showContenido($_GET["id"]);
+    $id=$obj->getIdContenido();
    
 ?>
 <html lang='es'>
@@ -115,19 +120,16 @@ if (isset($_GET["id"])) {
 
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                         
-                        <input type="hidden" name="id" value="<?php echo $obj->getIdMateria(); ?>">
+                        <input type="hidden" name="id" value="<?php echo $obj->getIdContenido(); ?>">
                         
                         <div class="form-group">
-                            <label for="nombre">ID Materia</label>
-                            <label for="nombre"><?php echo $obj->getIdMateria(); ?></label>
-                            <label for="nombre">Nombre Materia</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $obj->getNombreMateria(); ?>" placeholder="Nombre">
-                            <label for="nombre">id Categoria</label>
-                            <input type="text" class="form-control" id="idcat" name="idcat" value="<?php echo $obj->getIdCategoriaXMateria(); ?>" placeholder="idcat">
-                            <label for="nombre">id Ayudante</label>
-                            <input type="text" class="form-control" id="idayu" name="idayu" value="<?php echo $obj->getAyudante(); ?>" placeholder="ayu">
-                             <label for="nombre">id Alumno</label>
-                            <input type="text" class="form-control" id="idalu" name="idalu" value="<?php echo $obj->getAlumno(); ?>" placeholder="idcat">
+                            <label for="nombre">ID Contenido</label>
+                            <label for="nombre"><?php echo $obj->getIdContenido(); ?></label>
+                            <label for="nombre">Descripcion</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $obj->getDescripcion(); ?>" placeholder="Nombre">
+                            <label for="nombre">id Materia</label>
+                            <input type="text" class="form-control" id="idmat" name="idmat" value="<?php echo $obj->getMateria(); ?>" placeholder="idmat">
+                            
 
                         </div>
                         <button type="submit" class="btn btn-default">Actualizar</button>
@@ -146,17 +148,15 @@ if (isset($_GET["id"])) {
 <?php
 } elseif (isset($_POST["id"]) && isset($_POST["nombre"])) {
     $id=$_POST["id"];
-   $nombre=$_POST["nombre"];
-    $idc=$_POST["idcat"];
-    $iday=$_POST["idayu"];
-    $idal=$_POST["idalu"];
+    $nombre=$_POST["nombre"];
+    $idc=$_POST["idmat"];
   
-    if ($coll->updateMateria($id,$nombre,$idc,$iday,$idal)) {
+    if ($coll->updateContenido($id,$nombre,$idc)) {
         //var_dump($obj);
         header("Location: ../index.php");
         exit();
     } else {
-        echo "Hubo un error al intentar actualizar la categoria por materia.";
+        echo "Hubo un error al intentar actualizar la contenido por materia.";
     }
 } else {
     header("Location: ../index.php");

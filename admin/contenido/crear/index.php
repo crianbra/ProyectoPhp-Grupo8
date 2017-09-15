@@ -1,16 +1,14 @@
 <?php 
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/materia/CollectorMateria.php';
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/materia/MateriaClass.php'; 
+include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/contenido/ContenidoClass.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/contenido/CollectorContenido.php';
 
-
- $coll = new MateriaCollector();
+ $coll = new ContenidoCollector();
 
  if (isset($_POST["nombre"])) {
      $nombre=($_POST["nombre"]);
-     $idc=($_POST["idCat"]);
-     $iday=$_POST["idAyu"];
-     $idal=$_POST["idal"];
-     if ($coll->createMateria($nombre,$idc,$iday,$idal)) {
+     $idc=($_POST["idmat"]);
+  
+     if ($coll->createContenido($nombre,$idc)) {
          //var_dump($obj);
          header("Location: ../index.php");
          exit();
@@ -128,21 +126,14 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/materia/MateriaC
                     <form action="index.php" method="post">
 
                         <div class="form-group">
-                            <label for="nombre">Nombre</label>
+                            <label for="nombre">Descripcion</label>
                             <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
                         </div>
                         <div class="form-group">
-                            <label for="descr">Id Categoria</label>
-                            <input type="text"class='form-control' placeholder='idCat' name="idCat" id="idCat" rows="6">
+                            <label for="descr">Materia_ID</label>
+                            <input type="text"class='form-control' placeholder='idmat' name="idmat" id="idmat" rows="6">
                         </div>
-                         <div class="form-group">
-                            <label for="descr">Id Ayudante</label>
-                            <input type="text"class='form-control' placeholder='idAyu' name="idAyu" id="idAyu" rows="6">
-                        </div>
-                         <div class="form-group">
-                            <label for="descr">Id Alumno</label>
-                            <input type="text"class='form-control' placeholder='idal' name="idal" id="idal" rows="6">
-                        </div>
+                         
                         <button type="submit" class="btn btn-default">Crear</button>
                     </form>
 

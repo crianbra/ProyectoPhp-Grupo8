@@ -44,7 +44,7 @@ function deleteContenido($id){
 }
 
 function createContenido($nombre, $materia){
- if( $insertarrow = self::$db->insertRow("INSERT INTO public.contenido (descripcion, materia_id ) VALUES (?)", array ("{$nombre}", "{$materia}"))){
+ if( $insertarrow = self::$db->insertRow("INSERT INTO public.contenido (descripcion, materia_id ) VALUES (?,?)", array ("{$nombre}", "{$materia}"))){
      return 1;
  }
     return 0;

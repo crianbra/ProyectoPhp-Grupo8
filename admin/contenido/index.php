@@ -1,4 +1,13 @@
+
+<?php
+session_start();
+   if($_SESSION["rol"]!="admin"){
+    header("location: ../../index.php");
+    exit();
+}
+?>
 <head>
+
 
 <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
