@@ -119,7 +119,7 @@ foreach($cole->showMaterias() as $datos)
          <td class=""><?php echo "id ".$datos->getIdMateria(); ?></td>
          <td class=""><?php echo "nombre ".$datos->getNombreMateria(); ?></td>
          <td class="celda"><?php echo "id_categoria ".$datos->getIdCategoriaXMateria(); ?></td>
-         <td class="celda"><?php echo "id_ayudante ".$datos->getAyudante(); ?></td>
+         <td class="celda"><?php echo "id_ayudante  ".$datos->getAyudante(); ?></td>
          <td class="celda"><?php echo "id_alumno ".$datos->getAlumno(); ?></td>
 
         <td><a class="link" href="editar/index.php?id=<?php echo $datos->getIdMateria(); ?>">Editar</a></td>

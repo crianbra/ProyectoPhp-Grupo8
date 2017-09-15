@@ -7,7 +7,7 @@ class Materia
     private $alumno_id;
     private $categoria_id;
     
-     function __construct($idmateria, $nombremateria, $categoria_id, $alumno,$ayudante) {
+     function __construct($idmateria, $nombremateria, $categoria_id, $alumno, $ayudante) {
        	$this->idmateria = $idmateria;
        	$this->nombre = $nombremateria;
         $this->categoria_id = $categoria_id;
@@ -38,7 +38,7 @@ class Materia
         $this->ayudante_id= $ayudante;
     }
     function getAyudante(){
-        $this->ayudante_id;
+        return $this->ayudante_id;
     }
      function setIdCategoriaxMateria($idc){
        $this->categoria_id = $idc;

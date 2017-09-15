@@ -67,6 +67,16 @@ class dataBase
   public function deleteRow($query, $params){
     return $this->insertRow($query, $params);
   }
+    public function execQuery($query){
+      try{ 
+      $stmt = $this->datab->prepare($query); 
+      $stmt->execute();
+          
+      return $stmt->fetch();       
+      }catch(PDOException $e){
+      throw new Exception($e->getMessage());
+    }        
+    }
 }
 
 ?>

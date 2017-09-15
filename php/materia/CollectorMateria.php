@@ -31,7 +31,15 @@ function updateMateria($id,$nombre, $idc,$ayudante,$alumno){
     return 1;
 }
 function deleteMateria($id){
+    $llave=self::$db->execQuery("select idmateria from public.materia  join categoriaxmateria on categoria_id=idcategoria; ");
+    
+    if($llave{'idmateria'}==$id){
+        echo "no se puede eliminar porque tiene una categoria asignada";
+        return 0;
+    }else{
 	$deleterow = self::$db->deleteRow("DELETE FROM public.materia WHERE idmateria= ?", array("{$id}"));
+    return 1;
+    }
 }
 function createMateria($nombremateria, $idcategoriaxmateria, $ayudante, $alumno){
     
