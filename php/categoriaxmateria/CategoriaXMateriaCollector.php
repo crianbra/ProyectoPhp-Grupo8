@@ -37,10 +37,16 @@ function updateCategoriaXMateria($id,$nombre){
 }
 
 function deleteCategoriaXMateria($id){
-	if($deleterow = self::$db->deleteRow("DELETE FROM public.categoriaxmateria WHERE idcategoria= ?", array("{$id}"))){
+    $llave=self::$db->execQuery("select idcategoria from public.categoriaxmateria  join materia on idcategoria=categoria_id; ");
+    
+    if($llave{'idcategoria'}==$id){
+        echo "no se puede eliminar porque tiene una categoria asignada";
+        return 0;
+    }else{
+	$deleterow = self::$db->deleteRow("DELETE FROM public.categoriaxmateria WHERE idcategoria= ?", array("{$id}"));
         return 1;
     }
-          return 1;
+          
 }
 
 function createCategoriaxMateria($nombre){
