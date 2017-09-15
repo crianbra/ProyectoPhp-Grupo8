@@ -133,7 +133,7 @@ if (isset($_GET["id"])) {
 } elseif (isset($_POST["id"]) && isset($_POST["nombre"])) {
     $id=$_POST["id"];
    $nombre=$_POST["nombre"];
-    if ($coll->updateMateria($id,$nombre)) {
+    if ($coll->updateCategoriaXMateria($id,$nombre)) {
         //var_dump($obj);
         header("Location: ../index.php");
         exit();

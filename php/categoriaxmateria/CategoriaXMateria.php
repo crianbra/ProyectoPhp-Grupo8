@@ -4,29 +4,29 @@
  */
 class CategoriaXMateria
 {
-  private $idcategoriamateria;
-  private $nombrecategoria;
+  private $idcategoria;
+  private $nombre;
 
   function __construct($id, $nombre)
   {
-    $this->idcategoriamateria=$id;
-    $this->nombrecategoria=$nombre;
+    $this->idcategoria=$id;
+    $this->nombre=$nombre;
       
   }
   public function setIdCategoriaMateria($id)
   {
-     $this->$idcategoriamateria=$id;    # code...
+     $this->$idcategoria=$id;    # code...
   }
   public function getIdCategoriaMateria(){
       //echo "get $this->idcategoriamateria";
-    return $this->idcategoriamateria;
+    return $this->idcategoria;
   }
     public function setNombreCategoria($nom){
-        $this->nombrecategoria=$nom;
+        $this->nombre=$nom;
     }
     public function getNombreCategoria(){
        // echo "get $this->nombrecategoria";
-        return $this->nombrecategoria;
+        return $this->nombre;
     }
 }
 
