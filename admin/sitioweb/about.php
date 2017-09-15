@@ -12,13 +12,13 @@ session_start();
     <meta name="description" content="free-educational-responsive-web-template-webEdu">
     <meta name="author" content="webThemez.com">
     <title>Educación Online</title>
-    <link rel="icon" type="image/png" href="assets/images/logo_navegador.png">
+    <link rel="icon" type="image/png" href="../../assets/images/logo_navegador.png">
     <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
     <!-- Custom styles for our template -->
-    <link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap-theme.css" media="screen">
+    <link rel="stylesheet" href="../../assets/css/style.css">
   </head>
 <body>
     <!-- Fixed navbar -->
@@ -27,8 +27,8 @@ session_start();
 			<div class="navbar-header">
 				<!-- Button for smallest screens -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-				<a class="navbar-brand" href="index.html">
-					<img src="assets/images/logo.png" alt="Techro HTML5 template"></a>
+				<a class="navbar-brand" href="index.php">
+					<img src="../../assets/images/logo.png" alt="Techro HTML5 template"></a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right mainNav">
@@ -36,9 +36,10 @@ session_start();
 					<li class="active"><a href="about.php">QUIENES SOMOS</a></li>
 					<li><a href="courses.php">CURSOS</a></li>
 					<li><a href="videos.php">VIDEOS</a></li>
-					<li ><a href="contact.php">CONTACTO</a></li>
-                    <li><a href="login.php">LOGIN</a></li>
-                    <!--<li ><a href="perfil.php">PERFIL</a></li>-->
+					<li ><a href="contact.php">Contáctenos</a></li>
+                    <!--<li><a href="login.php">LOGIN</a></li>-->
+                    <li ><a href="perfil.php">PERFIL</a></li>
+                    <li ><a href="../../index.php">SALIR</a></li>
 
 				</ul>
 			</div>
@@ -60,7 +61,7 @@ session_start();
             <section class="col-sm-8 maincontent">
                 <h3>Quiénes Somos</h3>
                 <p>
-                    <img src="assets/images/about.jpg" alt="" class="img-rounded pull-right" width="300">
+                    <img src="../../assets/images/about.jpg" alt="" class="img-rounded pull-right" width="300">
                    Educación Online es una página web que ofrecer servicios educativo a la comunidad. La experiencia acumulada de nuestros tutores incluye tareas funcionales para el aprendizaje,infraestructura de primera, esquemas de soporte y tutorias personalizada.
                 </p>
                 <h3>Nuestro objetivo</h3>
@@ -99,7 +100,7 @@ session_start();
                         <!-- Image Hover Block -->
                         <div class="member-img">
                             <!-- Image  -->
-                            <img class="img-responsive" src="assets/images/photo-1.jpg" alt="">
+                            <img class="img-responsive" src="../../assets/images/photo-1.jpg" alt="">
                         </div>
                         <!-- Member Details -->
                         <h4>John Doe</h4>
@@ -120,7 +121,7 @@ session_start();
                         <!-- Image Hover Block -->
                         <div class="member-img">
                             <!-- Image  -->
-                            <img class="img-responsive" src="assets/images/photo-2.jpg" alt="">
+                            <img class="img-responsive" src="../../assets/images/photo-2.jpg" alt="">
                         </div>
                         <!-- Member Details -->
                         <h4>Larry Doe</h4>
@@ -141,7 +142,7 @@ session_start();
                         <!-- Image Hover Block -->
                         <div class="member-img">
                             <!-- Image  -->
-                            <img class="img-responsive" src="assets/images/photo-3.jpg" alt="">
+                            <img class="img-responsive" src="../../assets/images/photo-3.jpg" alt="">
                         </div>
                         <!-- Member Details -->
                         <h4>Ranith Kays</h4>
@@ -162,7 +163,7 @@ session_start();
                         <!-- Image Hover Block -->
                         <div class="member-img">
                             <!-- Image  -->
-                            <img class="img-responsive" src="assets/images/photo-4.jpg" alt="">
+                            <img class="img-responsive" src="../../assets/images/photo-4.jpg" alt="">
                         </div>
                         <!-- Member Details -->
                         <h4>Joan Ray</h4>
@@ -242,8 +243,7 @@ session_start();
                                 <a href="about.php">QUIENES SOMOS</a> |
                                 <a href="courses.php">CURSOS</a> |
                                 <a href="videos.php">VIDEOS</a> |
-                                <a href="contact.php">CONTACTO</a> |
-                                <a href="login.php">LOGIN</a>
+                                <a href="contact.php">CONTACTO</a>
 							</p>
 						</div>
 					</div>
@@ -256,6 +256,6 @@ session_start();
     <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="../../assets/js/custom.js"></script>
 </body>
 </html>

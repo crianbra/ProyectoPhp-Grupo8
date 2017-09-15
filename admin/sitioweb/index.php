@@ -1,6 +1,10 @@
 <?php
 
 session_start();
+//if(($_SESSION["rol"]!='admin')OR($_SESSION["rol"]!='ayudante')){
+  //  header("location: ../../index.php");
+   // exit();
+//}
 
 ?>
 
@@ -12,13 +16,13 @@ session_start();
 	<meta name="description" content="free-educational-responsive-web-template-webEdu">
 	<meta name="author" content="webThemez.com">
 	<title>Educación Online</title>
-	<link rel="icon" type="image/png" href="assets/images/logo_navegador.png">
+	<link rel="icon" type="image/png" href="../../assets/images/logo_navegador.png">
 	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen">
-	<link rel="stylesheet" href="assets/css/style.css">
-    <link rel='stylesheet' id='camera-css'  href='assets/css/camera.css' type='text/css' media='all'>
+	<link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../../assets/css/bootstrap-theme.css" media="screen">
+	<link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel='stylesheet' id='camera-css'  href='../../assets/css/camera.css' type='text/css' media='all'>
 </head>
 <body>
 	<!-- Fixed navbar -->
@@ -27,8 +31,8 @@ session_start();
 			<div class="navbar-header">
 				<!-- Button for smallest screens -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-				<a class="navbar-brand" href="index.php">
-					<img src="assets/images/logo.png" alt="Techro HTML5 template"></a>
+				<a class="navbar-brand" href="index.html">
+					<img src="../../assets/images/logo.png" alt="Techro HTML5 template"></a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right mainNav">
@@ -37,9 +41,18 @@ session_start();
 					<li><a href="courses.php">CURSOS</a></li>
 					<li><a href="videos.php">VIDEOS</a></li>
 					<li><a href="contact.php">CONTACTO</a></li>
-                    <li><a href="login.php">LOGIN</a></li>
-                    <!--<li><a href="perfil.php">PERFIL</a></li>-->
-
+                    <!--<li><a href="login.php">LOGIN</a></li>-->
+                    <li><a href="perfil.php">PERFIL</a></li>
+                    <?php 
+                    if($_SESSION{'mySesion'}=='admin'){
+                        ?>
+                     <li><a href="../index.php">Administrar</a></li>
+                    <?php
+                       
+                    }
+                    ?>
+                    <li><a href="logout.php">SALIR</a></li>
+                     
 				</ul>
 			</div>
 			<!--/.nav-collapse -->
@@ -58,12 +71,12 @@ session_start();
 
 					<div class="fluid_container">
                     <div class="camera_wrap camera_emboss pattern_1" id="camera_wrap_4">
-                        <div data-thumb="assets/images/slides/thumbs/img1.jpg" data-src="assets/images/slides/img1.jpg">
+                        <div data-thumb="../../assets/images/slides/thumbs/img1.jpg" data-src="../../assets/images/slides/img1.jpg">
                             <h2>We develop.</h2>
                         </div>
-                        <div data-thumb="assets/images/slides/thumbs/img2.jpg" data-src="assets/images/slides/img2.jpg">
+                        <div data-thumb="../../assets/images/slides/thumbs/img2.jpg" data-src="../../assets/images/slides/img2.jpg">
                         </div>
-                        <div data-thumb="assets/images/slides/thumbs/img3.jpg" data-src="assets/images/slides/img3.jpg">
+                        <div data-thumb="../../assets/images/slides/thumbs/img3.jpg" data-src="../../assets/images/slides/img3.jpg">
                         </div>
                     </div><!-- #camera_wrap_3 -->
                 </div><!-- .fluid_container -->
@@ -76,7 +89,7 @@ session_start();
 					<div class="col-md-3">
 						<div class="grey-box-icon">
 							<div class="icon-box-top grey-box-icon-pos">
-								<img src="assets/images/1.png" alt="" />
+								<img src="../../assets/images/1.png" alt="" />
 							</div><!--icon box top -->
 							<h4>Cursos Online</h4>
 							<p>La educación on-line, es una modalidad de la educación a distancia, que utiliza
@@ -87,7 +100,7 @@ session_start();
 					<div class="col-md-3">
 						<div class="grey-box-icon">
 							<div class="icon-box-top grey-box-icon-pos">
-								<img src="assets/images/2.png" alt="" />
+								<img src="../../assets/images/2.png" alt="" />
 							</div><!--icon box top -->
 							<h4>Personal Capacitado</h4>
 							<p>Toda capacitación es muy importante durante la vida laboral y profesional, ya que de esta
@@ -98,7 +111,7 @@ session_start();
 					<div class="col-md-3">
 						<div class="grey-box-icon">
 							<div class="icon-box-top grey-box-icon-pos">
-								<img src="assets/images/3.png" alt="" />
+								<img src="../../assets/images/3.png" alt="" />
 							</div><!--icon box top -->
 							<h4>Últimas Actualizaciones</h4>
 							<p>La noción actualmente está muy asociada al terreno de la informática. La actualización
@@ -109,7 +122,7 @@ session_start();
 					<div class="col-md-3">
 						<div class="grey-box-icon">
 							<div class="icon-box-top grey-box-icon-pos">
-								<img src="assets/images/4.png" alt="" />
+								<img src="../../assets/images/4.png" alt="" />
 							</div><!--icon box top -->
 							<h4>Ubicaciones</h4>
 							<p>Lo primero que vamos a hacer, antes de entrar de lleno en el análisis del significado del
@@ -128,7 +141,7 @@ session_start();
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="newsBox">
                         <div class="thumbnail">
-                            <figure><img src="assets/images/news2.jpg" alt=""></figure>
+                            <figure><img src="../../assets/images/news2.jpg" alt=""></figure>
                             <div class="caption maxheight2">
                             <div class="box_inner">
                                         <div class="box">
@@ -143,7 +156,7 @@ session_start();
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="newsBox">
                         <div class="thumbnail">
-                            <figure><img src="assets/images/news3.jpg" alt=""></figure>
+                            <figure><img src="../../assets/images/news3.jpg" alt=""></figure>
                             <div class="caption maxheight2">
                             <div class="box_inner">
                                         <div class="box">
@@ -158,7 +171,7 @@ session_start();
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="newsBox">
                         <div class="thumbnail">
-                            <figure><img src="assets/images/news4.jpg" alt=""></figure>
+                            <figure><img src="../../assets/images/news4.jpg" alt=""></figure>
                             <div class="caption maxheight2">
                            <div class="box_inner">
                                         <div class="box">
@@ -261,11 +274,11 @@ session_start();
 						<div class="panel-body">
 							<p class="simplenav">
 								<a href="index.php">INICIO</a> |
-                                <a href="about.php">QUIENES SOMOS</a> |
-                                <a href="courses.php">CURSOS</a> |
-                                <a href="videos.php">VIDEOS</a> |
-                                <a href="contact.php">CONTACTO</a> |
-                                <a href="login.php">LOGIN</a>
+								<a href="about.php">QUIENES SOMOS</a> |
+								<a href="courses.php">CURSOS</a> |
+								<a href="videos.php">VIDEOS</a> | 
+								<a href="contact.php">Contáctenos</a> |
+                                <a href="perfil.php">PERFIL</a>
 							</p>
 						</div>
 					</div>
@@ -276,15 +289,15 @@ session_start();
 	</footer>
 
 	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-	<script src="assets/js/modernizr-latest.js"></script>
-	<script type='text/javascript' src='assets/js/jquery.min.js'></script>
-    <script type='text/javascript' src='assets/js/fancybox/jquery.fancybox.pack.js'></script>
+	<script src="../../assets/js/modernizr-latest.js"></script>
+	<script type='text/javascript' src='../../assets/js/jquery.min.js'></script>
+    <script type='text/javascript' src='../../assets/js/fancybox/jquery.fancybox.pack.js'></script>
 
-    <script type='text/javascript' src='assets/js/jquery.mobile.customized.min.js'></script>
-    <script type='text/javascript' src='assets/js/jquery.easing.1.3.js'></script>
-    <script type='text/javascript' src='assets/js/camera.min.js'></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/custom.js"></script>
+    <script type='text/javascript' src='../../assets/js/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='../../assets/js/jquery.easing.1.3.js'></script>
+    <script type='text/javascript' src='../../assets/js/camera.min.js'></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
+	<script src="../../assets/js/custom.js"></script>
     <script>
 		jQuery(function(){
 
@@ -299,7 +312,7 @@ session_start();
                 playPause: false,
                 navigation: false,
 				opacityOnGrid: false,
-				imagePath: 'assets/images/'
+				imagePath: '../../assets/images/'
 			});
 
 		});

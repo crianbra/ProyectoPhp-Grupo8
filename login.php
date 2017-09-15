@@ -48,9 +48,9 @@ session_start();
 				<ul class="nav navbar-nav pull-right mainNav">
 					<li><a href="index.php">INICIO</a></li>
 					<li><a href="about.php">QUIENES SOMOS</a></li>
-					<!--<li><a href="courses.php">CURSOS</a></li>
-					<li><a href="videos.php">VIDEOS</a></li>-->
-					<li ><a href="contact.php">CONTACTENOS</a></li>
+					<li><a href="courses.php">CURSOS</a></li>
+					<li><a href="videos.php">VIDEOS</a></li>
+					<li ><a href="contact.php">CONTACTO</a></li>
           <li class="active"><a href="login.php">LOGIN</a></li>
           <!--<li ><a href="perfil.php">PERFIL</a></li>-->
 
@@ -72,7 +72,7 @@ session_start();
   </div>
   <div class="form">
     <h2>Ingresar con una cuenta existente</h2>
-     <form id="filldetails"  method="POST" action="php/usuario/validarUsuario.php">
+     <form id="filldetails"  method="POST" action="admin/usuario/validarUsuario.php">
       <input type="text" placeholder="Usuario" name="nombreusuario" required="" />
       <input type="password" placeholder="Contraseña" name="contrasenia" required="" />
       <button>Ingresar</button>
@@ -151,10 +151,11 @@ session_start();
 						<div class="panel-body">
 							<p class="simplenav">
 								<a href="index.php">INICIO</a> |
-								<a href="about.php">QUIENES SOMOS</a> |
-							<!--	<a href="courses.php">CURSOS</a> |
-								<a href="videos.php">VIDEOS</a> |-->
-								<a href="contact.php">CONTACTO</a>
+                <a href="about.php">QUIENES SOMOS</a> |
+                <a href="courses.php">CURSOS</a> |
+                <a href="videos.php">VIDEOS</a> |
+                <a href="contact.php">CONTACTO</a> |
+                <a href="login.php">LOGIN</a>
 							</p>
 						</div>
 					</div>
