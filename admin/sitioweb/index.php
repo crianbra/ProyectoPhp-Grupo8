@@ -5,11 +5,11 @@ session_start();
 
 //if(isset($_SESSION['mySesion'])){
   //  echo "<p> Hola usuario:(" . $_SESSION['mySesion']. ")";
-if($_SESSION["rol"]!="admin"){
+/*if($_SESSION["rol"]!="admin"){
     header("location: ../index.php");
     echo "<p> Hola usuario:(" . $_SESSION['mySesion']. ")";
     exit();
-}
+}*/
 ?>
 
 <!DOCTYPE html>

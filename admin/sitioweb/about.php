@@ -3,10 +3,10 @@
 session_start();
 
 
-if($_SESSION["rol"]!="admin"){
+/*if($_SESSION["rol"]!="admin"){
     header("location: ../index.php");
     exit();
-}
+}*/
 
 ?>
 
