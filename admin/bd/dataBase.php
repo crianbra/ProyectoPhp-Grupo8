@@ -7,15 +7,15 @@ class dataBase
   public $isConnected;
   protected $datab;
 
-  /*private $host      = "ec2-54-225-88-199.compute-1.amazonaws.com";
+ private $host      = "ec2-54-225-88-199.compute-1.amazonaws.com";
   private $username  = "uzxaqhjmjxncxa";
   private $password  = "d0747a93621a7131e779199b9ab67e5457476bf8a081eb9b897d473d5b950e74";
-  private $dbname    = "d6pba8juduci4s";*/
-
+  private $dbname    = "d6pba8juduci4s";
+ /*
   private $host      = "localhost";
   private $username  = "postgres";
   private $password  = "postgres";
-  private $dbname    = "educaciononline";
+  private $dbname    = "educaciononline";*/
 
 
 
