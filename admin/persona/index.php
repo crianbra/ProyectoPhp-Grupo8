@@ -30,58 +30,54 @@
             <div class="navbar-header">
                 <!-- Button for smallest screens -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="../index.php">
                     <img src="../../assets/images/logo.png" alt="Techro HTML5 template"></a>
             </div>
             <div class="navbar-collapse collapse">
                      <ul class="nav navbar-nav side-nav">
             <li >
-                <a href="#">
+                <a href="persona/index.php">
                     
-                    Alumnos</a>
+                    Personas</a>
             </li>
+
             <li >
-                <a href="#">
+                <a href="../usuario/index.php">
                     
                     Usuarios</a>
             </li>
             <li >
-                <a href="#">
+                <a href="../alumno/index.php">
                     
-                    Personas</a>
+                    Alumnos</a>
             </li>
             <li >
-                <a href="#">
+                <a href="../contenido/index.php">
+                   
+                    Contenido</a>
+            </li>
+            <li >
+                <a href="../categoriaxmateria/index.php">
                     
                     Categoria Por Materias</a>
             </li>
             <li >
-                <a href="#">
-                   
-                    Cursos</a>
-            </li>
-            <li >
-                <a href="#">
-             
-                    Perfil</a>
-            </li>
-            <li >
-                <a href="#">
+                <a href="../ayudante/index.php">
                     
                     Ayudantes</a>
             </li>
                      <li >
-                <a href="#">
+                <a href="../materia/index.php">
                    
                     Materias</a>
                           </li>
             <li >
-                <a href="#">
+                <a href="../reconocimiento/index.php">
                     
-                    Alumnos Por Materias</a>
+                    Reconocimiento</a>
             </li>
             <li >
-                <a href="#">
+                <a href="../contactenos/index.php">
                     
                     Contactenos</a>
             </li>

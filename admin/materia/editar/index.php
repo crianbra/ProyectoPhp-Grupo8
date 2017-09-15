@@ -1,6 +1,6 @@
 <?php 
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/materia/CollectorMateria.php';
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/materia/MateriaClass.php';    
+require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/materia/CollectorMateria.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/materia/MateriaClass.php';    
 
  $coll = new MateriaCollector();
 if (isset($_GET["id"])) {
@@ -46,11 +46,6 @@ if (isset($_GET["id"])) {
             </div>
             <div class="navbar-collapse collapse">
                       <ul class="nav navbar-nav side-nav">
-                          <li >
-                <a href="../../../admin/index.php">
-                    
-                    Menu Administrador</a>
-            </li>
             <li >
                 <a href="#">
                     
@@ -67,7 +62,7 @@ if (isset($_GET["id"])) {
                     Personas</a>
             </li>
             <li >
-                <a href="../../categoriaxmateria/index.php">
+                <a href="#">
                     
                     Categoria Por Materias</a>
             </li>
@@ -87,14 +82,14 @@ if (isset($_GET["id"])) {
                     Ayudantes</a>
             </li>
                      <li >
-                <a href="../index.php">
+                <a href="#">
                    
                     Materias</a>
                           </li>
             <li >
-                <a href="../../contenido/index.php">
+                <a href="#">
                     
-                    Contenido</a>
+                    Alumnos Por Materias</a>
             </li>
             <li >
                 <a href="#">
@@ -124,10 +119,7 @@ if (isset($_GET["id"])) {
                             <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $obj->getNombreMateria(); ?>" placeholder="Nombre">
                             <label for="nombre">id Categoria</label>
                             <input type="text" class="form-control" id="idcat" name="idcat" value="<?php echo $obj->getIdCategoriaXMateria(); ?>" placeholder="idcat">
-                            <label for="nombre">id Ayudante</label>
-                            <input type="text" class="form-control" id="idayu" name="idayu" value="<?php echo $obj->getAyudante(); ?>" placeholder="ayu">
-                             <label for="nombre">id Alumno</label>
-                            <input type="text" class="form-control" id="idalu" name="idalu" value="<?php echo $obj->getAlumno(); ?>" placeholder="idcat">
+
 
                         </div>
                         <button type="submit" class="btn btn-default">Actualizar</button>
@@ -148,10 +140,8 @@ if (isset($_GET["id"])) {
     $id=$_POST["id"];
    $nombre=$_POST["nombre"];
     $idc=$_POST["idcat"];
-    $iday=$_POST["idayu"];
-    $idal=$_POST["idalu"];
   
-    if ($coll->updateMateria($id,$nombre,$idc,$iday,$idal)) {
+    if ($coll->updateMateria($id,$nombre,$idc)) {
         //var_dump($obj);
         header("Location: ../index.php");
         exit();

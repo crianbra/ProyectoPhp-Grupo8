@@ -2,6 +2,10 @@
 
 session_start();
 
+if($_SESSION["rol"]!="admin"){
+    header("location: ../index.php");
+    exit();
+}
 ?>
 
 <!DOCTYPE html>
@@ -37,8 +41,17 @@ session_start();
 					<li class="active"><a href="courses.php">CURSOS</a></li>
 					<li><a href="videos.php">VIDEOS</a></li>
 					<li><a href="contact.php">Contáctenos</a></li>
-                    <!--<li><a href="login.php">LOGIN</a></li>-->
-                    <li><a href="perfil.php">PERFIL</a></li>
+					<?php 
+                    if($_SESSION{'rol'}=='admin'){
+                        ?>
+                     <li><a href="../index.php">Administrar</a></li>
+
+                    <?php
+                       
+                    }
+                        ?>
+                    <!--<li><a href="login.php">LOGIN</a></li>
+                    <li><a href="perfil.php">PERFIL</a></li>-->
                     <li><a href="../../index.php">SALIR</a></li>
 
 				</ul>
@@ -56,11 +69,47 @@ session_start();
     </header>
 
 
- <div class="container">
-<h3> CURSOS</h3>
-<p>Nota, aqui podra subir los enlaces de cursos a dictar de manera de autoaprendizaje.lista de cursos a impartir. .</p>
-</div>
+    <div class="container">
+<h3>Cursos</h3>
+<p>Cursos pedagógicos, se mostraran de manera personal y con vídeos explicativos.</p>
 
+<br/>
+<ul class="list-unstyled video-list-thumbs row">
+	<li class="col-lg-3 col-sm-4 col-xs-6">
+		<a href="https://www.youtube.com/watch?v=EwHzJWTcP7o" target="_blank">
+			<img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
+			<h2>Formamos Ecuador, Logica Matematica</h2>
+			<span class="play-button"></span>
+			<span class="duration">02:00</span>
+		</a>
+	</li>
+	<li class="col-lg-3 col-sm-4 col-xs-6">
+		<a href="https://www.youtube.com/watch?v=YylHQhjXrOk" target="_blank" >
+			<img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
+			<h2>Rubiños, Razonamiento Abstracto</h2>
+			<span class="play-button"></span>
+			<span class="duration">47:06</span>
+		</a>
+	</li>
+	<li class="col-lg-3 col-sm-4 col-xs-6">
+		<a href="https://www.youtube.com/watch?v=EwHzJWTcP7o" target="_blank">
+			<img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
+			<h2>Formamos Ecuador, Logica Matematica</h2>
+			<span class="play-button"></span>
+			<span class="duration">02:00</span>
+		</a>
+	</li>
+	<li class="col-lg-3 col-sm-4 col-xs-6">
+		<a href="https://www.youtube.com/watch?v=YylHQhjXrOk" target="_blank" >
+			<img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
+			<h2>Rubiños, Razonamiento Abstracto</h2>
+			<span class="play-button"></span>
+			<span class="duration">47:06</span>
+		</a>
+	</li>
+</ul>
+
+</div>
 	<div id="courses">
 		<section class="container">
 			<h3 align="center">Lista de Cursos que se dictarán</h3>
@@ -117,70 +166,9 @@ session_start();
 					</div>
 				</div>
 			</div>
-		<br/>
-		<h4>AGREGAR UN NUEVO CURSO. </h4>
-		 <a href="nuevo_curso.php"><button>Ir agregar nuevo curso</BUTTON></a> 
 
 		</section>
 	</div>
-
-<!-- <div class="container">
-<h3> CURSOS</h3>
-<p>Nota, aqui podra subir los enlaces de cursos a disctar de manera de autoaprendizaje.lista de cursos a impartir. .</p>
-
-<br/>
-<h4>Agregar Curso</h4>
-<input type="text" name="nombrecurso" class="form-control" placeholder="Nombre del Curso a dictar .:.">
-<br><br>
-<input type="text" name="enlace" class="form-control" placeholder="Link de pa pagina .:.">
-<br><br>
-<button> Agregar
-</button> 
-<br><br>-->
-
-<!-- Formulario simple que enviará una petición POST -->
-<!--<form action="" method="post">
-  <label for="POST-name">Nombre:</label>
-  <input id="POST-name" type="text" name="name">
-  <input type="submit" value="Save">
-</form>-->
-
-<!--<ul class="list-unstyled video-list-thumbs row">
-	<li class="col-lg-3 col-sm-4 col-xs-6">
-		<a href="https://www.youtube.com/watch?v=EwHzJWTcP7o" target="_blank">
-			<img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
-			<h2>Formamos Ecuador, Logica Matematica</h2>
-			<span class="play-button"></span>
-			<span class="duration">02:00</span>
-		</a>
-	</li>
-	<li class="col-lg-3 col-sm-4 col-xs-6">
-		<a href="https://www.youtube.com/watch?v=YylHQhjXrOk" target="_blank" >
-			<img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
-			<h2>Rubiños, Razonamiento Abstracto</h2>
-			<span class="play-button"></span>
-			<span class="duration">47:06</span>
-		</a>
-	</li>
-	<li class="col-lg-3 col-sm-4 col-xs-6">
-		<a href="https://www.youtube.com/watch?v=EwHzJWTcP7o" target="_blank">
-			<img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
-			<h2>Formamos Ecuador, Logica Matematica</h2>
-			<span class="play-button"></span>
-			<span class="duration">02:00</span>
-		</a>
-	</li>
-	<li class="col-lg-3 col-sm-4 col-xs-6">
-		<a href="https://www.youtube.com/watch?v=YylHQhjXrOk" target="_blank" >
-			<img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
-			<h2>Rubiños, Razonamiento Abstracto</h2>
-			<span class="play-button"></span>
-			<span class="duration">47:06</span>
-		</a>
-	</li>
-</ul>-->
-
-
 
 	 <footer id="footer">
 		<div class="container">
@@ -264,5 +252,6 @@ session_start();
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 	<script src="../../assets/js/custom.js"></script>
+
 </body>
 </html>

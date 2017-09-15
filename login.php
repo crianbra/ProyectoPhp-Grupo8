@@ -90,7 +90,7 @@ session_start();
       <button>Registrar</button>
     </form>
   </div>
-  <div class="cta"><a href="https://www.facebook.com/educaciononline2017/">Olvidó  su contraseña ?</a></div>
+  <div class="cta"><a href="http://andytran.me">Olvidó  su contraseña ?</a></div>
 </div>
     <footer id="footer">
 <div class="container">
@@ -174,6 +174,7 @@ session_start();
 	<script src="assets/js/google-map.js"></script>
     
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://codepen.io/andytran/pen/vLmRVp.js'></script>
 
     <script src="js/indexLog.js"></script>
 

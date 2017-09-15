@@ -4,7 +4,7 @@ session_start();
     header("location: ../../index.php");
     exit();
    }
-include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/contenido/CollectorContenido.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/contenido/CollectorContenido.php';
 
 $coll = new ContenidoCollector();
 if (isset($_GET["id"])) {

@@ -2,6 +2,10 @@
 
 session_start();
 
+if($_SESSION["rol"]!="admin"){
+    header("location: ../index.php");
+    exit();
+
 ?>
 
 <!DOCTYPE html>
@@ -90,7 +94,7 @@ session_start();
       <button>Registrar</button>
     </form>
   </div>
-  <div class="cta"><a href="https://www.facebook.com/educaciononline2017/">Olvidó  su contraseña ?</a></div>
+  <div class="cta"><a href="http://andytran.me">Olvidó  su contraseña ?</a></div>
 </div>
     <footer id="footer">
 <div class="container">

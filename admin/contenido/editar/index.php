@@ -4,10 +4,10 @@ session_start();
     header("location: ../../index.php");
     exit();
 }
-include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/contenido/ContenidoClass.php';
-include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/contenido/CollectorContenido.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/contenido/ContenidoClass.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/contenido/CollectorContenido.php';
 
- $coll = new ContenidoCollector();
+ $coll = new CollectorContenido();
 if (isset($_GET["id"])) {
     //global $id;
     $obj = $coll->showContenido($_GET["id"]);
@@ -52,7 +52,7 @@ if (isset($_GET["id"])) {
             <div class="navbar-collapse collapse">
                       <ul class="nav navbar-nav side-nav">
                           <li >
-                <a href="../../../admin/index.php">
+                <a href="../../admin/index.php">
                     
                     Menu Administrador</a>
             </li>
@@ -72,7 +72,7 @@ if (isset($_GET["id"])) {
                     Personas</a>
             </li>
             <li >
-                <a href="../../categoriaxmateria/index.php">
+                <a href="../categoriaxmateria/index.php">
                     
                     Categoria Por Materias</a>
             </li>
@@ -92,7 +92,7 @@ if (isset($_GET["id"])) {
                     Ayudantes</a>
             </li>
                      <li >
-                <a href="../../materia/index.php">
+                <a href="../materia/index.php">
                    
                     Materias</a>
                           </li>
@@ -123,12 +123,12 @@ if (isset($_GET["id"])) {
                         <input type="hidden" name="id" value="<?php echo $obj->getIdContenido(); ?>">
                         
                         <div class="form-group">
-                            <label for="nombre">ID Contenido</label>
-                            <label for="nombre"><?php echo $obj->getIdContenido(); ?></label>
-                            <label for="nombre">Descripcion</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $obj->getDescripcion(); ?>" placeholder="Nombre">
-                            <label for="nombre">id Materia</label>
-                            <input type="text" class="form-control" id="idmat" name="idmat" value="<?php echo $obj->getMateria(); ?>" placeholder="idmat">
+                            <label for="idcontenido">ID Contenido</label>
+                           <input type="text" class="form-control" id="idcontenido" name="idcontenido" value="<?php echo $obj->getIdContenido(); ?>" placeholder="Id Contenido">
+                            <label for="descripcion">Descripcion</label>
+                            <input type="text" class="form-control" id="descripcion" name="descripcion" value="<?php echo $obj->getDescripcion(); ?>" placeholder="Descripcion">
+                            <label for="materia_id">id Materia</label>
+                            <input type="text" class="form-control" id="materia_id" name="materia_id" value="<?php echo $obj->getMateria_id(); ?>" placeholder="Materia Id">
                             
 
                         </div>
@@ -143,22 +143,25 @@ if (isset($_GET["id"])) {
 
         </div>     
     </body>
+    </html>
 
     
 <?php
-} elseif (isset($_POST["id"]) && isset($_POST["nombre"])) {
+} //elseif (isset($_POST["id"]) && isset($_POST["nombre"])) {
     $id=$_POST["id"];
-    $nombre=$_POST["nombre"];
-    $idc=$_POST["idmat"];
+    $descripcion=$_POST["descripcion"];
+    $materia_id=$_POST["materia_id"];
   
     if ($coll->updateContenido($id,$nombre,$idc)) {
         //var_dump($obj);
         header("Location: ../index.php");
         exit();
     } else {
-        echo "Hubo un error al intentar actualizar la contenido por materia.";
-    }
-} else {
-    header("Location: ../index.php");
-    exit();
+     
+    echo "<p> Se ha editado correctamente </br>
+            [<a href='../index.php'>Salir</a>]";
+
+    //header("Location: ../index.php");
+    //exit();
 }
+?>

@@ -10,6 +10,7 @@ class UsuarioCollector extends Collector
     foreach ($rows as $c){
         $token= Functions::guid();
         $aux = new usuario($c{'idusuario'},$c{'nombreusuario'},$c{'contrasenia'},$c{'perfil'},$c{'persona_id'});
+        Usuario::$rol=$c{'perfil'};
         //Usuario::$perfil=$c{'perfil'};//agregando el perfil al usario con una variable estatica para no perder la referencia
         return 1;
        }

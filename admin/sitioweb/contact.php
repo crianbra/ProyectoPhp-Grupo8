@@ -2,6 +2,11 @@
 
 session_start();
 
+if($_SESSION["rol"]!="admin"){
+    header("location: ../index.php");
+    exit();
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -37,8 +42,17 @@ session_start();
 					<li><a href="courses.php">CURSOS</a></li>
 					<li><a href="videos.php">VIDEOS</a></li>
 					<li class="active"><a href="contact.php">Contáctenos</a></li>
-                    <!--<li><a href="login.php">LOGIN</a></li>-->
-                    <li ><a href="perfil.php">PERFIL</a></li>
+					<?php 
+                    if($_SESSION{'rol'}=='admin'){
+                        ?>
+                     <li><a href="../index.php">Administrar</a></li>
+
+                    <?php
+                       
+                    }
+                        ?>
+                    <!--<li><a href="login.php">LOGIN</a></li>
+                    <li ><a href="perfil.php">PERFIL</a></li>-->
                     <li ><a href="../../index.php">SALIR</a></li>
 
 				</ul>
@@ -61,39 +75,34 @@ session_start();
 						<p>
 						Por medio de este metodo usted nos ayudara a mejorar, atenderemos su consulta en beneficio de todos.
 						</p>
-						<form action="guardarContacto.php" method="post">
-				         <fieldset>
-
 						<form class="form-light mt-20" role="form">
 							<div class="form-group">
 								<label>Nombre</label>
-								<input type="text" name="nombre" class="form-control" placeholder="Aqui su nombre">
+								<input type="text" class="form-control" placeholder="Aqui su nombre">
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
 										<label>Correo Electrónico</label>
-										<input type="email" name="email" class="form-control" placeholder="Escriba su correo">
+										<input type="email" class="form-control" placeholder="Escriba su correo">
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
 										<label>Telefono</label>
-										<input type="text" name="telefono" class="form-control" placeholder="Digite su número">
+										<input type="text" class="form-control" placeholder="Digite su número">
 									</div>
 								</div>
 							</div>
 							<div class="form-group">
-								<label>Asunto</label>
-								<input type="text" name="materia" class="form-control" placeholder="Subject">
+								<label>Subject</label>
+								<input type="text" class="form-control" placeholder="Subject">
 							</div>
 							<div class="form-group">
 								<label>Mensaje</label>
-								<textarea class="form-control" name="mensaje" id="message" placeholder="Escriba su inquietud o sugerencia aqui..." style="height:100px;"></textarea>
+								<textarea class="form-control" id="message" placeholder="Escriba su inquietud o sugerencia aqui..." style="height:100px;"></textarea>
 							</div>
 							<button type="submit" class="btn btn-two">Enviar Mensaje</button><p><br/></p>
-						</form>
-						</fieldset>
 						</form>
 					</div>
 					<div class="col-md-4">
@@ -192,5 +201,7 @@ session_start();
 	<!-- Google Maps -->
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 	<script src="../../assets/js/google-map.js"></script>
+
+
 </body>
 </html>

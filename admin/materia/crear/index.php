@@ -1,11 +1,6 @@
 <?php 
-session_start();
-   if($_SESSION["rol"]!="admin"){
-    header("location: ../../index.php");
-    exit();
-}
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/materia/CollectorMateria.php';
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/materia/MateriaClass.php'; 
+require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/materia/CollectorMateria.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/materia/MateriaClass.php'; 
 
 
  $coll = new MateriaCollector();
@@ -13,9 +8,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/materia/MateriaC
  if (isset($_POST["nombre"])) {
      $nombre=($_POST["nombre"]);
      $idc=($_POST["idCat"]);
-     $iday=$_POST["idAyu"];
-     $idal=$_POST["idal"];
-     if ($coll->createMateria($nombre,$idc,$iday,$idal)) {
+     if ($coll->createMateria($nombre,$idc)) {
          //var_dump($obj);
          header("Location: ../index.php");
          exit();
@@ -62,12 +55,6 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/materia/MateriaC
             </div>
             <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav side-nav">
-                            
-                            <li >
-                <a href="../../../admin/index.php">
-                    
-                    Menu Administrador</a>
-            </li>
             <li >
                 <a href="#">
                     
@@ -84,7 +71,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/materia/MateriaC
                     Personas</a>
             </li>
             <li >
-                <a href="../../categoriaxmateria/index.php">
+                <a href="#">
                     
                     Categoria Por Materias</a>
             </li>
@@ -104,14 +91,14 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/materia/MateriaC
                     Ayudantes</a>
             </li>
                      <li >
-                <a href="../index.php">
+                <a href="#">
                    
                     Materias</a>
                           </li>
             <li >
-                <a href="../../contenido/index.php">
+                <a href="#">
                     
-                   Contenido</a>
+                    Alumnos Por Materias</a>
             </li>
             <li >
                 <a href="#">
@@ -139,14 +126,6 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/materia/MateriaC
                         <div class="form-group">
                             <label for="descr">Id Categoria</label>
                             <input type="text"class='form-control' placeholder='idCat' name="idCat" id="idCat" rows="6">
-                        </div>
-                         <div class="form-group">
-                            <label for="descr">Id Ayudante</label>
-                            <input type="text"class='form-control' placeholder='idAyu' name="idAyu" id="idAyu" rows="6">
-                        </div>
-                         <div class="form-group">
-                            <label for="descr">Id Alumno</label>
-                            <input type="text"class='form-control' placeholder='idal' name="idal" id="idal" rows="6">
                         </div>
                         <button type="submit" class="btn btn-default">Crear</button>
                     </form>

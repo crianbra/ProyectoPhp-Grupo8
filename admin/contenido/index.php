@@ -1,13 +1,4 @@
-
-<?php
-session_start();
-   if($_SESSION["rol"]!="admin"){
-    header("location: ../../index.php");
-    exit();
-}
-?>
 <head>
-
 
 <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,7 +22,7 @@ session_start();
     <link rel="stylesheet" href="../../assets/css/bootstrap-theme.css" media="screen">
     <link rel="stylesheet" href="../../assets/css/style.css">
     </head>
-    <body>
+
         <body>
 <!-- Fixed navbar -->
     <div class="navbar navbar-inverse">
@@ -39,31 +30,31 @@ session_start();
             <div class="navbar-header">
                 <!-- Button for smallest screens -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="../index.php">
                     <img src="../../assets/images/logo.png" alt="Techro HTML5 template"></a>
             </div>
             <div class="navbar-collapse collapse">
                      <ul class="nav navbar-nav side-nav">
-                         <li >
-                <a href="../../admin/index.php">
+           <li >
+                <a href="../persona/index.php">
                     
-                    Menu Administrador</a>
+                    Personas</a>
             </li>
-                         
+
             <li >
-                <a href="#">
-                    
-                    Alumnos</a>
-            </li>
-            <li >
-                <a href="#">
+                <a href="../usuario/index.php">
                     
                     Usuarios</a>
             </li>
             <li >
-                <a href="#">
+                <a href="../alumno/index.php">
                     
-                    Personas</a>
+                    Alumnos</a>
+            </li>
+            <li >
+                <a href="contenido/index.php">
+                   
+                    Contenido</a>
             </li>
             <li >
                 <a href="../categoriaxmateria/index.php">
@@ -71,17 +62,7 @@ session_start();
                     Categoria Por Materias</a>
             </li>
             <li >
-                <a href="#">
-                   
-                    Cursos</a>
-            </li>
-            <li >
-                <a href="#">
-             
-                    Perfil</a>
-            </li>
-            <li >
-                <a href="#">
+                <a href="../ayudante/index.php">
                     
                     Ayudantes</a>
             </li>
@@ -90,41 +71,73 @@ session_start();
                    
                     Materias</a>
                           </li>
-           
             <li >
-                <a href="#">
+                <a href="../reconocimiento/index.php">
+                    
+                    Reconocimiento</a>
+            </li>
+            <li >
+                <a href="../contactenos/index.php">
                     
                     Contactenos</a>
             </li>
         </ul>
             </div>
         <!--/.nav-collapse -->
-        </div>
-    </div>
-              
-    </body>
-<?php
-include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/contenido/ContenidoClass.php';
-include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/contenido/CollectorContenido.php';
+         <div class="row">    
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-heading clearfix">
+        <strong>
+          <span class="glyphicon glyphicon-th"></span>
+          <span>CONTENIDO</span>
+       </strong>
+         <a href="../index.php" class="btn btn-danger pull-right">ATRAS</a> 
+         <a href="crear/index.php" class="btn btn-info">AGREGAR CONTENIDO</a>
+      </div>
+     <div class="panel-body">
+    <table id="example" class="table table-striped table-bordered" cellspacing="0" width="80%">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>DESCRIPCION</th>
+                <th>MATERIA ID</th>
+                
+            </tr>
+        </thead>
+        <?php
 
-$cole= new ContenidoCollector();
+            include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/contenido/ContenidoClass.php';
+            include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/contenido/CollectorContenido.php';
+
+            $cole= new CollectorContenido();
 
 
-foreach($cole->showContenidos() as $datos)
-{
-    ?>
-<tr>
-         <td class=""><?php echo "Id ".$datos->getIdContenido(); ?></td>
-         <td class=""><?php echo "Descripcion ".$datos->getDescripcion(); ?></td>
-         <td class="celda"><?php echo "Id Materia ".$datos->getMateria(); ?></td>
+            foreach($cole->showContenidos() as $datos)
+            {
+                ?>
 
-        <td><a class="link" href="editar/index.php?id=<?php echo $datos->getIdContenido(); ?>">Editar</a></td>
-        <td><a class="link" href="borrar/index.php?id=<?php echo $datos->getIdContenido(); ?>">Eliminar</a></td><br>
-</tr>
+        <tr>
+         <td class=""><?php echo "".$datos->getIdcontenido(); ?></td>
+         <td class=""><?php echo "".$datos->getDescripcion(); ?></td>
+         <td class=""><?php echo "".$datos->getMateria_id(); ?></td>
+
+        <td><a class="link" href="editar/index.php?id=<?php echo $datos->getIdcontenido(); ?>">Editar</a></td>
+        <td><a class="link" href="borrar/index.php?id=<?php echo $datos->getIdcontenido(); ?>">Eliminar</a></td><br>
+        </tr>
+            
 <?php
 }
 
 ?>
-  <form action="crear/index.php">
-  <button>Crear Nuevo</button>
- </form>      
+    </table>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+        </div>
+    </div>
+              
+    </body>

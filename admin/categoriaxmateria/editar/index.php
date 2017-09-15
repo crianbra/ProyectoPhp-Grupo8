@@ -12,9 +12,9 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/categoriaxmateri
 if (isset($_GET["id"])) {
     //global $id;
     $obj = $coll->showCategoriaXMateria($_GET["id"]);
-    echo $obj->getIdCategoriaMateria();
    
 ?>
+<html lang='es'>
 <head>
 
 <meta charset="utf-8">
@@ -50,12 +50,7 @@ if (isset($_GET["id"])) {
                     <img src="../../../assets/images/logo.png" alt="Techro HTML5 template"></a>
             </div>
             <div class="navbar-collapse collapse">
-                      <ul class="nav navbar-nav side-nav">
-                          <li >
-                <a href="../../../admin/index.php">
-                    
-                    Menu Administrador</a>
-            </li>
+                         <ul class="nav navbar-nav side-nav">
             <li >
                 <a href="#">
                     
@@ -72,7 +67,7 @@ if (isset($_GET["id"])) {
                     Personas</a>
             </li>
             <li >
-                <a href="../index.php">
+                <a href="#">
                     
                     Categoria Por Materias</a>
             </li>
@@ -92,14 +87,14 @@ if (isset($_GET["id"])) {
                     Ayudantes</a>
             </li>
                      <li >
-                <a href="../../materia/index.php">
+                <a href="#">
                    
                     Materias</a>
                           </li>
             <li >
-                <a href="../../contenido/index.php">
+                <a href="#">
                     
-                    Contenido</a>
+                    Alumnos Por Materias</a>
             </li>
             <li >
                 <a href="#">
@@ -110,30 +105,42 @@ if (isset($_GET["id"])) {
             </div>
         <!--/.nav-collapse -->
         </div>
+    </div>
+          <div >
 
-                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            
+
+            <div id="page-wrapper">
+                <div class="container-fluid">
+
+                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                         
-                        <input type="hidden" name="id" value="<?php echo $obj->getIdCategoriaMateria(); ?>">
+                        <input type="hidden" name="id" value="<?php echo $obj->getIdMateria(); ?>">
                         
                         <div class="form-group">
-                            <label for="nombre">ID Materia</label>
+                            <label for="nombre">ID Categoria Por Materia</label>
                             <label for="nombre"><?php echo $obj->getIdCategoriaMateria(); ?></label>
-                            <label for="nombre">Nombre Materia</label>
+                            <label for="nombre">Nombre Categoria Por Materia</label>
                             <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $obj->getNombreCategoria(); ?>" placeholder="Nombre">
-                            
-
-
                         </div>
                         <button type="submit" class="btn btn-default">Actualizar</button>
                     </form>
 
+                </div>
+                <!-- /.container-fluid -->
+
             </div>
-</body>
+            <!-- /#page-wrapper -->
+
+        </div>     
+    </body>
+
+    
 <?php
 } elseif (isset($_POST["id"]) && isset($_POST["nombre"])) {
     $id=$_POST["id"];
    $nombre=$_POST["nombre"];
-    if ($coll->updateCategoriaXMateria($id,$nombre)) {
+    if ($coll->updateMateria($id,$nombre)) {
         //var_dump($obj);
         header("Location: ../index.php");
         exit();

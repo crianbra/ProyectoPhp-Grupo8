@@ -1,8 +1,8 @@
 <?php 
-include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/contenido/ContenidoClass.php';
-include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/contenido/CollectorContenido.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/contenido/ContenidoClass.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/contenido/CollectorContenido.php';
 
- $coll = new ContenidoCollector();
+ $coll = new CollectorContenido();
 
  if (isset($_POST["nombre"])) {
      $nombre=($_POST["nombre"]);
@@ -13,7 +13,10 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/contenido/Collec
          header("Location: ../index.php");
          exit();
      } else {
-         echo "Hubo un error al intentar crear la materia.";
+        //echo "Se ha guardado correctamente </br>";
+        echo "<p> Se ha guardado correctamente </br>
+            [<a href='../index.php'>Salir</a>]";
+         //echo "Hubo un error al intentar crear la materia.";
      }
  } else {
 
@@ -51,7 +54,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/contenido/Collec
                 <!-- Button for smallest screens -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                 <a class="navbar-brand" href="index.html">
-                    <img src="../../../assets/images/logo.png" alt="Techro HTML5 template"></a>
+                    <img src="../../assets/images/logo.png" alt="Techro HTML5 template"></a>
             </div>
             <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav side-nav">
@@ -77,7 +80,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/contenido/Collec
                     Personas</a>
             </li>
             <li >
-                <a href="../../categoriaxmateria/index.php">
+                <a href="../categoriaxmateria/index.php">
                     
                     Categoria Por Materias</a>
             </li>

@@ -1,10 +1,3 @@
-<?php
-session_start();
-if($_SESSION["rol"]!="admin"){
-    header("location: ../../index.php");
-    exit();
-}
-?>
 <head>
 
 <meta charset="utf-8">
@@ -37,31 +30,31 @@ if($_SESSION["rol"]!="admin"){
             <div class="navbar-header">
                 <!-- Button for smallest screens -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="../index.php">
                     <img src="../../assets/images/logo.png" alt="Techro HTML5 template"></a>
             </div>
             <div class="navbar-collapse collapse">
                      <ul class="nav navbar-nav side-nav">
-                         <li >
-                <a href="../../admin/index.php">
-                    
-                    Menu Administrador</a>
-            </li>
-                         
             <li >
-                <a href="#">
+                <a href="../persona/index.php">
                     
-                    Alumnos</a>
+                    Personas</a>
             </li>
+
             <li >
-                <a href="#">
+                <a href="../usuario/index.php">
                     
                     Usuarios</a>
             </li>
             <li >
-                <a href="#">
+                <a href="../alumno/index.php">
                     
-                    Personas</a>
+                    Alumnos</a>
+            </li>
+            <li >
+                <a href="../contenido/index.php">
+                   
+                    Contenido</a>
             </li>
             <li >
                 <a href="../categoriaxmateria/index.php">
@@ -69,32 +62,22 @@ if($_SESSION["rol"]!="admin"){
                     Categoria Por Materias</a>
             </li>
             <li >
-                <a href="#">
-                   
-                    Cursos</a>
-            </li>
-            <li >
-                <a href="#">
-             
-                    Perfil</a>
-            </li>
-            <li >
-                <a href="#">
+                <a href="../ayudante/index.php">
                     
                     Ayudantes</a>
             </li>
                      <li >
-                <a href="#">
+                <a href="materia/index.php">
                    
                     Materias</a>
                           </li>
             <li >
-                <a href="../contenido/index.php">
+                <a href="../reconocimiento/index.php">
                     
-                   Contenido</a>
+                    Reconocimiento</a>
             </li>
             <li >
-                <a href="#">
+                <a href="../contactenos/index.php">
                     
                     Contactenos</a>
             </li>
@@ -106,8 +89,8 @@ if($_SESSION["rol"]!="admin"){
               
     </body>
 <?php
-include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/materia/MateriaClass.php';
-include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/materia/CollectorMateria.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/materia/MateriaClass.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/materia/CollectorMateria.php';
 
 $cole= new MateriaCollector();
 
@@ -119,8 +102,6 @@ foreach($cole->showMaterias() as $datos)
          <td class=""><?php echo "id ".$datos->getIdMateria(); ?></td>
          <td class=""><?php echo "nombre ".$datos->getNombreMateria(); ?></td>
          <td class="celda"><?php echo "id_categoria ".$datos->getIdCategoriaXMateria(); ?></td>
-         <td class="celda"><?php echo "id_ayudante  ".$datos->getAyudante(); ?></td>
-         <td class="celda"><?php echo "id_alumno ".$datos->getAlumno(); ?></td>
 
         <td><a class="link" href="editar/index.php?id=<?php echo $datos->getIdMateria(); ?>">Editar</a></td>
         <td><a class="link" href="borrar/index.php?id=<?php echo $datos->getIdMateria(); ?>">Eliminar</a></td><br>

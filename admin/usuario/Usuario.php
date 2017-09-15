@@ -5,13 +5,9 @@ class Usuario
     private $idusuario;
     private $nombreusuario;
     private $contrasenia;
-<<<<<<< HEAD:admin/usuario/Usuario.php
     private $persona_id;
     private $perfil;//variable estatica llamada perfil
-=======
-    private $personaid;
-    public static  $perfil;//variable estatica llamada perfil
->>>>>>> aac5bd7ae6cf0ae4383f761c67406e2111a94329:php/usuario/Usuario.php
+    public static $rol;
     
      function __construct($idusuario, $nombreusuario, $contrasenia, $perfil, $persona_id) {
        	$this->idusuario = $idusuario;
@@ -28,20 +24,12 @@ class Usuario
        return $this->idusuario;
      }
    
-<<<<<<< HEAD:admin/usuario/Usuario.php
-    /*public static function  getPerfil($p){
-        static $perfil;
-        $perfil=$p;
-        return $perfil;
-    }*/
-
-=======
-    public static function  getPerfil($p){
-        static $perfil;
-        $perfil=$p;
-        return $perfil;
+    public static function  getRol($p){
+        static $rol;
+        $rol=$p;
+        return $rol;
     }
->>>>>>> aac5bd7ae6cf0ae4383f761c67406e2111a94329:php/usuario/Usuario.php
+
      function setNombreusuario($nombreusuario){
        $this->nombreusuario = $nombreusuario;
      } 

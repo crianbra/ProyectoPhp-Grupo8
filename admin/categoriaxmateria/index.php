@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 if($_SESSION['rol']!='admin'){
     header("location: ../../index.php");
@@ -32,50 +31,46 @@ if($_SESSION['rol']!='admin'){
     <link rel="stylesheet" href="../../assets/css/style.css">
     </head>
     <body>
+        <body>
 <!-- Fixed navbar -->
     <div class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
                 <!-- Button for smallest screens -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="../index.php">
                     <img src="../../assets/images/logo.png" alt="Techro HTML5 template"></a>
             </div>
             <div class="navbar-collapse collapse">
                  <ul class="nav navbar-nav side-nav">
-                     <li >
-                <a href="../../admin/index.php">
+           <li >
+                <a href="../persona/index.php">
                     
-                    Menu Administrador</a>
+                    Personas</a>
             </li>
+
             <li >
-                <a href="#">
-                    
-                    Alumnos</a>
-            </li>
-            <li >
-                <a href="#">
+                <a href="../usuario/index.php">
                     
                     Usuarios</a>
             </li>
             <li >
-                <a href="#">
+                <a href="../alumno/index.php">
                     
-                    Personas</a>
+                    Alumnos</a>
             </li>
-           
             <li >
-                <a href="#">
+                <a href="../contenido/index.php">
                    
-                    Cursos</a>
+                    Contenido</a>
             </li>
             <li >
-                <a href="#">
-             
-                    Perfil</a>
+                <a href="categoriaxmateria/index.php">
+                    
+                    Categoria Por Materias</a>
             </li>
             <li >
-                <a href="#">
+                <a href="../ayudante/index.php">
                     
                     Ayudantes</a>
             </li>
@@ -85,12 +80,12 @@ if($_SESSION['rol']!='admin'){
                     Materias</a>
                           </li>
             <li >
-                <a href="../contenido/index.php">
+                <a href="../reconocimiento/index.php">
                     
-                    Contenido</a>
+                    Reconocimiento</a>
             </li>
             <li >
-                <a href="#">
+                <a href="../contactenos/index.php">
                     
                     Contactenos</a>
             </li>
