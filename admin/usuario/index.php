@@ -12,7 +12,7 @@
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="../../js/jquery-example.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
-    <link href="..//../css/personalizado.css" rel="stylesheet">
+    <link href="../../css/personalizado.css" rel="stylesheet">
     <link href="../../css/starter-template.css" rel="stylesheet">
 
     <link rel="icon" type="image/png" href="../../assets/images/logo_navegador.png">
@@ -50,7 +50,7 @@
       <div class="panel-heading clearfix">
         <strong>
           <span class="glyphicon glyphicon-th"></span>
-          <span>PERSONAS</span>
+          <span>USUARIOS</span>
        </strong>
          <a href="../index.php" class="btn btn-danger pull-right">ATRAS</a> 
          <a href="insertar.php" class="btn btn-info">AGREGAR USUARIO</a>
