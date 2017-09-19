@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once('validar.php');
+
 ?>
 <!DOCTYPE html>
 
@@ -8,6 +8,8 @@ include_once('validar.php');
     <head>
         <title>Login</title>
         <?php
+
+        include_once('validar.php');
         
         $usuarioCollector = new UsuarioCollector();
         $nombreusuario = $_POST['nombreusuario'];
