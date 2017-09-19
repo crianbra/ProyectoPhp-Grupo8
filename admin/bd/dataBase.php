@@ -7,16 +7,16 @@ class dataBase
   public $isConnected;
   protected $datab;
 
-  /*private $host      = "ec2-54-225-88-199.compute-1.amazonaws.com";
-  private $username  = "uzxaqhjmjxncxa";
-  private $password  = "d0747a93621a7131e779199b9ab67e5457476bf8a081eb9b897d473d5b950e74";
-  private $dbname    = "d6pba8juduci4s";*/
+/*  private $host      = "localhost";
+  private $username  = "postgres";
+  private $password  = "postgres";
+  private $dbname    = "educaciononline";*/
+
 
   private $host      = "ec2-54-235-90-125.compute-1.amazonaws.com";
   private $username  = "miibzjjmqasrvo";
   private $password  = "7214b15265adb77bc9507330f0509eff2d5e6ae06186022a0143ea2db363857b";
   private $dbname    = "depacrdvqb96vg";
-
 
 
   public function __construct($username, $password, $host, $dbname, $options=array()){

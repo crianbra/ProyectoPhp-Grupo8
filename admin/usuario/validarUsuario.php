@@ -9,13 +9,14 @@ include_once('validar.php');
         <title>Login</title>
         <?php
         
-        
         $usuarioCollector = new UsuarioCollector();
-        $nombreusuario = $_POST['usuario'];
-        $contrasenia = $_POST['clave'];
+        $nombreusuario = $_POST['nombreusuario'];
+        $contrasenia = $_POST['contrasenia'];
+        $perfil = $_POST['perfil'];
         if ($usuarioCollector->validarUsuario($nombreusuario,$contrasenia)){
             $_SESSION['mySesion'] = $nombreusuario;
-            echo "<meta HTTP-EQUIV='REFRESH' CONTENT='1;URL=../index.php'>";
+            $_SESSION['rol'] = Usuario::$rol; //agrege una sesion rol para identificar al perfil del usuario
+            echo "<meta HTTP-EQUIV='REFRESH' CONTENT='1;URL=../sitioweb/index.php'>";
         }
         else{
              $mensaje = "EL USUARIO NO SE ENCUENTRA REGISTRADO";
@@ -26,8 +27,7 @@ include_once('validar.php');
             
     </head>
     <body>
+
 	
     </body>
 </html>
-
-

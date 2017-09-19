@@ -2,9 +2,9 @@
 //$cu = new usuarioColector();
 //$usuario = AutenticarClass::verUsuarioConectado($cu, $_SESSION);
 session_start();
-if($_SESSION["mySesion"]!="admin"){
-    //header("location: ../../index.php");
-    //exit();
+if($_SESSION["rol"]!="admin"){
+    header("location: ../index.php");
+    exit();
 }
 
     ?>

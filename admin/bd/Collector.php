@@ -11,6 +11,11 @@ define("DB_HOST", "ec2-54-235-90-125.compute-1.amazonaws.com");
 define("DB_USER", "miibzjjmqasrvo");
 define("DB_PASS", "7214b15265adb77bc9507330f0509eff2d5e6ae06186022a0143ea2db363857b");
 define("DB_NAME", "depacrdvqb96vg");
+/*
+define("DB_HOST", "localhost");
+define("DB_USER", "postgres");
+define("DB_PASS", "postgres");
+define("DB_NAME", "educaciononline");*/
 
 
 class Collector extends dataBase
