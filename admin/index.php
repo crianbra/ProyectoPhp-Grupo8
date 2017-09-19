@@ -3,8 +3,8 @@
 //$usuario = AutenticarClass::verUsuarioConectado($cu, $_SESSION);
 session_start();
 if($_SESSION["mySesion"]!="admin"){
-    header("location: ../../index.php");
-    exit();
+    //header("location: ../../index.php");
+    //exit();
 }
 
     ?>
