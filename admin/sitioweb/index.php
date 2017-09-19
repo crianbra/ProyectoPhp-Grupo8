@@ -49,7 +49,6 @@ session_start();
 					<li><a href="courses.php">CURSOS</a></li>
 					<li><a href="videos.php">VIDEOS</a></li>
 					<li><a href="contact.php">CONTACTO</a></li>
-<<<<<<< HEAD:admin/sitioweb/index.php
                     <!--<li><a href="login.php">LOGIN</a></li>-->
                     <li><a href="perfil.php">PERFIL</a></li>
                     <?php 
@@ -60,7 +59,6 @@ session_start();
                        
                     }
                     ?>
-=======
                     <!--<li><a href="login.php">LOGIN</a></li>
                     <li><a href="perfil.php">PERFIL</a></li>-->
                     <?php 
@@ -72,7 +70,6 @@ session_start();
                        
                     }
                         ?>
->>>>>>> b49817fc5ebe00ed93cca35a197f78273adb57a0:admin/sitioweb/index.php
                     <li><a href="logout.php">SALIR</a></li>
                      
 				</ul>
