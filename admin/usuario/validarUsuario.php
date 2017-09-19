@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('validar.php');
+include_once('validar.php');
 ?>
 <!DOCTYPE html>
 
@@ -8,6 +8,8 @@ require('validar.php');
     <head>
         <title>Login</title>
         <?php
+        
+        
         $usuarioCollector = new UsuarioCollector();
 		$nombreusuario = $_POST['nombreusuario'];
 		$contrasenia = $_POST['contrasenia'];
