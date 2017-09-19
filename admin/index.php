@@ -2,7 +2,6 @@
 //$cu = new usuarioColector();
 //$usuario = AutenticarClass::verUsuarioConectado($cu, $_SESSION);
 session_start();
-<<<<<<< HEAD
 if($_SESSION["mySesion"]!="admin"){
     header("location: ../../index.php");
     exit();
@@ -11,18 +10,6 @@ if($_SESSION["mySesion"]!="admin"){
     ?>
 <!-- Navigation -->
 <html>
-=======
-/*if($_SESSION["rol"]!="admin"){
-    header("location: ../index.php");
-    exit();
-}*/
-
-
-    ?>
-
-<!DOCTYPE html>
-<html lang="es">
->>>>>>> b49817fc5ebe00ed93cca35a197f78273adb57a0
 <head>
 
     <meta charset="utf-8">
@@ -47,7 +34,6 @@ if($_SESSION["mySesion"]!="admin"){
     <link rel="stylesheet" href="../assets/css/bootstrap-theme.css" media="screen">
     <link rel="stylesheet" href="../assets/css/style.css">
     
-<<<<<<< HEAD
     <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
     <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -63,11 +49,6 @@ if($_SESSION["mySesion"]!="admin"){
     <link rel='stylesheet' id='camera-css'  href='../assets/css/camera.css' type='text/css' media='all'>
 </head>
 </head>
-=======
-
-</head>
-<body>
->>>>>>> b49817fc5ebe00ed93cca35a197f78273adb57a0
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -87,28 +68,17 @@ if($_SESSION["mySesion"]!="admin"){
     <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
                    <ul class="nav navbar-nav side-nav">
-<<<<<<< HEAD
             <li >
                 <a href="alumno/index.php">
                     
                     Alumnos</a>
             </li>
-=======
-            
-            <li >
-                <a href="persona/index.php">
-                    
-                    Personas</a>
-            </li>
-
->>>>>>> b49817fc5ebe00ed93cca35a197f78273adb57a0
             <li >
                 <a href="usuario/index.php">
                     
                     Usuarios</a>
             </li>
             <li >
-<<<<<<< HEAD
                 <a href="persona/index.php">
                     
                     Personas</a>
@@ -120,23 +90,6 @@ if($_SESSION["mySesion"]!="admin"){
             </li>
           
                     <li >
-=======
-                <a href="alumno/index.php">
-                    
-                    Alumnos</a>
-            </li>
-            <li >
-                <a href="contenido/index.php">
-                   
-                    Contenido</a>
-            </li>
-            <li >
-                <a href="categoriaxmateria/index.php">
-                    
-                    Categoria Por Materias</a>
-            </li>
-            <li >
->>>>>>> b49817fc5ebe00ed93cca35a197f78273adb57a0
                 <a href="ayudante/index.php">
                     
                     Ayudantes</a>
@@ -147,14 +100,11 @@ if($_SESSION["mySesion"]!="admin"){
                     Materias</a>
                           </li>
             <li >
-<<<<<<< HEAD
                 <a href="contenido/index.php">
                     
                     Contenido</a>
             </li>
              <li >
-=======
->>>>>>> b49817fc5ebe00ed93cca35a197f78273adb57a0
                 <a href="reconocimiento/index.php">
                     
                     Reconocimiento</a>
@@ -168,13 +118,8 @@ if($_SESSION["mySesion"]!="admin"){
     </div>
     <!-- /.navbar-collapse -->
 </nav>
-<<<<<<< HEAD
 <body>
         <header id="head">
-=======
-
-<header id="head">
->>>>>>> b49817fc5ebe00ed93cca35a197f78273adb57a0
         <div class="container">
              <div class="heading-text">
                             <h1 class="animated flipInY delay1">Comienza Tu Educación En Línea</h1>
@@ -195,7 +140,6 @@ if($_SESSION["mySesion"]!="admin"){
                 </div><!-- .fluid_container -->
         </div>
     </header>
-<<<<<<< HEAD
      <footer id="footer">
         <div class="container">
    <div class="row">
@@ -303,10 +247,3 @@ if($_SESSION["mySesion"]!="admin"){
 
 </body>
 </html>
-=======
-
-
-
-    </body>
-    </html>
->>>>>>> b49817fc5ebe00ed93cca35a197f78273adb57a0

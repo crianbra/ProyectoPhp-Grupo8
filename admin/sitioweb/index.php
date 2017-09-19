@@ -6,14 +6,6 @@ session_start();
    // exit();
 //}
 
-
-//if(isset($_SESSION['mySesion'])){
-  //  echo "<p> Hola usuario:(" . $_SESSION['mySesion']. ")";
-/*if($_SESSION["rol"]!="admin"){
-    header("location: ../index.php");
-    echo "<p> Hola usuario:(" . $_SESSION['mySesion']. ")";
-    exit();
-}*/
 ?>
 
 <!DOCTYPE html>
@@ -59,17 +51,6 @@ session_start();
                        
                     }
                     ?>
-                    <!--<li><a href="login.php">LOGIN</a></li>
-                    <li><a href="perfil.php">PERFIL</a></li>-->
-                    <?php 
-                    if($_SESSION{'rol'}=='admin'){
-                        ?>
-                     <li><a href="../index.php">Administrar</a></li>
-
-                    <?php
-                       
-                    }
-                        ?>
                     <li><a href="logout.php">SALIR</a></li>
                      
 				</ul>
@@ -337,8 +318,6 @@ session_start();
 		});
 
 	</script>
-
-
 
 </body>
 </html>

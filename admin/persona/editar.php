@@ -7,11 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/persona/Person
 
 
 $id = $_GET["id"];
-<<<<<<< HEAD
 //echo "valor de id es ". $id;
-=======
-echo "valor de id es ". $id;
->>>>>>> b49817fc5ebe00ed93cca35a197f78273adb57a0
 include_once("PersonaCollector.php");
 include_once("Persona.php");
 $PersonaCollectorObj = new PersonaCollector();
@@ -54,7 +50,6 @@ $ObjPersona = $PersonaCollectorObj->showPersona($id);
                 <a class="navbar-brand" href="../index.php">
                     <img src="../../assets/images/logo.png" alt="Techro HTML5 template"></a>
             </div>
-<<<<<<< HEAD
              <div class="collapse navbar-collapse navbar-ex1-collapse">
                    <ul class="nav navbar-nav side-nav">
             <li >
@@ -64,62 +59,6 @@ $ObjPersona = $PersonaCollectorObj->showPersona($id);
             </li>
         </ul>
     </div>
-=======
-            <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav side-nav">
-            <li >
-                <a href="#">
-                    
-                    Alumnos</a>
-            </li>
-            <li >
-                <a href="#">
-                    
-                    Usuarios</a>
-            </li>
-            <li >
-                <a href="index.php">
-                    
-                    Personas</a>
-            </li>
-            <li >
-                <a href="#">
-                    
-                    Categoria Por Materias</a>
-            </li>
-            <li >
-                <a href="#">
-                   
-                    Cursos</a>
-            </li>
-            <li >
-                <a href="#">
-             
-                    Perfil</a>
-            </li>
-            <li >
-                <a href="#">
-                    
-                    Ayudantes</a>
-            </li>
-                     <li >
-                <a href="#">
-                   
-                    Materias</a>
-                          </li>
-            <li >
-                <a href="#">
-                    
-                    Alumnos Por Materias</a>
-            </li>
-            <li >
-                <a href="#">
-                    
-                    Contactenos</a>
-            </li>
-        </ul>
-            </div>
->>>>>>> b49817fc5ebe00ed93cca35a197f78273adb57a0
         <!--/.nav-collapse -->
         </div>
     </div>

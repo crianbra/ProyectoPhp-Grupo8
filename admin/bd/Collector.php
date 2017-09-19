@@ -2,15 +2,15 @@
 include_once('dataBase.php');
 
 // Define configuration
-define("DB_HOST", "ec2-54-225-88-199.compute-1.amazonaws.com");
+/*define("DB_HOST", "ec2-54-225-88-199.compute-1.amazonaws.com");
 define("DB_USER", "uzxaqhjmjxncxa");
 define("DB_PASS", "d0747a93621a7131e779199b9ab67e5457476bf8a081eb9b897d473d5b950e74");
-define("DB_NAME", "d6pba8juduci4s");
-/*
-define("DB_HOST", "localhost");
-define("DB_USER", "postgres");
-define("DB_PASS", "postgres");
-define("DB_NAME", "educaciononline");*/
+define("DB_NAME", "d6pba8juduci4s");*/
+
+define("DB_HOST", "ec2-54-225-192-243.compute-1.amazonaws.com");
+define("DB_USER", "iiewhrdiftbwug");
+define("DB_PASS", "01a9f53305469f5872423250649d2546a609c46cc36febcebb1fdbe26371c2e4");
+define("DB_NAME", "d688ggtp9d4kab");
 
 
 class Collector extends dataBase

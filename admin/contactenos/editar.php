@@ -47,7 +47,6 @@ $ObjCOntacto = $ContactenosCollectorObj->showContacto($id);
             <div class="navbar-header">
                 <!-- Button for smallest screens -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-<<<<<<< HEAD
                 <a class="navbar-brand" href="index.html">
                     <img src="../../assets/images/logo.png" alt="Techro HTML5 template"></a>
             </div>
@@ -60,65 +59,6 @@ $ObjCOntacto = $ContactenosCollectorObj->showContacto($id);
             </li>
         </ul>
     </div>
-=======
-                <a class="navbar-brand" href="../index.php">
-                    <img src="../../assets/images/logo.png" alt="Techro HTML5 template"></a>
-            </div>
-            <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav side-nav">
-            <li >
-                <a href="#">
-                    
-                    Alumnos</a>
-            </li>
-            <li >
-                <a href="#">
-                    
-                    Usuarios</a>
-            </li>
-            <li >
-                <a href="index.php">
-                    
-                    Personas</a>
-            </li>
-            <li >
-                <a href="#">
-                    
-                    Categoria Por Materias</a>
-            </li>
-            <li >
-                <a href="#">
-                   
-                    Cursos</a>
-            </li>
-            <li >
-                <a href="#">
-             
-                    Perfil</a>
-            </li>
-            <li >
-                <a href="#">
-                    
-                    Ayudantes</a>
-            </li>
-                     <li >
-                <a href="#">
-                   
-                    Materias</a>
-                          </li>
-            <li >
-                <a href="#">
-                    
-                    Alumnos Por Materias</a>
-            </li>
-            <li >
-                <a href="#">
-                    
-                    Contactenos</a>
-            </li>
-        </ul>
-            </div>
->>>>>>> b49817fc5ebe00ed93cca35a197f78273adb57a0
         <!--/.nav-collapse -->
         </div>
     </div>
@@ -132,7 +72,6 @@ $ObjCOntacto = $ContactenosCollectorObj->showContacto($id);
                     <form action="actualizar.php" method="post">
 
                        <div class="form-group">
-<<<<<<< HEAD
                             <label for="idcontactenos">Id </label>
                             <input type="text" class="form-control" id="idcontactenos" name="idcontactenos" value="<?php echo $ObjCOntacto->getIdContactenos(); ?>" placeholder="Id COntacto" rows="6" readonly>
                         </div>
@@ -142,17 +81,6 @@ $ObjCOntacto = $ContactenosCollectorObj->showContacto($id);
                         </div>
                         <div class="form-group">
                             <label for="correo">Ciudad</label>
-=======
-                            <label for="idpersona">Id Persona</label>
-                            <input type="text" class="form-control" id="idpersona" name="idpersona" value="<?php echo $ObjPersona->getIdpersona(); ?>" placeholder="Id Persona" rows="6" readonly>
-                        </div>
-                        <div class="form-group">
-                            <label for="nombre">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $ObjPersona->getNombre(); ?>" placeholder="Nombre" rows="6">
-                        </div>
-                        <div class="form-group">
-                            <label for="ciudad">Ciudad</label>
->>>>>>> b49817fc5ebe00ed93cca35a197f78273adb57a0
                             <input type="text"class='form-control' id="ciudad" name="ciudad" value="<?php echo $ObjPersona->getCiudad(); ?>"  placeholder="Ciudad" rows="6">
                         </div>
                         <div class="form-group">

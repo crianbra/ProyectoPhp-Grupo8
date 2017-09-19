@@ -2,11 +2,6 @@
 
 session_start();
 
-/*if($_SESSION["rol"]!="admin"){
-    header("location: ../index.php");
-    exit();
-}*/
-
 ?>
 
 <!DOCTYPE html>
@@ -42,17 +37,8 @@ session_start();
 					<li><a href="courses.php">CURSOS</a></li>
 					<li><a href="videos.php">VIDEOS</a></li>
 					<li class="active"><a href="contact.php">Contáctenos</a></li>
-					<?php 
-                    if($_SESSION{'rol'}=='admin'){
-                        ?>
-                     <li><a href="../index.php">Administrar</a></li>
-
-                    <?php
-                       
-                    }
-                        ?>
-                    <!--<li><a href="login.php">LOGIN</a></li>
-                    <li ><a href="perfil.php">PERFIL</a></li>-->
+                    <!--<li><a href="login.php">LOGIN</a></li>-->
+                    <li ><a href="perfil.php">PERFIL</a></li>
                     <li ><a href="../../index.php">SALIR</a></li>
 
 				</ul>
@@ -201,7 +187,5 @@ session_start();
 	<!-- Google Maps -->
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 	<script src="../../assets/js/google-map.js"></script>
-
-
 </body>
 </html>

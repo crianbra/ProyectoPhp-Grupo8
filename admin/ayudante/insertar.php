@@ -39,15 +39,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/ayudante/Ayuda
                 <a class="navbar-brand" href="../index.php">
                     <img src="../../assets/images/logo.png" alt="Techro HTML5 template"></a>
             </div>
-<<<<<<< HEAD
             
-=======
-            <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav side-nav">
-            
-        </ul>
-            </div>
->>>>>>> b49817fc5ebe00ed93cca35a197f78273adb57a0
         <!--/.nav-collapse -->
         </div>
     </div>

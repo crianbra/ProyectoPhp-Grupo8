@@ -2,11 +2,6 @@
 
 session_start();
 
-/*if($_SESSION["rol"]!="admin"){
-    header("location: ../index.php");
-    exit();
-}*/
-
 ?>
 
 <!DOCTYPE html>
@@ -50,17 +45,8 @@ session_start();
 					<li><a href="courses.php">Cursos</a></li>
 					<li class="active"><a href="videos.php">Videos</a></li>
 					<li><a href="contact.php">Contáctenos</a></li>
-					<?php 
-                    if($_SESSION{'rol'}=='admin'){
-                        ?>
-                     <li><a href="../index.php">Administrar</a></li>
-
-                    <?php
-                       
-                    }
-                        ?>
-                    <!--<li><a href="login.php">LOGIN</a></li>
-                    <li ><a href="perfil.php">PERFIL</a></li>-->
+                    <!--<li><a href="login.php">LOGIN</a></li>-->
+                    <li ><a href="perfil.php">PERFIL</a></li>
                     <li><a href="../../index.php">SALIR</a></li>
 
 
@@ -323,6 +309,5 @@ session_start();
 	<script src="../../assets/js/jquery.isotope.min.js"></script>
 	<script src="../../assets/js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
 	<script src="../../assets/js/custom.js"></script>
-
 </body>
 </html>

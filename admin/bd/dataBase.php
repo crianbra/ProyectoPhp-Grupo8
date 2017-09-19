@@ -7,25 +7,15 @@ class dataBase
   public $isConnected;
   protected $datab;
 
-<<<<<<< HEAD:admin/bd/dataBase.php
   /*private $host      = "ec2-54-225-88-199.compute-1.amazonaws.com";
   private $username  = "uzxaqhjmjxncxa";
   private $password  = "d0747a93621a7131e779199b9ab67e5457476bf8a081eb9b897d473d5b950e74";
   private $dbname    = "d6pba8juduci4s";*/
 
-=======
- private $host      = "ec2-54-225-88-199.compute-1.amazonaws.com";
-  private $username  = "uzxaqhjmjxncxa";
-  private $password  = "d0747a93621a7131e779199b9ab67e5457476bf8a081eb9b897d473d5b950e74";
-  private $dbname    = "d6pba8juduci4s";
- /*
->>>>>>> b49817fc5ebe00ed93cca35a197f78273adb57a0:admin/bd/dataBase.php
-  private $host      = "localhost";
-  private $username  = "postgres";
-  private $password  = "postgres";
-  private $dbname    = "educaciononline";*/
-
-
+  private $host      = "ec2-54-225-192-243.compute-1.amazonaws.com";
+  private $username  = "iiewhrdiftbwug";
+  private $password  = "01a9f53305469f5872423250649d2546a609c46cc36febcebb1fdbe26371c2e4";
+  private $dbname    = "d688ggtp9d4kab";
 
 
 

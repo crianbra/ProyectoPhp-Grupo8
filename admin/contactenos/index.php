@@ -33,7 +33,6 @@
                 <a class="navbar-brand" href="../index.php">
                     <img src="../../assets/images/logo.png" alt="Techro HTML5 template"></a>
             </div>
-<<<<<<< HEAD
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                    <ul class="nav navbar-nav side-nav">
             <li >
@@ -43,58 +42,6 @@
             </li>
         </ul>
     </div>
-=======
-            <div class="navbar-collapse collapse">
-                     <ul class="nav navbar-nav side-nav">
-           <li >
-                <a href="../persona/index.php">
-                    
-                    Personas</a>
-            </li>
-
-            <li >
-                <a href="../usuario/index.php">
-                    
-                    Usuarios</a>
-            </li>
-            <li >
-                <a href="../alumno/index.php">
-                    
-                    Alumnos</a>
-            </li>
-            <li >
-                <a href="../contenido/index.php">
-                   
-                    Contenido</a>
-            </li>
-            <li >
-                <a href="../categoriaxmateria/index.php">
-                    
-                    Categoria Por Materias</a>
-            </li>
-            <li >
-                <a href="../ayudante/index.php">
-                    
-                    Ayudantes</a>
-            </li>
-                     <li >
-                <a href="../materia/index.php">
-                   
-                    Materias</a>
-                          </li>
-            <li >
-                <a href="../reconocimiento/index.php">
-                    
-                    Reconocimiento</a>
-            </li>
-            <li >
-                <a href="contactenos/index.php">
-                    
-                    Contactenos</a>
-            </li>
-        </ul>
-            </div>
->>>>>>> b49817fc5ebe00ed93cca35a197f78273adb57a0
         <!--/.nav-collapse -->
          <div class="row">    
   <div class="col-md-12">
@@ -139,14 +86,9 @@
          <td class=""><?php echo "".$datos->getTelefono(); ?></td>
          <td class=""><?php echo "".$datos->getAsunto(); ?></td>
          <td class=""><?php echo "".$datos->getMensaje(); ?></td>
-<<<<<<< HEAD
         <!-- <td><a class="link" href="editar.php?id=<?php echo $datos->getIdContactenos(); ?>">Editar</a></td>-->
         <td><a class="link" href="eliminar.php?id=<?php echo $datos->getIdContactenos(); ?>">Eliminar</a></td><br>
         </tr>
-=======
-         <td><a class="link" href="eliminar.php?id=<?php echo $datos->getIdContactenos(); ?>">Eliminar</a></td>
-           </tr>
->>>>>>> b49817fc5ebe00ed93cca35a197f78273adb57a0
          
        
             
