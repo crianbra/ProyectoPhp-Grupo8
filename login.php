@@ -48,9 +48,9 @@ session_start();
 				<ul class="nav navbar-nav pull-right mainNav">
 					<li><a href="index.php">INICIO</a></li>
 					<li><a href="about.php">QUIENES SOMOS</a></li>
-					<!--<li><a href="courses.php">CURSOS</a></li>
-					<li><a href="videos.php">VIDEOS</a></li>-->
-					<li ><a href="contact.php">CONTACTENOS</a></li>
+					<li><a href="courses.php">CURSOS</a></li>
+					<li><a href="videos.php">VIDEOS</a></li>
+					<li ><a href="contact.php">CONTACTO</a></li>
           <li class="active"><a href="login.php">LOGIN</a></li>
           <!--<li ><a href="perfil.php">PERFIL</a></li>-->
 
@@ -71,22 +71,24 @@ session_start();
     <div class="tooltip">Click Me</div>
   </div>
   <div class="form">
+
+
     <h2>Ingresar con una cuenta existente</h2>
-     <form id="filldetails"  method="POST" action="php/usuario/validarUsuario.php">
+     <form id="filldetails"  method="POST" action="admin/usuario/validarUsuario.php">
       <input type="text" placeholder="Usuario" name="nombreusuario" required="" />
       <input type="password" placeholder="Contraseña" name="contrasenia" required="" />
       <button>Ingresar</button>
     </form>
+
   </div>
   <div class="form">
     <h2>Crear una cuenta</h2>
-    <form>
-      <input type="text" placeholder="Nombre"/>
-      <input type="text" placeholder="Usuario"/>
+    <form id="filldetails"  method="POST" action="admin/usuario/Nuevousuario.php">
+      <input type="text" placeholder="Nombre" name="nombre" />
+      <input type="text" placeholder="Usuario"  name="" />
       <input type="password" placeholder="Contraseña"/>
       <input type="email" placeholder="Email "/>
       <input type="tel" placeholder="Numero de teléfono"/>
-      <input type="checkbox" id="cbox1" value="first_checkbox">Ayudante</input>
       <button>Registrar</button>
     </form>
   </div>
@@ -151,10 +153,11 @@ session_start();
 						<div class="panel-body">
 							<p class="simplenav">
 								<a href="index.php">INICIO</a> |
-								<a href="about.php">QUIENES SOMOS</a> |
-							<!--	<a href="courses.php">CURSOS</a> |
-								<a href="videos.php">VIDEOS</a> |-->
-								<a href="contact.php">CONTACTO</a>
+                <a href="about.php">QUIENES SOMOS</a> |
+                <a href="courses.php">CURSOS</a> |
+                <a href="videos.php">VIDEOS</a> |
+                <a href="contact.php">CONTACTO</a> |
+                <a href="login.php">LOGIN</a>
 							</p>
 						</div>
 					</div>
@@ -173,7 +176,6 @@ session_start();
 	<script src="assets/js/google-map.js"></script>
     
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://codepen.io/andytran/pen/vLmRVp.js'></script>
 
     <script src="js/indexLog.js"></script>
 

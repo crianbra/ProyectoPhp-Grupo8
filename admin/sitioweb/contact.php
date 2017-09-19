@@ -12,13 +12,13 @@ session_start();
 	<meta name="description" content="free-educational-responsive-web-template-webEdu">
 	<meta name="author" content="webThemez.com">
 	<title>Educación Online</title>
-	<link rel="icon" type="image/png" href="assets/images/logo_navegador.png">
+	<link rel="icon" type="image/png" href="../../assets/images/logo_navegador.png">
 	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
 	<!-- Custom styles for our template -->
-	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen">
-	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="../../assets/css/bootstrap-theme.css" media="screen">
+	<link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body>
 	<!-- Fixed navbar -->
@@ -27,8 +27,8 @@ session_start();
 			<div class="navbar-header">
 				<!-- Button for smallest screens -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-				<a class="navbar-brand" href="index.html">
-					<img src="assets/images/logo.png" alt="Techro HTML5 template"></a>
+				<a class="navbar-brand" href="index.php">
+					<img src="../../assets/images/logo.png" alt="Techro HTML5 template"></a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right mainNav">
@@ -36,9 +36,10 @@ session_start();
 					<li ><a href="about.php">QUIENES SOMOS</a></li>
 					<li><a href="courses.php">CURSOS</a></li>
 					<li><a href="videos.php">VIDEOS</a></li>
-					<li class="active"><a href="contact.php">CONTACTO</a></li>
-                    <li><a href="login.php">LOGIN</a></li>
-                    <!--<li ><a href="perfil.php">PERFIL</a></li>-->
+					<li class="active"><a href="contact.php">Contáctenos</a></li>
+                    <!--<li><a href="login.php">LOGIN</a></li>-->
+                    <li ><a href="perfil.php">PERFIL</a></li>
+                    <li ><a href="../../index.php">SALIR</a></li>
 
 				</ul>
 			</div>
@@ -48,7 +49,7 @@ session_start();
 	<!-- /.navbar -->
 		<header id="head" class="secondary">
             <div class="container">
-                    <h1>Contactenos</h1>
+                    <h1>Contáctenos</h1>
                     <p>Ayudenos a mejorar !!</p>
                 </div>
     </header>
@@ -60,39 +61,34 @@ session_start();
 						<p>
 						Por medio de este metodo usted nos ayudara a mejorar, atenderemos su consulta en beneficio de todos.
 						</p>
-						<form action="admin/contactenos/guardarContacto.php" method="post">
-				         <fieldset>
-
 						<form class="form-light mt-20" role="form">
 							<div class="form-group">
 								<label>Nombre</label>
-								<input type="text" name="nombre" class="form-control" placeholder="Aqui su nombre">
+								<input type="text" class="form-control" placeholder="Aqui su nombre">
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
 										<label>Correo Electrónico</label>
-										<input type="email" name="email" class="form-control" placeholder="Escriba su correo">
+										<input type="email" class="form-control" placeholder="Escriba su correo">
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
 										<label>Telefono</label>
-										<input type="text" name="telefono" class="form-control" placeholder="Digite su número">
+										<input type="text" class="form-control" placeholder="Digite su número">
 									</div>
 								</div>
 							</div>
 							<div class="form-group">
-								<label>Asunto</label>
-								<input type="text" name="asunto" class="form-control" placeholder="Subject">
+								<label>Subject</label>
+								<input type="text" class="form-control" placeholder="Subject">
 							</div>
 							<div class="form-group">
 								<label>Mensaje</label>
-								<textarea class="form-control" name="mensaje" id="message" placeholder="Escriba su inquietud o sugerencia aqui..." style="height:100px;"></textarea>
+								<textarea class="form-control" id="message" placeholder="Escriba su inquietud o sugerencia aqui..." style="height:100px;"></textarea>
 							</div>
 							<button type="submit" class="btn btn-two">Enviar Mensaje</button><p><br/></p>
-						</form>
-						</fieldset>
 						</form>
 					</div>
 					<div class="col-md-4">
@@ -172,11 +168,10 @@ session_start();
 						<div class="panel-body">
 							<p class="simplenav">
 								<a href="index.php">INICIO</a> |
-								<a href="about.php">QUIENES SOMOS</a> |
-								<a href="courses.php">CURSOS</a> |
-								<a href="videos.php">VIDEOS</a> |
-								<a href="contact.php">CONTACTO</a> |
-                                <a href="login.php">LOGIN</a>
+                                <a href="about.php">QUIENES SOMOS</a> |
+                                <a href="courses.php">CURSOS</a> |
+                                <a href="videos.php">VIDEOS</a> |
+                                <a href="contact.php">CONTACTO</a>
 							</p>
 						</div>
 					</div>
@@ -188,9 +183,9 @@ session_start();
 	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	<script src="assets/js/custom.js"></script>
+	<script src="../../assets/js/custom.js"></script>
 	<!-- Google Maps -->
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-	<script src="assets/js/google-map.js"></script>
+	<script src="../../assets/js/google-map.js"></script>
 </body>
 </html>

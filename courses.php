@@ -33,12 +33,12 @@ session_start();
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right mainNav">
 					<li><a href="index.php">INICIO</a></li>
-					<li ><a href="about.php">QUIENES SOMOS</a></li>
+					<li><a href="about.php">QUIENES SOMOS</a></li>
 					<li class="active"><a href="courses.php">CURSOS</a></li>
 					<li><a href="videos.php">VIDEOS</a></li>
-					<li ><a href="contact.php">CONTACTENOS</a></li>
+					<li><a href="contact.php">CONTACTO</a></li>
                     <li><a href="login.php">LOGIN</a></li>
-                    <li ><a href="perfil.php">PERFIL</a></li>
+                    <!--<li><a href="perfil.php">PERFIL</a></li>-->
 
 				</ul>
 			</div>
@@ -222,7 +222,8 @@ session_start();
 								<a href="about.php">QUIENES SOMOS</a> |
 								<a href="courses.php">CURSOS</a> |
 								<a href="videos.php">VIDEOS</a> |
-								<a href="contact.php">CONTACTO</a>
+								<a href="contact.php">CONTACTO</a> |
+                                <a href="login.php">LOGIN</a>
 							</p>
 						</div>
 					</div>

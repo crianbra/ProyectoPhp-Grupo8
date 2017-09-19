@@ -44,9 +44,9 @@ session_start();
 					<li><a href="about.php">Quiénes Somos</a></li>
 					<li><a href="courses.php">Cursos</a></li>
 					<li class="active"><a href="videos.php">Videos</a></li>
-					<li><a href="contact.php">Contáctenos</a></li>
+					<li><a href="contact.php">CONTACTO</a></li>
                     <li><a href="login.php">LOGIN</a></li>
-                    <li ><a href="perfil.php">PERFIL</a></li>
+                    <!--<li><a href="perfil.php">PERFIL</a></li>-->
 
 
 				</ul>
@@ -288,7 +288,8 @@ session_start();
 								<a href="about.php">QUIENES SOMOS</a> |
 								<a href="courses.php">CURSOS</a> |
 								<a href="videos.php">VIDEOS</a> |
-								<a href="contact.php">CONTACTO</a>
+								<a href="contact.php">CONTACTO</a> |
+                                <a href="login.php">LOGIN</a>
 							</p>
 						</div>
 					</div>
