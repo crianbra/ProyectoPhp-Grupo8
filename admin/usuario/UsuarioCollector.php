@@ -2,6 +2,7 @@
 
 include_once('Usuario.php');
 include_once('../bd/Collector.php');
+include_once('../Autenticacion/Functions.php');
 
 class UsuarioCollector extends Collector
 {
@@ -42,13 +43,16 @@ function createUsuario($nombreusuario, $contrasenia, $perfil, $persona_id){
 }
 
 function validarUsuario($nombreusuario,$contrasenia){
-                $rows = self::$db->getRows("SELECT * FROM usuario WHERE nombreusuario='$nombreusuario' AND contrasenia='$ontrasenia'");
-                foreach ($rows as $c){
-                  $aux = new Usuario($c{'idusuario'},$c{'nombreusuario'},$c{'contrasenia'},$c{'perfil'}, $c{'persona_id'});
-                  return 1;
-                }
-                return 0;
-          }    
+      $rows = self::$db->getRows("SELECT * FROM usuario WHERE nombreusuario='$nombreusuario' AND contrasenia='$contrasenia'");               
+    foreach ($rows as $c){
+        $token= Functions::guid();
+        $aux = new usuario($c{'idusuario'},$c{'nombreusuario'},$c{'contrasenia'},$c{'perfil'},$c{'persona_id'});
+        Usuario::$rol=$c{'perfil'};
+        //Usuario::$perfil=$c{'perfil'};//agregando el perfil al usario con una variable estatica para no perder la referencia
+        return 1;
+       }
+        return 0;
+  }   
         
 function buscarUsuario($nombreusuario) {
                 $rows = self::$db->getRows("SELECT * FROM usuario WHERE nombreusuario='$nombreusuario'");               

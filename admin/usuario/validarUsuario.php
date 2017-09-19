@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once('validar.php');
+include_once('UsuarioCollector.php');
 ?>
 <!DOCTYPE html>
 
