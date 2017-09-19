@@ -23,9 +23,9 @@ $facebook =($_POST["facebook"]);
 
 echo "Edicion en proceso..... </br>";
 
-include_once("PersonaCollector.php");
-$PersonaCollectorObj = new PersonaCollector();
-$PersonaCollectorObj->deletePersona($id);
+include_once("UsuarioCollector.php");
+$PersonaCollectorObj = new UsuarioCollector();
+$PersonaCollectorObj->deleteUsuario($id);
 
 echo "valor id:".htmlspecialchars($id)." se borro " .$nombre." </br>";
 
