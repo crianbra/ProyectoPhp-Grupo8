@@ -11,7 +11,7 @@ session_start();
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="free-educational-responsive-web-template-webEdu">
 	<meta name="author" content="webThemez.com">
-	<title>Contáctenos - Educación Online</title>
+	<title>Educación Online</title>
 	<link rel="icon" type="image/png" href="assets/images/logo_navegador.png">
 	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">

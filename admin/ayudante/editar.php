@@ -15,6 +15,8 @@ $ObjAyudante = $AyudanteCollectorObj->showAyudante($id);
 
 
 ?>
+ <!DOCTYPE html>
+
 <html lang='es'>
 <head>
 

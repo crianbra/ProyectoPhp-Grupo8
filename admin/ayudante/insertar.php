@@ -4,6 +4,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/ayudante/Ayuda
 
 
  ?>
+  <!DOCTYPE html>
 <html lang='es'>
 <head>
 

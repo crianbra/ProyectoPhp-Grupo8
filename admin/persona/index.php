@@ -97,6 +97,8 @@
 <?php
 }
 
+<?php echo "".$datos->getIdpersona(); ?>
+
 ?>
     </table>
     </div>

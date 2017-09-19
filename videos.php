@@ -11,7 +11,7 @@ session_start();
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="free-educational-responsive-web-template-webEdu">
 	<meta name="author" content="webThemez.com">
-	<title>Videos - Educación Online</title>
+	<title>Video - Educación Online</title>
 	<link rel="icon" type="image/png" href="assets/images/logo_navegador.png">
 	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -63,17 +63,19 @@ session_start();
                 </div>
     </header>
 
-	<div class="container">
+
+	<!-- container -->
+	<section class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<section id="portfolio" class="page-section section appear clearfix">
 					<br />
 					<br />
-					<h2>
+					<p>
 						El vídeo es una magnífica herramienta que ayuda al proceso de aprendizaje al ser divertida y llamativa. Se prevé que el 98% de las organizaciones utilizará el vídeo en el 2018 en sus estrategias de aprendizaje digitales.
 						<br />
 						<br />
-					</h2>
+					</p>
 
 
 					<div class="row">
@@ -218,7 +220,7 @@ session_start();
 			</div>
 		</div>
 
-	</div>
+	</section>
 	<!-- /container -->
  <footer id="footer">
 

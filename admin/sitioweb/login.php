@@ -46,16 +46,6 @@ session_start();
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right mainNav">
-<<<<<<< HEAD:login.html
-
-					<li><a href="index.html">INICIO</a></li>
-					<li><a href="about.html">QUIENES SOMOS</a></li>
-					<li><a href="courses.html">CURSOS</a></li>
-					<li><a href="videos.html">VIDEOS</a></li>
-					<li ><a href="contact.html">CONTACTENOS</a></li>
-          				<li class="active"><a href="login.html">LOGIN</a></li>
-          				<li ><a href="perfil.html">PERFIL</a></li>
-=======
 					<li><a href="index.php">INICIO</a></li>
 					<li><a href="about.php">QUIENES SOMOS</a></li>
 					<!--<li><a href="courses.php">CURSOS</a></li>
@@ -63,7 +53,6 @@ session_start();
 					<li ><a href="contact.php">CONTACTENOS</a></li>
           <li class="active"><a href="login.php">LOGIN</a></li>
           <!--<li ><a href="perfil.php">PERFIL</a></li>-->
->>>>>>> master:admin/sitioweb/login.php
 
 
 				</ul>

@@ -33,12 +33,18 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/materia/Materi
 <!-- Fixed navbar -->
     <div class="navbar navbar-inverse">
         <div class="container">
+            <div class="navbar navbar-inverse">
+        <div class="container">
             <div class="navbar-header">
                 <!-- Button for smallest screens -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                 <a class="navbar-brand" href="../index.php">
                     <img src="../../assets/images/logo.png" alt="Techro HTML5 template"></a>
             </div>
+            
+        <!--/.nav-collapse -->
+        </div>
+    </div>
 
         <div id="wrapper">
 
@@ -50,6 +56,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/materia/Materi
 
                       
                         <div class="form-group">
+
                             <label for="nombre">NOMBRE</label>
                             <input type="text"class='form-control' id="nombre" name="nombre" placeholder="nombre" rows="6">
                         </div>

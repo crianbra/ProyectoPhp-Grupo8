@@ -63,6 +63,7 @@ session_start();
 <ul class="list-unstyled video-list-thumbs row">
 	<li class="col-lg-3 col-sm-4 col-xs-6">
 		<a href="https://www.youtube.com/watch?v=EwHzJWTcP7o" target="_blank">
+			<img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
 			<h2>Formamos Ecuador, Logica Matematica</h2>
 			<span class="play-button"></span>
 			<span class="duration">02:00</span>
@@ -70,6 +71,7 @@ session_start();
 	</li>
 	<li class="col-lg-3 col-sm-4 col-xs-6">
 		<a href="https://www.youtube.com/watch?v=YylHQhjXrOk" target="_blank" >
+			<img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
 			<h2>Rubiños, Razonamiento Abstracto</h2>
 			<span class="play-button"></span>
 			<span class="duration">47:06</span>
@@ -77,6 +79,7 @@ session_start();
 	</li>
 	<li class="col-lg-3 col-sm-4 col-xs-6">
 		<a href="https://www.youtube.com/watch?v=EwHzJWTcP7o" target="_blank">
+			<img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
 			<h2>Formamos Ecuador, Logica Matematica</h2>
 			<span class="play-button"></span>
 			<span class="duration">02:00</span>
@@ -84,6 +87,7 @@ session_start();
 	</li>
 	<li class="col-lg-3 col-sm-4 col-xs-6">
 		<a href="https://www.youtube.com/watch?v=YylHQhjXrOk" target="_blank" >
+			<img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
 			<h2>Rubiños, Razonamiento Abstracto</h2>
 			<span class="play-button"></span>
 			<span class="duration">47:06</span>
@@ -94,29 +98,29 @@ session_start();
 </div>
 	<div id="courses">
 		<section class="container">
-			<h3 >Lista de Cursos que se dictarán</h3>
+			<h3 align="center">Lista de Cursos que se dictarán</h3>
 			<div class="row">
 				<div class="col-md-4">
 					<div class="featured-box">
 						<div class="text">
-							<h3>Lengua y Líteratura</h3>
-							<p>Explicación de verbos y pretéritos del fúturo.</p>
+							<h3 align="center">Lengua y Líteratura</h3>
+							<p align="center" >Explicación de verbos y pretéritos del fúturo.</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="featured-box">
 						<div class="text">
-							<h3>Matemáticas</h3>
-							<p> Explicación de ejercicios matemáticos, reglas de tres y conjuntos.</p>
+							<h3 align="center">Matemáticas</h3>
+							<p align="center"> Explicación de ejercicios matemáticos, reglas de tres y conjuntos.</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="featured-box">
 						<div class="text">
-							<h3>Ciencias Naturales</h3>
-							<p>  Preguntas relacionadas a las pruebas que tomarán.</p>
+							<h3 align="center">Ciencias Naturales</h3>
+							<p align="center" >  Preguntas relacionadas a las pruebas que tomarán.</p>
 						</div>
 					</div>
 				</div>
@@ -125,8 +129,8 @@ session_start();
 				<div class="col-md-4">
 					<div class="featured-box">
 						<div class="text">
-							<h3> Estudios Sociales</h3>
-							<p>Fechas Importantes y conocimiento
+							<h3 align="center"> Estudios Sociales</h3>
+							<p align="center" >Fechas Importantes y conocimiento
                             general . </p>
 						</div>
 					</div>
@@ -134,16 +138,16 @@ session_start();
 				<div class="col-md-4">
 					<div class="featured-box">
 						<div class="text">
-							<h3>Matématica Abstracta</h3>
-							<p>Razomamiento abstracto y ejercicios resueltos para el aprendizaje.</p>
+							<h3 align="center">Matématica Abstracta</h3>
+							<p align="center" >Razomamiento abstracto y ejercicios resueltos para el aprendizaje.</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="featured-box">
 						<div class="text">
-							<h3>Matemática y Lengua y Líteratura</h3>
-							<p> Combinación de ambas en ejercicios de despejes.</p>
+							<h3 align="center">Matemática y Lengua y Líteratura</h3>
+							<p align="center" > Combinación de ambas en ejercicios de despejes.</p>
 						</div>
 					</div>
 				</div>
@@ -159,22 +163,25 @@ session_start();
     <div class="col-md-3 col-sm-6">
 
            <div class="footerwidget">
-        <h4>CATEGORÍA DE LOS CURSOS A DICTAR</h4>
+        <h4>
+        <h4  align="center">
+          CATEGORÍA DE LOS CURSOS A DICTAR
+        </h4>
         <div class="menu-course">
           <ul class="menu">
-            <li><a href=" https://drive.google.com/file/d/0B048WkRgr8JQbC1YZ0xLU2tFdW8/view" target="_blank">
+            <li align="center"><a href=" https://drive.google.com/file/d/0B048WkRgr8JQbC1YZ0xLU2tFdW8/view" target="_blank">
                 Matemática (Revisar)
               </a>
             </li>
-            <li><a href="https://drive.google.com/file/d/0B048WkRgr8JQRnN4MmxGdFBYR00/view" target="_blank">
+            <li align="center"><a href="https://drive.google.com/file/d/0B048WkRgr8JQRnN4MmxGdFBYR00/view" target="_blank">
                 Matemática y Lengua y Líteratura (Revisar)
               </a>
             </li>
-            <li><a href="https://drive.google.com/file/d/0B048WkRgr8JQQ3AwRW9GTGZLWVk/view" target="_blank">
+            <li align="center"><a href="https://drive.google.com/file/d/0B048WkRgr8JQQ3AwRW9GTGZLWVk/view" target="_blank">
                 Ciencia y Sociales (Revisar)
               </a>
             </li>
-            <li><a href="https://drive.google.com/file/d/0B048WkRgr8JQdWRQSW5BRk15VGc/view" target="_blank">
+            <li align="center"><a href="https://drive.google.com/file/d/0B048WkRgr8JQdWRQSW5BRk15VGc/view" target="_blank">
                Matemática y Lengua y Líteratura Resuelta (Revisar)
               </a>
             </li>

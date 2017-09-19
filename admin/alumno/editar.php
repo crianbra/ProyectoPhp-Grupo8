@@ -15,6 +15,7 @@ $ObjAlumno = $AlumnoCollectorObj->showAlumno($id);
 
 
 ?>
+ <!DOCTYPE html>
 <html lang='es'>
 <head>
 
