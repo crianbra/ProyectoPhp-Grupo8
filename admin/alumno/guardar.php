@@ -6,20 +6,13 @@
 <div id="main">
 
 <?php
-$valor = $_POST["id"];
-$valor2 = $_POST["descripcion"];
-$valor3 = $_POST["usuario_id"];
 
-echo "Se Guardo Correctamente";
 include_once("AlumnoCollector.php");
 
 $AlumnoCollectorObj = new AlumnoCollector();
 //$ObjPersona = $PersonaCollectorObj->createPersona($valor);
 
 echo "Se ha guardado correctamente </br>";
-
-
-
 
  if (isset($_POST["descripcion"])) {
      $descripcion =($_POST["descripcion"]);
