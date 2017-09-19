@@ -1,7 +1,6 @@
 <?php 
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/contenido/ContenidoCollector.php';
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/contenido/Contenido.php'; 
-
+include_once ('Contenido.php');
+include_once ('ContenidoCollector.php');
 
  ?>
 <html lang='es'>

@@ -1,6 +1,6 @@
 <?php 
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/catxmateria/CxmateriaCollector.php';
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/catxmateria/Cxmateria.php'; 
+include_once ('Cxmateria.php');
+include_once ('CxmateriaCollector.php');
 
 
  ?>

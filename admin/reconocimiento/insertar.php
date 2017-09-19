@@ -1,6 +1,7 @@
 <?php 
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/persona/PersonaCollector.php';
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/persona/Persona.php'; 
+session_start();
+include_once ('Reconocimiento.php');
+include_once ('ReconocimientoCollector.php');
 
 
  ?>

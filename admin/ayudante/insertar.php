@@ -1,6 +1,7 @@
 <?php 
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/ayudante/AyudanteCollector.php';
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/ayudante/Ayudante.php'; 
+include_once ('Ayudante.php');
+            include_once ('AyudanteCollector.php');
+
 
 
  ?>

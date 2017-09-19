@@ -1,7 +1,7 @@
 <?php
 include_once('Usuario.php');
 include_once('../bd/Collector.php');
-include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/Autenticacion/Functions.php';
+include_once('../Autenticacion/Functions.php');
 class UsuarioCollector extends Collector
 {
   

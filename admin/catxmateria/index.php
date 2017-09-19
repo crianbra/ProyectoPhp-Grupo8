@@ -68,8 +68,8 @@
         </thead>
         <?php
 
-            include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/catxmateria/Cxmateria.php';
-            include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/catxmateria/CxmateriaCollector.php';
+            include_once ('Cxmateria.php');
+            include_once ('CxmateriaCollector.php');
 
             $cole = new CxmateriaCollector();
 

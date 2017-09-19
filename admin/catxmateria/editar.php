@@ -1,11 +1,6 @@
 <?php 
 session_start();
 
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/catxmateria/CxmateriaCollector.php';
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/catxmateria/Cxmateria.php';    
-
-
-
 $id = $_GET["id"];
 //echo "valor de id es ". $id;
 include_once("CxmateriaCollector.php");

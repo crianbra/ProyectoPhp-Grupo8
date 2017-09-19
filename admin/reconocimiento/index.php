@@ -64,8 +64,8 @@
         </thead>
         <?php
 
-            include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/reconocimiento/Reconocimiento.php';
-            include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/reconocimiento/ReconocimientoCollector.php';
+            include_once ('Reconocimiento.php');
+            include_once ('ReconocimientoCollector.php');
 
             $cole= new ReconocimientoCollector();
 

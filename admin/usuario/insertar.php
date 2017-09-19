@@ -1,7 +1,6 @@
 <?php 
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/persona/PersonaCollector.php';
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/persona/Persona.php'; 
-
+include_once ('Usuario.php');
+include_once ('UsuarioCollector.php');
 
  ?>
   <!DOCTYPE html>
@@ -40,60 +39,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/persona/Person
                 <a class="navbar-brand" href="../index.php">
                     <img src="../../assets/images/logo.png" alt="Techro HTML5 template"></a>
             </div>
-            <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav side-nav">
-            <li >
-                <a href="#">
-                    
-                    Alumnos</a>
-            </li>
-            <li >
-                <a href="#">
-                    
-                    Usuarios</a>
-            </li>
-            <li >
-                <a href="#">
-                    
-                    Personas</a>
-            </li>
-            <li >
-                <a href="#">
-                    
-                    Categoria Por Materias</a>
-            </li>
-            <li >
-                <a href="#">
-                   
-                    Cursos</a>
-            </li>
-            <li >
-                <a href="#">
-             
-                    Perfil</a>
-            </li>
-            <li >
-                <a href="#">
-                    
-                    Ayudantes</a>
-            </li>
-                     <li >
-                <a href="#">
-                   
-                    Materias</a>
-                          </li>
-            <li >
-                <a href="#">
-                    
-                    Alumnos Por Materias</a>
-            </li>
-            <li >
-                <a href="#">
-                    
-                    Contactenos</a>
-            </li>
-        </ul>
-            </div>
+           
         <!--/.nav-collapse -->
         </div>
     </div>

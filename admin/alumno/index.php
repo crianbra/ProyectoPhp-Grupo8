@@ -69,8 +69,8 @@
         </thead>
         <?php
 
-            include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/alumno/Alumno.php';
-            include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/alumno/AlumnoCollector.php';
+            include_once("AlumnoCollector.php");
+            include_once("Alumno.php");
 
             $cole= new AlumnoCollector();
 

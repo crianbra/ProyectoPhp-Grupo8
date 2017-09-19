@@ -67,8 +67,8 @@
         </thead>
         <?php
 
-            include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/usuario/Usuario.php';
-            include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/usuario/UsuarioCollector.php';
+            include_once ('Usuario.php');
+            include_once ('UsuarioCollector.php');
 
             $cole= new UsuarioCollector();
 

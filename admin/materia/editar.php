@@ -1,8 +1,8 @@
 <?php 
 session_start();
 
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/materia/MateriaCollector.php';
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/materia/Materia.php';    
+include_once ('Materia.php');
+            include_once ('MateriaCollector.php');   
 
 
 

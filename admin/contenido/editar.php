@@ -1,10 +1,6 @@
 <?php 
 session_start();
-
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/contenido/ContenidoCollector.php';
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/contenido/Contenido.php';    
-
-
+  
 
 $id = $_GET["id"];
 //echo "valor de id es ". $id;
