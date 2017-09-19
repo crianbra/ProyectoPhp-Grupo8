@@ -31,8 +31,13 @@ function updateUsuario($idusuario,$nombreusuario, $contrasenia, $perfil, $person
 
 }
 
+<<<<<<< HEAD:admin/usuario/UsuarioCollector.php
 function deleteUsuario($id){
 	$deleterow = self::$db->deleteRow("DELETE FROM usuario WHERE idusuario= ?", array("{$id}"));
+=======
+function deleteUsuario($idusuario){
+	$deleterow = self::$db->deleteRow("DELETE FROM usuario WHERE idusuario= ?", array("{$idusuario}"));
+>>>>>>> b49817fc5ebe00ed93cca35a197f78273adb57a0:admin/usuario/UsuarioCollector.php
 
 }
 

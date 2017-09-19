@@ -2,6 +2,12 @@
 
 session_start();
 
+
+/*if($_SESSION["rol"]!="admin"){
+    header("location: ../index.php");
+    exit();
+}*/
+
 ?>
 
 <!DOCTYPE html>
@@ -37,8 +43,17 @@ session_start();
 					<li><a href="courses.php">CURSOS</a></li>
 					<li><a href="videos.php">VIDEOS</a></li>
 					<li ><a href="contact.php">Contáctenos</a></li>
-                    <!--<li><a href="login.php">LOGIN</a></li>-->
-                    <li ><a href="perfil.php">PERFIL</a></li>
+                    <?php 
+                    if($_SESSION{'rol'}=='admin'){
+                        ?>
+                     <li><a href="../index.php">Administrar</a></li>
+
+                    <?php
+                       
+                    }
+                        ?>
+                    <!--<li><a href="login.php">LOGIN</a></li>
+                    <li ><a href="perfil.php">PERFIL</a></li>-->
                     <li ><a href="../../index.php">SALIR</a></li>
 
 				</ul>
@@ -257,5 +272,6 @@ session_start();
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="../../assets/js/custom.js"></script>
+ 
 </body>
 </html>

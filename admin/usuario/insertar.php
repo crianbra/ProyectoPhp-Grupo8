@@ -41,6 +41,7 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/persona/Person
             </div>
             <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav side-nav">
+<<<<<<< HEAD
             <li >
                 <a href="#">
                     
@@ -91,6 +92,9 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/persona/Person
                     
                     Contactenos</a>
             </li>
+=======
+            
+>>>>>>> b49817fc5ebe00ed93cca35a197f78273adb57a0
         </ul>
             </div>
         <!--/.nav-collapse -->

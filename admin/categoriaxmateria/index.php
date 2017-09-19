@@ -1,3 +1,11 @@
+<?php
+session_start();
+if($_SESSION['rol']!='admin'){
+    header("location: ../../index.php");
+    exit();
+     
+}
+?>
 <head>
 
 <meta charset="utf-8">
@@ -22,14 +30,10 @@
     <link rel="stylesheet" href="../../assets/css/bootstrap-theme.css" media="screen">
     <link rel="stylesheet" href="../../assets/css/style.css">
     </head>
-
+    <body>
         <body>
 <!-- Fixed navbar -->
-<<<<<<< HEAD
-   <div class="navbar navbar-inverse">
-=======
     <div class="navbar navbar-inverse">
->>>>>>> b49817fc5ebe00ed93cca35a197f78273adb57a0
         <div class="container">
             <div class="navbar-header">
                 <!-- Button for smallest screens -->
@@ -37,20 +41,9 @@
                 <a class="navbar-brand" href="../index.php">
                     <img src="../../assets/images/logo.png" alt="Techro HTML5 template"></a>
             </div>
-<<<<<<< HEAD
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                   <ul class="nav navbar-nav side-nav">
-            <li >
-                <h2><a href="index.php">
-                    
-                    .:. RECONOCIMIENTO .:.</a></h2>
-            </li>
-        </ul>
-    </div>
-=======
             <div class="navbar-collapse collapse">
-                     <ul class="nav navbar-nav side-nav">
-            <li >
+                 <ul class="nav navbar-nav side-nav">
+           <li >
                 <a href="../persona/index.php">
                     
                     Personas</a>
@@ -72,7 +65,7 @@
                     Contenido</a>
             </li>
             <li >
-                <a href="../categoriaxmateria/index.php">
+                <a href="categoriaxmateria/index.php">
                     
                     Categoria Por Materias</a>
             </li>
@@ -87,7 +80,7 @@
                     Materias</a>
                           </li>
             <li >
-                <a href="reconocimiento/index.php">
+                <a href="../reconocimiento/index.php">
                     
                     Reconocimiento</a>
             </li>
@@ -98,60 +91,30 @@
             </li>
         </ul>
             </div>
->>>>>>> b49817fc5ebe00ed93cca35a197f78273adb57a0
         <!--/.nav-collapse -->
-         <div class="row">    
-  <div class="col-md-12">
-    <div class="panel panel-default">
-      <div class="panel-heading clearfix">
-        <strong>
-          <span class="glyphicon glyphicon-th"></span>
-          <span>RECONOCIMIENTO</span>
-       </strong>
-         <a href="../index.php" class="btn btn-danger pull-right">ATRAS</a> 
-         <a href="insertar.php" class="btn btn-info">AGREGAR RECONOCIMIENTO</a>
-      </div>
-     <div class="panel-body">
-    <table id="example" class="table table-striped table-bordered" cellspacing="0" width="80%">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>DESCRIPCION</th>
-            </tr>
-        </thead>
-        <?php
-
-            include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/reconocimiento/Reconocimiento.php';
-            include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/reconocimiento/ReconocimientoCollector.php';
-
-            $cole= new ReconocimientoCollector();
-
-
-            foreach($cole->showReconocimientos() as $datos)
-            {
-                ?>
-
-           <tr>
-         <td class=""><?php echo "".$datos->getIdreconocimiento(); ?></td>
-         <td class=""><?php echo "".$datos->getDescripcion(); ?></td>
-
-        <td><a class="link" href="editar.php?id=<?php echo $datos->getIdreconocimiento(); ?>">Editar</a></td>
-        <td><a class="link" href="eliminar.php?id=<?php echo $datos->getIdreconocimiento(); ?>">Eliminar</a></td><br>
-</tr>
-            
-<?php
-}
-
-?>
-    </table>
-    </div>
-    </div>
-  </div>
-</div>
-
-
         </div>
     </div>
               
     </body>
-    
+<?php
+include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/categoriaxmateria/CategoriaXMateria.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/php/categoriaxmateria/CategoriaXMateriaCollector.php';
+
+$cole= new CategoriaXMateriaCollector();
+
+
+foreach($cole->showCategoriaXMaterias() as $datos)
+{
+    ?>
+<tr>
+         <td class=""><?php echo $datos->getIdCategoriaMateria(); ?></td>
+         <td class=""><?php echo $datos->getNombreCategoria(); ?></td>
+         
+        <td><a class="link" href="editar/index.php?id=<?php echo $datos->getIdCategoriaMateria(); ?>">Editar</a></td>
+        <td><a class="link" href="borrar/index.php?id=<?php echo $datos->getIdCategoriaMateria(); ?>">Eliminar</a></td><br>
+</tr>
+<?php
+}
+
+?>
+<a href="crear/index.php">Crear Nuevo</a>

@@ -27,7 +27,11 @@ session_start();
 			<div class="navbar-header">
 				<!-- Button for smallest screens -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+<<<<<<< HEAD
 				<a class="navbar-brand" href="index.php">
+=======
+				<a class="navbar-brand" href="../index.php">
+>>>>>>> b49817fc5ebe00ed93cca35a197f78273adb57a0
 					<img src="../../assets/images/logo.png" alt="Techro HTML5 template"></a>
 			</div>
 			<div class="navbar-collapse collapse">
