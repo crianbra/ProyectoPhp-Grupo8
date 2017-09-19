@@ -57,8 +57,8 @@ include_once ('ContenidoCollector.php');
                             <input type="text"class='form-control' id="descripcion" name="descripcion" placeholder="Descripcion" rows="6">
                         </div>
                         <div class="form-group">
-                            <label for="usuario_id">ID USUARIO</label>
-                            <input type="text"class='form-control' id="usuario_id" name="usuario_id" placeholder="ID Usuario" rows="6">
+                            <label for="materia_id">ID Materia</label>
+                            <input type="text"class='form-control' id="materia_id" name="materia_id" placeholder="ID Materia" rows="6">
                         </div>
                                                 
                         <button type="submit" class="btn btn-default">Crear</button>
