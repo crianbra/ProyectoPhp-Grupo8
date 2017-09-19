@@ -1,3 +1,9 @@
+<?php
+
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -26,14 +32,13 @@
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav pull-right mainNav">
-					<li><a href="index.html">INICIO</a></li>
-					<li ><a href="about.html">QUIENES SOMOS</a></li>
-					<li><a href="courses.html">CURSOS</a></li>
-					<li><a href="videos.html">VIDEOS</a></li>
-					<li class="active"><a href="contact.html">CONTACTENOS</a>
-                    </li>
-                    <li><a href="login.html">LOGIN</a></li>
-                    <li ><a href="perfil.html">PERFIL</a></li>
+					<li><a href="index.php">INICIO</a></li>
+					<li ><a href="about.php">QUIENES SOMOS</a></li>
+					<li><a href="courses.php">CURSOS</a></li>
+					<li><a href="videos.php">VIDEOS</a></li>
+					<li class="active"><a href="contact.php">CONTACTO</a></li>
+                    <li><a href="login.php">LOGIN</a></li>
+                    <!--<li ><a href="perfil.php">PERFIL</a></li>-->
 
 				</ul>
 			</div>
@@ -55,34 +60,39 @@
 						<p>
 						Por medio de este metodo usted nos ayudara a mejorar, atenderemos su consulta en beneficio de todos.
 						</p>
+						<form action="admin/contactenos/guardarContacto.php" method="post">
+				         <fieldset>
+
 						<form class="form-light mt-20" role="form">
 							<div class="form-group">
 								<label>Nombre</label>
-								<input type="text" class="form-control" placeholder="Aqui su nombre">
+								<input type="text" name="nombre" class="form-control" placeholder="Aqui su nombre">
 							</div>
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
 										<label>Correo Electrónico</label>
-										<input type="email" class="form-control" placeholder="Escriba su correo">
+										<input type="email" name="email" class="form-control" placeholder="Escriba su correo">
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
 										<label>Telefono</label>
-										<input type="text" class="form-control" placeholder="Digite su número">
+										<input type="text" name="telefono" class="form-control" placeholder="Digite su número">
 									</div>
 								</div>
 							</div>
 							<div class="form-group">
-								<label>Subject</label>
-								<input type="text" class="form-control" placeholder="Subject">
+								<label>Asunto</label>
+								<input type="text" name="asunto" class="form-control" placeholder="Subject">
 							</div>
 							<div class="form-group">
 								<label>Mensaje</label>
-								<textarea class="form-control" id="message" placeholder="Escriba su inquietud o sugerencia aqui..." style="height:100px;"></textarea>
+								<textarea class="form-control" name="mensaje" id="message" placeholder="Escriba su inquietud o sugerencia aqui..." style="height:100px;"></textarea>
 							</div>
 							<button type="submit" class="btn btn-two">Enviar Mensaje</button><p><br/></p>
+						</form>
+						</fieldset>
 						</form>
 					</div>
 					<div class="col-md-4">
@@ -161,11 +171,12 @@
 					<div class="col-md-6 panel">
 						<div class="panel-body">
 							<p class="simplenav">
-								<a href="index.html">INICIO</a> |
-								<a href="about.html">QUIENES SOMOS</a> |
-								<a href="courses.html">CURSOS</a> |
-								<a href="videos.html">VIDEOS</a> |
-								<a href="contact.html">CONTACTO</a>
+								<a href="index.php">INICIO</a> |
+								<a href="about.php">QUIENES SOMOS</a> |
+								<a href="courses.php">CURSOS</a> |
+								<a href="videos.php">VIDEOS</a> |
+								<a href="contact.php">CONTACTO</a> |
+                                <a href="login.php">LOGIN</a>
 							</p>
 						</div>
 					</div>

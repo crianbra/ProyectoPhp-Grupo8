@@ -1,3 +1,9 @@
+<?php
+
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,23 +16,24 @@
     <meta name="author" content="">
     <title>Educacion Online -User</title>
     <!--  CSS de Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="js/jquery-example.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <link href="css/personalizado.css" rel="stylesheet">
-    <link href="css/starter-template.css" rel="stylesheet">
+    <script src="../../js/jquery-example.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <link href="../../css/personalizado.css" rel="stylesheet">
+    <link href="../../css/starter-template.css" rel="stylesheet">
 
-    <link rel="icon" type="image/png" href="assets/images/logo_navegador.png">
+    <link rel="icon" type="image/png" href="../../assets/images/logo_navegador.png">
     <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
     <!-- Custom styles for our template -->
-    <link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap-theme.css" media="screen">
+    <link rel="stylesheet" href="../../assets/css/style.css">
     
 
 </head>
+
 
 <body>
 <!-- Fixed navbar -->
@@ -35,18 +42,19 @@
             <div class="navbar-header">
                 <!-- Button for smallest screens -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/logo.png" alt="Techro HTML5 template"></a>
+                <a class="navbar-brand" href="index.php">
+                    <img src="../../assets/images/logo.png" alt="Techro HTML5 template"></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav pull-right mainNav">
-                    <li><a href="index.html">INICIO</a></li>
-                    <li><a href="about.html">QUIENES SOMOS</a></li>
-                    <li><a href="courses.html">CURSOS</a></li>
-                    <li><a href="videos.html">VIDEOS</a></li>
-                    <li ><a href="contact.html">CONTÁCTENOS</a></li>
-<li><a href="login.html">LOGIN</a></li>
-                    <li class="active"><a href="perfil.html">PERFIL</a></li>
+                    <li><a href="index.php">INICIO</a></li>
+                    <li><a href="about.php">QUIENES SOMOS</a></li>
+                    <li><a href="courses.php">CURSOS</a></li>
+                    <li><a href="videos.php">VIDEOS</a></li>
+                    <li><a href="contact.php">CONTÁCTENOS</a></li>
+                    <!--<li><a href="login.php">LOGIN</a></li>-->
+                    <li class="active"><a href="perfil.php">PERFIL</a></li>
+                    <li><a href="../../index.php">SALIR</a></li>
                 </ul>
             </div>
         <!--/.nav-collapse -->
@@ -61,9 +69,9 @@
             <div class="col-md-12">
                 <h1 class="page-header">Mis Datos .::.</h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="perfil.html">Perfil de usuario</a></li>
-                    <li class="active"><a href="ediPerfil.html" >Editando datos</a></li>
+                    <!--<li><a href="index.php">Inicio</a></li>
+                    <li><a href="perfil.php">Perfil de usuario</a></li>-->
+                    <li class="active"><a href="perfil.php" >Perfil de usuario</a></li>
                 </ol>
             </div>
         </div>
@@ -75,7 +83,7 @@
             <!-- Columna de la izquierda -->
         	<div class="col-md-3">
         		<div class="col-md-12" align="center">
-        			<img class="img-responsive img-portfolio img-hover" src="img/profile.jpg">
+        			<img class="img-responsive img-portfolio img-hover" src="../../img/profile.jpg">
         		</div>
         		<div class="col-md-12">
         			<p class="text-center"><strong>Nombre Apellido</strong></p>
@@ -106,7 +114,6 @@
         			<br >
         			<ul class="list-group list-primary">
     			     <a href="#" class="list-group-item">Mi perfil</a>
-        			 <a href="#" class="list-group-item">Cuenta</a>
         			</ul>
     			</div>
                 <!-- Fin Barra vertical de opciones del perfil de usuario -->
@@ -128,46 +135,40 @@
     	                        <div class="controls">
     	                        	<br >
     	                            <label>Información básica</label>
-    	                            <span id="alertName" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
-    	                            	<input type="text" class="form-control" id="txtName" placeholder="Introduzca su nombre" required data-validation-required-message="Por favor introduzca su nomnbre.">
+    	                            <span id="alertNombre" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
+    	                            	<input type="text" class="form-control" id="txtNombre" placeholder="Introduzca su nombre" required data-validation-required-message="Por favor introduzca su nomnbre." >
     	                            </span>
     	                            <br >
-    	                            <span id="alertSurname" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
-    	                            	<input type="text" class="form-control" id="txtSurname" placeholder="Introduzca sus apellidos" required data-validation-required-message="Por favor introduzca sus apellidos.">
+    	                            <span id="alertCiudad" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
+    	                            	<input type="text" class="form-control" id="txtCiudad" placeholder="Introduzca su ciudad" required data-validation-required-message="Por favor introduzca su ciudad.">
     	                            </span>
     	                            <br >
-    	                            <span id="alertQualification" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
-    	                            	<input type="text" class="form-control" id="txtQualification" placeholder="Introduzca su título" required data-validation-required-message="Por favor introduzca su título.">
+    	                            <span id="alertDireccion" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
+    	                            	<input type="text" class="form-control" id="txtDireccion" placeholder="Introduzca su direccion" required data-validation-required-message="Por favor introduzca su direccion.">
     	                            </span>
-    	                            <br >
-    	                            <span id="alertEmail" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
-    	                            	<input type="email" class="form-control" id="txtEmail" placeholder="Introduzca su email" required data-validation-required-message="Por favor introduzca su email.">
-    	                            </span>
+                                    <br >
+                                    <span id="alertEdad" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
+                                        <input type="text" class="form-control" id="txtEdad" placeholder="Introduzca su edad" required data-validation-required-message="Por favor introduzca su edad.">
+                                    </span>
+                                    <br >
+                                    <span id="alertTelefono" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
+                                        <input type="text" class="form-control" id="txtTelefono" placeholder="Introduzca su telefono" required data-validation-required-message="Por favor introduzca su telefono.">
+                                    <br >
+                                    <span id="alertCorreo" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
+                                        <input type="text" class="form-control" id="txtCorreo" placeholder="Introduzca su correo" required data-validation-required-message="Por favor introduzca su correo.">
+                                    </span>
+                                    <br >
+                                    <span id="alertUsuario" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
+                                        <input type="text" class="form-control" id="txtUsuario" placeholder="Introduzca su usuario" required data-validation-required-message="Por favor introduzca su usuario.">
+                                    </span>
+                                    <br >
+                                    <span id="alertContrasenia" data-toggle="popover" data-trigger="hover" data-placement="right" title="" data-content="">
+                                        <input type="text" class="form-control" id="txtContrasenia" placeholder="Introduzca su contraseña" required data-validation-required-message="Por favor introduzca su contraseña.">
+                                    </span>
     	                            <p class="help-block"></p>
     	                        </div>
     	                    </div>
-    	                    <div class="control-group form-group">
-    	                        <div class="controls">
-    	                            <label>Biografía:</label>
-    	                            <span id="alertBiography" data-toggle="popover" data-trigger="hover" data-placement="auto" title="" data-content="">
-    		                            <textarea rows="6" cols="30" class="form-control" id="txtBiography" required maxlength="999" style="resize:none" 
-    		                            data-validation-required-message="Por favor introduzca su biografía deseada."></textarea>
-    		                        </span>
-    		                        <br >
-    		                        <span id="alertSelectLanguage" data-toggle="popover" data-trigger="hover" data-placement="auto" title="" data-content="">
-    		                            <select class="form-control" id="selectLanguage" title="Seleccione su idioma">
-    		                            	<option class="bs-title-option" value="" disabled selected>Elija un idioma</option>
-    		                            	<option>Alemán</option>
-    		                            	<option>Castellano</option>
-    		                            	<option>Catalán</option>
-		                            	   	<option>Francés</option>
-    		                            	<option>Inglés</option>
-    		                            	<option>Portugués</option>
-    		                            </select>
-    		                        </span>
-                                    <br >
-    	                        </div>
-                        	</div>
+    	                   
                     </div>
                 </div>
                 <!-- Fin del div central parte de formulario información básica -->
@@ -179,13 +180,7 @@
     	            	<div class="control-group form-group">
                             <div class="controls">
                             	<br >
-                                <label>Enlaces:</label>
-                                <input type="text" class="form-control" id="txtMyWeb" placeholder="Introduzca su web personal o profesional">
-                                <br>
-                                
-                                <div class="input-group">
-                                	<span class="input-group-addon">http://twitter.com</span><input type="text" class="form-control" id="txtTwitter" placeholder="Introduzca su usuario de Twitter">
-                                </div>
+                                <label>Enlace:</label>
                                 <br>
                                 <div class="input-group">
                                 	<span class="input-group-addon">https://www.facebook.com</span><input type="text" class="form-control" id="txtFacebook" placeholder="Introduzca su usuario de Facebook">
@@ -284,11 +279,12 @@
                     <div class="col-md-6 panel">
                         <div class="panel-body">
                             <p class="simplenav">
-                                <a href="index.html">INICIO</a> |
-                                <a href="about.html">QUIENES SOMOS</a> |
-                                <a href="courses.html">CURSOS</a> |
-                                <a href="videos.html">VIDEOS</a> |
-                                <a href="contact.html">CONTACTO</a>
+                                <a href="index.php">INICIO</a> |
+                                <a href="about.php">QUIENES SOMOS</a> |
+                                <a href="courses.php">CURSOS</a> |
+                                <a href="videos.php">VIDEOS</a> |
+                                <a href="contact.php">CONTÁCTENOS</a> |
+                                <a href="perfil.php">PERFIL</a>
                             </p>
                         </div>
                     </div>
@@ -302,10 +298,10 @@
     <!-- /.container -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="../../assets/js/custom.js"></script>
     <!-- Google Maps -->
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-    <script src="assets/js/google-map.js"></script>
+    <script src="../../assets/js/google-map.js"></script>
 </body>
 
 </html>
