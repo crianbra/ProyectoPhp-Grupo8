@@ -1,6 +1,6 @@
 <?php 
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/persona/PersonaCollector.php';
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/persona/Persona.php'; 
+include_once('Persona.php');
+include_once('PersonaCollector.php');
 
 
  ?>
@@ -57,11 +57,11 @@ require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/persona/Person
                             <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" rows="6">
                         </div>
                         <div class="form-group">
-                            <label for="descr">Ciudad</label>
+                            <label for="ciudad">Ciudad</label>
                             <input type="text"class='form-control' id="ciudad" name="ciudad" placeholder="Ciudad" rows="6">
                         </div>
                         <div class="form-group">
-                            <label for="descr">Direccion</label>
+                            <label for="direccion">Direccion</label>
                             <input type="text"class='form-control' id="direccion" name="direccion" placeholder="Direccion" rows="6">
                         </div>
                         <div class="form-group">
