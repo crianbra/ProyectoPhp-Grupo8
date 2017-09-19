@@ -42,16 +42,16 @@ session_start();
 					<li><a href="videos.php">VIDEOS</a></li>
 					<li><a href="contact.php">CONTACTO</a></li>
                     <!--<li><a href="login.php">LOGIN</a></li>-->
-                    <li><a href="perfil.php">PERFIL</a></li>
+          <li><a href="perfil.php">PERFIL</a></li>
                    <!-- <?php 
-                    if($_SESSION{'mySesion'}=='admin'){
+          if($_SESSION{'rol'}=='admin'){
                         ?>-->
-                     <li><a href="../index.php">Administrar</a></li>
+          <li><a href="../index.php">Administrar</a></li>
                     <!--<?php
                        
                     }
                     ?>-->
-                    <li><a href="logout.php">SALIR</a></li>
+          <li><a href="logout.php">SALIR</a></li>
                      
 				</ul>
 			</div>

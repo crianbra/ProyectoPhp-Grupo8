@@ -1,11 +1,6 @@
 <?php 
 session_start();
 
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/alumno/AlumnoCollector.php';
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/alumno/Alumno.php';    
-
-
-
 $id = $_GET["id"];
 //echo "valor de id es ". $id;
 include_once("AlumnoCollector.php");

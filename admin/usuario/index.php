@@ -1,3 +1,4 @@
+<html>
 <head>
 
 <meta charset="utf-8">
@@ -103,27 +104,5 @@
     </div>
               
     </body>
+    </html>
     
-<!--<?php
-include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/persona/Persona.php';
-include_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/persona/PersonaCollector.php';
-
-$cole= new PersonaCollector();
-
-
-foreach($cole->showPersonas() as $datos)
-{
-    ?>
-<tr>
-         <td class=""><?php echo "id ".$datos->getIdpersona(); ?></td>
-         <td class=""><?php echo "nombre ".$datos->getNombre(); ?></td>
-         <td class="celda"><?php echo "ciudad ".$datos->getCiudad(); ?></td>
-
-        <td><a class="link" href="editar.php?id=<?php echo $datos->getIdpersona(); ?>">Editar</a></td>
-        <td><a class="link" href="eliminar.php?id=<?php echo $datos->getIdpersona(); ?>">Eliminar</a></td><br>
-</tr>
-<?php
-}
-
-?>
-<a href="insertar.php">Crear Nuevo</a>-->

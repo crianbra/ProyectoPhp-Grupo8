@@ -114,6 +114,11 @@ if($_SESSION["mySesion"]!="admin"){
                     
                     Contactenos</a>
             </li>
+            <li >
+                <a href="sitioweb/index.php">
+                    
+                    Salir</a>
+            </li>
         </ul>
     </div>
     <!-- /.navbar-collapse -->

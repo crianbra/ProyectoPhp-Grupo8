@@ -5,8 +5,8 @@ include_once('../bd/Collector.php');
 class UsuarioCollector extends Collector
 {
   
-  function validarUsuario($nombreusuario,$contrasenia){
-      $rows = self::$db->getRows("SELECT * FROM usuario WHERE nombreusuario='$nombreusuario' AND contrasenia='$contrasenia'");               
+  function validarUsuario($nombreusuario,$contrasenia,$perfil){
+      $rows = self::$db->getRows("SELECT * FROM usuario WHERE nombreusuario='$nombreusuario' AND contrasenia='$contrasenia' AND perfil=$perfil");               
     foreach ($rows as $c){
         $token= Functions::guid();
         $aux = new usuario($c{'idusuario'},$c{'nombreusuario'},$c{'contrasenia'},$c{'perfil'},$c{'persona_id'});
