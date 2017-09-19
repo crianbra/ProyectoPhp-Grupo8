@@ -1,7 +1,7 @@
 <?php
-include_once('Usuario.php');
-include_once('../bd/Collector.php');
-include_once('../Autenticacion/Functions.php');
+include_once('usuario/Usuario.php');
+include_once('bd/Collector.php');
+include_once('Autenticacion/Functions.php');
 class UsuarioCollector extends Collector
 {
   

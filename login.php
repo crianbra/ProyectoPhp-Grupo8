@@ -75,7 +75,7 @@ session_start();
 
 
     <h2>Ingresar con una cuenta existente</h2>
-     <form id="filldetails"  method="POST" action="admin/usuario/validarUsuario.php">
+     <form id="filldetails"  method="POST" action="admin/validarUsuario.php">
       <input type="text" placeholder="Usuario" name="nombreusuario" required="" />
       <input type="password" placeholder="Contraseña" name="contrasenia" required="" />
       <button>Ingresar</button>

@@ -38,7 +38,7 @@ session_start();
 					<li><a href="videos.php">VIDEOS</a></li>
 					<li><a href="contact.php">CONTACTO</a></li>
                     <li><a href="login.php">LOGIN</a></li>
-                    <li><a href="admin/index.php">Administrar</a></li>
+                    <!--<li><a href="admin/index.php">Administrar</a></li>-->
                     <!--<li><a href="perfil.php">PERFIL</a></li>-->
 
 				</ul>
