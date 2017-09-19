@@ -1,10 +1,11 @@
-<?php 
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/alumno/AlumnoCollector.php';
-require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/alumno/Alumno.php'; 
+<?php
+session_start(); 
+//require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/alumno/AlumnoCollector.php';
+//require_once $_SERVER['DOCUMENT_ROOT'].'/ProyectoPhp-Grupo8/admin/alumno/Alumno.php'; 
 
 
  ?>
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang='es'>
 <head>
 
