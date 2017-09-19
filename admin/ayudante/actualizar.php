@@ -23,7 +23,7 @@ echo "Edicion en proceso..... </br>";
 include_once("AyudanteCollector.php");
 $AyudanteCollectorObj = new AyudanteCollector();
 $AyudanteCollectorObj->updateAyudante($idayudante,$descripcion, $usuario_id,$reconocimiento_id);
-echo "id:".$descripcion." actualizando a:".$descripcion." </br>";
+echo "Se Actualizo Correctamente";
 
 ?>
 

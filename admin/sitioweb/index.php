@@ -43,7 +43,8 @@ session_start();
 					<li><a href="contact.php">CONTACTO</a></li>
                     <!--<li><a href="login.php">LOGIN</a></li>-->
           <li><a href="perfil.php">PERFIL</a></li>
-                  <?php 
+          <li><a href="../index.php">Administrar</a></li>
+                  <!--<?php 
                     if($_SESSION{'rol'}=='admin'){
                         ?>
                      <li><a href="../index.php">Administrar</a></li>
@@ -51,7 +52,7 @@ session_start();
                     <?php
                        
                     }
-                        ?>
+                        ?>-->
           <li><a href="logout.php">SALIR</a></li>
                      
 				</ul>

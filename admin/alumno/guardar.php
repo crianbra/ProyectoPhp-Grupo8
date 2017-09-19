@@ -10,7 +10,7 @@ $valor = $_POST["id"];
 $valor2 = $_POST["descripcion"];
 $valor3 = $_POST["usuario_id"];
 
-echo 'Hola Usuario con el ID : ' .htmlspecialchars($valor) . '!';
+echo "Se Guardo Correctamente";
 include_once("AlumnoCollector.php");
 
 $AlumnoCollectorObj = new AlumnoCollector();

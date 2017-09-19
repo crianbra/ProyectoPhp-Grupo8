@@ -22,7 +22,7 @@ echo "Edicion en proceso..... </br>";
 include_once("AlumnoCollector.php");
 $AlumnoCollectorObj = new AlumnoCollector();
 $AlumnoCollectorObj->updateAlumno($idalumno,$description, $usuario_id);
-echo "id:".$description." actualizando a:".$description." </br>";
+echo "Se Actualizo Correctamente";
 
 ?>
 
