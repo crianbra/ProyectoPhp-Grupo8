@@ -12,10 +12,10 @@ class dataBase
   private $password  = "d0747a93621a7131e779199b9ab67e5457476bf8a081eb9b897d473d5b950e74";
   private $dbname    = "d6pba8juduci4s";*/
 
-  private $host      = "ec2-54-225-192-243.compute-1.amazonaws.com";
-  private $username  = "iiewhrdiftbwug";
-  private $password  = "01a9f53305469f5872423250649d2546a609c46cc36febcebb1fdbe26371c2e4";
-  private $dbname    = "d688ggtp9d4kab";
+  private $host      = "ec2-50-17-203-84.compute-1.amazonaws.com";
+  private $username  = "bgrhelnxypqrcj";
+  private $password  = "0f9c9c7495961bb49623c3a59a7c93d68cc406513e4c46a50e21af76f8f3ed59";
+  private $dbname    = "d1f5a0t0p8ie1i";
 
 
 

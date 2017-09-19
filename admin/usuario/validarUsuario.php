@@ -11,7 +11,7 @@ require('validar.php');
         $usuarioCollector = new UsuarioCollector();
 		$nombreusuario = $_POST['nombreusuario'];
 		$contrasenia = $_POST['contrasenia'];
-        $perfil = $_POST['perfil'];
+        //$perfil = $_POST['perfil'];
         if ($usuarioCollector->validarUsuario($nombreusuario,$contrasenia)){
             $_SESSION['mySesion'] = $nombreusuario;
             //$_SESSION['rol'] = Usuario::$perfil;
